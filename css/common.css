@@ -187,7 +187,7 @@
 .popup.full .area-search .form.col .form-cont .dropdown.v2:first-of-type .drop-list {left: -105px}
 .popup.full .area-search .form.col .form-cont .dropdown.v2:last-of-type .drop-list {left: -35px}
 
-.popup.full .pop-body {display: flex; height: calc(100% - 50px); justify-content: flex-start; align-items: stretch;}
+.popup.full .pop-body {display: flex; height: calc(100% - 50px); justify-content: flex-start; align-items: stretch; width: 100%;}
 
 .popup.full .datum {flex: none; height: 100%; width: 360px; border-left: 360px; border-right: 1px solid #E9ECEF; display: flex; flex-direction: column;}
 .popup.full .datum .datum-cont {flex: 1 0; min-height: 0;}
