@@ -158,7 +158,7 @@
 .popup.layer > div + div {border-top: 1px solid #CED4DA;}
 .popup.layer .pop-head {position: relative; width: 100%; flex: none;}
 .popup.layer .pop-head .btn-pop-close {position: absolute; right: 24px; top: 16px;}
-.popup.layer .pop-body {overflow: auto; width: 100%; flex: 1 0; min-height: 0;}
+.popup.layer .pop-body {overflow: auto; width: 100%; flex: 1 0; min-height: 0; max-height: calc(100vh - 138px);}
 .popup.layer .pop-body .list-wrap.v1 table {width: 100%; min-width: 0;}
 .popup.layer .pop-txt {font-size: 12px; line-height: 1.3334; text-align: center; color: #868e86;}
 
