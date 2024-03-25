@@ -148,7 +148,7 @@
 .fx.ai-c{ align-items: center; }
 .fx.ai-s{ align-items: stretch; }
 
-.fx-none{ flex: none; }
+.fx-none{ flex: none !important; }
 
 .fx1{ flex: 1 0 !important; }
 .fx2{ flex: 2 0 !important; }
