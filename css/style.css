@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------------
+    파일정의 : 페이지 스타일
+-------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------
+    @레이아웃
+-------------------------------------------------------------------*/
+.title-wrap {display: flex; align-items: center; justify-content: space-between; height: 52px;}
+.title-wrap .title-area {display: flex; align-items: center; justify-content: flex-start; gap: 0 10px;}
+.title-wrap .title-area .title {font-size: 16px; font-weight: 700; line-height: 1.25;}
+.title-wrap .title-area .text {font-size: 12px; font-weight: 600; line-height: 1.5; color: #868E96;}
+
+.bx-group {display: flex; align-items: stretch; gap: 0 20px;}
+.bx-group .bx-area {flex: 1 0;}
+.bx-group .bx-area + .bx-area {margin-top: 0;}
+
+.bx-area {background-color: #ffffff; border-radius: 20px; padding-top: 20px; padding-bottom: 20px;}
+.bx-area > .inner {padding-left: 20px; padding-right: 20px; display: flex; align-items: center; justify-content: space-between;}
+.bx-area + .bx-area {margin-top: 10px;}
+
+.has-pd {padding-left: 20px; padding-right: 20px;}
+
+/*-------------------------------------------------------------------
+    @팝업
+-------------------------------------------------------------------*/
+/* 공통 - 동영상 튜토리얼 팝업 */
+.pop-tutorial {width: 900px;}
+.pop-tutorial .pop-body {padding-top: 20px; padding-bottom: 20px;}
+.pop-tutorial .step-area ul {display: flex; align-items: center; justify-content: center; gap: 0 10px;}
+.pop-tutorial .step-area ul li {padding: 8px 16px; border-radius: 16px; display: flex; align-items: center; justify-content: center; background-color: #F1F3F5; gap: 0 4px;}
+.pop-tutorial .step-area ul li .num {flex: none; width: 16px; height: 16px; line-height: 16px; text-align: center; border-radius: 50%; background-color: #ffffff; font-size: 11px;}
+.pop-tutorial .step-area ul li .text {font-size: 12px; font-weight: 600; color: #868E96;}
+.pop-tutorial .step-area ul li.on {background-color: #6741D9;}
+.pop-tutorial .step-area ul li.on .num {color: #6741D9;}
+.pop-tutorial .step-area ul li.on .text {color: #ffffff;}
+.pop-tutorial .text-area {width: calc(100% - 100px); margin: 20px auto 0; background-color: #F8F9FA; padding: 10px 0; text-align: center; border-radius: 20px;}
+.pop-tutorial .text-area .text01 {font-size: 20px; font-weight: 700; line-height: 1.2; color: #6741D9;}
+.pop-tutorial .text-area .text02 {font-size: 14px; font-weight: 600; line-height: 1.215; margin-top: 4px;}
+.pop-tutorial .text-area .text03 {font-size: 12px; line-height: 1.3334; margin-top: 10px;}
+.pop-tutorial .tutorial-swiper {margin: 20px auto 0; width: calc(100% - 100px); position: relative;}
+.pop-tutorial .tutorial-swiper .swiper {border-radius: 20px;}
+.pop-tutorial .tutorial-swiper .swiper .swiper-wrapper .swiper-slide {background-color: #343A40; height: 450px;}
+.pop-tutorial .tutorial-swiper [class^="swiper-button-"] {width: 24px; height: 24px; background-repeat: no-repeat; background-size: 100%; background-position: center;}
+.pop-tutorial .tutorial-swiper [class^="swiper-button-"]::after {display: none;}
+.pop-tutorial .tutorial-swiper .swiper-button-next {background-image: url('../img/icon/ic_arr_swiper_r.png'); right: -35px;}
+.pop-tutorial .tutorial-swiper .swiper-button-prev {background-image: url('../img/icon/ic_arr_swiper_l.png'); left: -35px;}
+.pop-tutorial .tutorial-swiper .swiper-controller {margin-top: 20px; display: flex; align-items: center; justify-content: center; gap: 0 10px;}
+.pop-tutorial .tutorial-swiper .swiper-controller [class^="swiper-paging"] {text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: 16px; display: block; width: 16px; line-height: 16px; border-radius: 50%; height: 16px; cursor: pointer;}
+.pop-tutorial .tutorial-swiper .swiper-controller [class^="swiper-paging"].swiper-button-disabled {opacity: .35; cursor: initial;}
+.pop-tutorial .tutorial-swiper .swiper-controller .swiper-paging-prev {background-image: url('../img/icon/ic_paging_prev.png');}
+.pop-tutorial .tutorial-swiper .swiper-controller .swiper-paging-next {background-image: url('../img/icon/ic_paging_next.png');}
+.pop-tutorial .tutorial-swiper .swiper-controller .paging {position: static; }
+.pop-tutorial .tutorial-swiper .swiper-controller .paging ul li {margin: 0; width: auto; height: auto; display: block; background: none; opacity: 1;}
+.pop-tutorial .tutorial-swiper .swiper-controller .paging ul li.swiper-pagination-bullet-active a {background-color: #868E96; color: #ffffff;}
+
+/* 운전자(차량) 관리 */
+.prepare {height: 100%; padding-bottom: 10px;}
+.prepare .container {display: flex; flex-direction: column; align-items: flex-start; height: 100%;}
+.prepare .container > div {width: 100%;}
+.prepare .bx-area:last-of-type {flex: 1 0; min-height: 0;}
+.prepare .list-wrap.v1 {height: calc(100% - 80px);}
+
+/* 조회항목 설정 팝업 */
+.pop-set-items {width: 360px;}
+.pop-set-items .pop-body {padding-top: 20px;}
+.pop-set-items .sortable {margin-top: 20px; padding-bottom: 20px; max-height: 430px;}
+.pop-set-items .sortable ul li + li {margin-top: 4px;}
+.pop-set-items .sortable ul li .check.v2 {margin: 0 auto;}
+
+/* 그룹지정 팝업 */
+.pop-specify-group {width: 670px;}
+.pop-specify-group .pop-body {padding-top: 20px;}
+
+/* 그룹 상세보기 팝업 */
+.pop-group-detail {width: 840px;}
+.pop-group-detail .pop-body {padding: 20px 40px;}
+.pop-group-detail .scroll-y {height: 152px;}
+.pop-group-detail .lookup .form.col .form-title {width: 115px;}
+
+/* 운전자 등록 팝업 */
+.pop-add-worker {width: 500px;}
+.pop-add-worker .pop-body {padding: 20px 45px;}
+.pop-add-worker .add-type {margin-top: 20px; display: flex; align-items: stretch; gap: 0 10px;}
+.pop-add-worker .add-type .item {border-radius: 20px; display: block; background-color: #F8F9FA; padding: 20px 32px 10px; flex: 1 0;}
+.pop-add-worker .add-type .item .title {text-align: center; font-size: 13px; color: #343A40; line-height: 1.231; font-weight: 600;}
+.pop-add-worker .add-type .item .title + i {margin: 34px auto 0;}
+.pop-add-worker .add-type .item .text {font-size: 11px; color: #2F9E44; text-align: center; line-height: 1.182;}
+.pop-add-worker .btn-form {margin: 20px auto 0;}
+.pop-add-worker .file-guide {margin-top: 20px; background-color: #FFE3E3; border-radius: 20px; padding: 20px 62px;}
+.pop-add-worker .file-guide .text {padding-left: 42px; background: url('../img/icon/ic_guide.png') no-repeat left center; background-size: 32px; font-size: 12px; font-weight: 600; line-height: 1.25; color: #FA5252;}
+.pop-add-worker .file-guide ul {margin-top: 10px;}
+.pop-add-worker .file-guide ul li {position: relative; font-size: 11px; line-height: 1.364; color: #868E96; padding-left: 12px;}
+.pop-add-worker .file-guide ul li::before {content: ""; width: 2px; height: 2px; border-radius: 50%; background-color: #868E96; position: absolute; left: 4px; top: 7px;}
+
+/* 운전자 등록 팝업 */
+.pop-write-worker {width: 735px;}
+.pop-write-worker .pop-body .mCustomScrollBox .mCSB_container {padding: 40px 40px;}
+
+/* 운전자 보기 팝업 */
+.pop-detail-worker {width: 735px;}
+.pop-detail-worker .pop-body .mCustomScrollBox .mCSB_container {padding: 40px 40px;}
+
+/* 주소등록 팝업 */
+.pop-search-address {width: 800px;}
+.pop-search-address .search-address {display: flex; align-items: stretch;}
+.pop-search-address .search-address > div {flex: none; width: 50%; height: 545px;}
+.pop-search-address .search-address .search-area {padding: 40px 40px;}
+.pop-search-address .search-address .map-area {background-color: #F1F3F5;}
+
+/* 업로드 완료 팝업 */
+.pop-complete-upload {width: 1000px;}
+.pop-complete-upload .pop-body {padding-top: 20px;}
+
+.pop-complete-upload .list-wrap.v1 {height: 390px;}
+.pop-complete-upload .list-wrap.v1 .list-head {width: 100%; overflow: hidden;}
+.pop-complete-upload .list-wrap.v1 .list-body {max-height: 350px;}
+.pop-complete-upload .list-wrap.v1 table {min-width: 3640px;}
+
+/* 운전자 일괄 수정 팝업 */
+.pop-bulk-modify {width: 1000px;}
+.pop-bulk-modify .pop-body {padding-top: 20px;}
+
+.pop-bulk-modify .list-wrap.v1 {height: 390px;}
+.pop-bulk-modify .list-wrap.v1 .list-head {width: 100%; overflow: hidden;}
+.pop-bulk-modify .list-wrap.v1 .list-body {max-height: 350px;}
+.pop-bulk-modify .list-wrap.v1 table {min-width: 3640px;}
+
+/* 휴무관리 팝업 */
+.pop-holiday-schedule {width: 920px; overflow: visible;}
+.pop-holiday-schedule .pop-body {padding: 20px 40px; overflow: visible !important;}
+.pop-holiday-schedule .schedule-head {position: relative;}
+.pop-holiday-schedule .schedule-head .btn {position: absolute; right: 0; top: 15px;}
+.pop-holiday-schedule .schedule-head .year {font-size: 12px; font-weight: 700; line-height: 1.167; text-align: center; color: #868E96;}
+.pop-holiday-schedule .schedule-head .month-area {margin-top: 4px; display: flex; align-items: center; justify-content: center; gap: 0 20px}
+.pop-holiday-schedule .schedule-head .month {font-size: 24px; font-weight: 700; line-height: 1.25; text-align: center;}
+.pop-holiday-schedule .schedule-body {margin-top: 20px;}
+.pop-holiday-schedule .schedule-body .month {display: flex; flex-direction: column;}
+.pop-holiday-schedule .schedule-body .week {display: grid; width: 100%; grid-template-columns: repeat(7, 1fr); grid-auto-flow: dense; }
+.pop-holiday-schedule .schedule-body .week .day {}
+.pop-holiday-schedule .schedule-body .week .day:nth-child(1) {grid-column-start: 1; grid-column-end: 2;}
+.pop-holiday-schedule .schedule-body .week .day:nth-child(2) {grid-column-start: 2; grid-column-end: 3;}
+.pop-holiday-schedule .schedule-body .week .day:nth-child(3) {grid-column-start: 3; grid-column-end: 4;}
+.pop-holiday-schedule .schedule-body .week .day:nth-child(4) {grid-column-start: 4; grid-column-end: 5;}
+.pop-holiday-schedule .schedule-body .week .day:nth-child(5) {grid-column-start: 5; grid-column-end: 6;}
+.pop-holiday-schedule .schedule-body .week .day:nth-child(6) {grid-column-start: 6; grid-column-end: 7;}
+.pop-holiday-schedule .schedule-body .week .day:nth-child(7) {grid-column-start: 7; grid-column-end: 8;}
+.pop-holiday-schedule .schedule-body .week-holiday {grid-row-start: 2; grid-column-start: 1; grid-column-end: 8; display: grid; grid-template-columns: repeat(7, 1fr); grid-template-rows: repeat(3, 17px); grid-auto-flow: row; height: 60px;}
+.pop-holiday-schedule .schedule-body .week-holiday .holiday {padding: 2px 8px; border-radius: 2px; height: 17px; display: flex; align-items: center; justify-content: flex-start; gap: 0 10px; position: relative;}
+.pop-holiday-schedule .schedule-body .week-holiday .holiday p {font-size: 11px; font-weight: 600; line-height: 1.182; color: #ffffff;}
+.pop-holiday-schedule .schedule-body .week-holiday .holiday .btn-chuck {display: none;}
+.pop-holiday-schedule .schedule-body .week-holiday .holiday:not(.more):hover .btn-chuck {display: block;}
+.pop-holiday-schedule .schedule-body .week-holiday .holiday + .holiday {margin-top: 2px;}
+.pop-holiday-schedule .schedule-body .week-holiday .more-holiday {position: absolute; left: 0; top: 100%; border: 1px solid #CED4DA; border-radius: 10px; box-shadow: 0px 4px 10px 0px #0000001A; z-index: 1; background-color: #F8F9FA; overflow: hidden; width: 100px; margin-left: 25px; margin-top: 6px; padding: 10px; display: none;}
+.pop-holiday-schedule .schedule-body .week-holiday .more-holiday .date-area {display: flex; align-items: center; justify-content: center; gap: 0 8px;}
+.pop-holiday-schedule .schedule-body .week-holiday .more-holiday .date-area p {font-weight: 600; line-height: 1.167;}
+.pop-holiday-schedule .schedule-body .week-holiday .more-holiday .date-area p.text-date01 {font-size: 12px; color: #343A40;}
+.pop-holiday-schedule .schedule-body .week-holiday .more-holiday .date-area p.text-date02 {font-size: 11px; color: #868E96;}
+.pop-holiday-schedule .schedule-body .week-holiday .more-holiday .more-list {margin-top: 10px;}
+.pop-holiday-schedule .schedule-body .calendar-head .week .day {padding: 8px 0; text-align: center; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #D9D9D9; font-size: 12px; font-weight: 600; line-height: 1.167; text-align: center;}
+.pop-holiday-schedule .schedule-body .calendar-head .week .day:nth-of-type(1) {border-bottom-color: #FA5252; color: #FA5252;}
+.pop-holiday-schedule .schedule-body .calendar-head .week .day:nth-of-type(7) {border-bottom-color: #228BE6; color: #228BE6;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .day {height: 90px;grid-row-start: 1; grid-row-end: 3; border-bottom: 1px solid #D9D9D9; border-left: 1px solid #d9d9d9;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .day:nth-child(7) {border-right: 1px solid #D9D9D9;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .day a {display: block; width: fit-content; color: #343A40; font-size: 12px; line-height: 1.167; margin: 12px 15px 0 auto;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .day.disabled a {color: #CED4DA;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-start="1"] {grid-column-start: 1;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-start="2"] { grid-column-start: 2; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-start="3"] { grid-column-start: 3; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-start="4"] { grid-column-start: 4; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-start="5"] { grid-column-start: 5; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-start="6"] { grid-column-start: 6; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-start="7"] { grid-column-start: 7; }
+
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-col="1"] { grid-column-end: span 1; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-col="2"] { grid-column-end: span 2; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-col="3"] { grid-column-end: span 3; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-col="4"] { grid-column-end: span 4; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-col="5"] { grid-column-end: span 5; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-col="6"] { grid-column-end: span 6; }
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday[data-col="7"] { grid-column-end: span 7; }
+
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.red {background-color: #FA5252;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.orange {background-color: #FD7E14;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.yellow {background-color: #FAB005;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.lime {background-color: #82C91E;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.green {background-color: #40C057;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.cyan {background-color: #15AABF;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.blue {background-color: #228BE6;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.indigo {background-color: #4C6EF5;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.violet {background-color: #7950F2;}
+.pop-holiday-schedule .schedule-body .calendar-body .month .week .week-holiday .holiday.grape {background-color: #BE4BDB;}
+
+/* 운전자 휴무 팝업 */
+.pop-worker-holiday {width: 585px;}
+.pop-worker-holiday .pop-body {padding: 20px 20px 0;}
+.pop-worker-holiday .lookup .form.col .form-title {width: 60px;}
+.pop-worker-holiday .list-wrap.v1 .list-body {max-height: 200px;}
+
+/* 운전자 등록 팝업 */
+.pop-add-holiday {width: 500px;}
+.pop-add-holiday .pop-body {padding: 20px 45px;}
+.pop-add-holiday .add-type {margin-top: 20px; display: flex; align-items: stretch; gap: 0 10px;}
+.pop-add-holiday .add-type .item {border-radius: 20px; display: block; background-color: #F8F9FA; padding: 20px 32px 10px; flex: 1 0;}
+.pop-add-holiday .add-type .item .title {text-align: center; font-size: 13px; color: #343A40; line-height: 1.231; font-weight: 600;}
+.pop-add-holiday .add-type .item .title + i {margin: 34px auto 0;}
+.pop-add-holiday .add-type .item .text {font-size: 11px; color: #2F9E44; text-align: center; line-height: 1.182;}
+.pop-add-holiday .add-type .item .btn {margin: 15px auto 0;}
+.pop-add-holiday .btn-form {margin: 20px auto 0;}
+.pop-add-holiday .file-guide {margin-top: 20px; background-color: #FFE3E3; border-radius: 20px; padding: 20px 62px;}
+.pop-add-holiday .file-guide .text {padding-left: 42px; background: url('../img/icon/ic_guide.png') no-repeat left center; background-size: 32px; font-size: 12px; font-weight: 600; line-height: 1.25; color: #FA5252;}
+.pop-add-holiday .file-guide ul {margin-top: 10px;}
+.pop-add-holiday .file-guide ul li {position: relative; font-size: 11px; line-height: 1.364; color: #868E96; padding-left: 12px;}
+.pop-add-holiday .file-guide ul li::before {content: ""; width: 2px; height: 2px; border-radius: 50%; background-color: #868E96; position: absolute; left: 4px; top: 7px;}
+
+/* 업로드 완료 팝업 */
+.pop-complete-holiday {width: 880px;}
+.pop-complete-holiday .pop-body {padding-top: 20px;}
+
+.pop-complete-holiday .list-wrap.v1 {height: 390px;}
+.pop-complete-holiday .list-wrap.v1 .list-head {width: 100%; overflow: hidden;}
+.pop-complete-holiday .list-wrap.v1 .list-body {max-height: 350px;}
+.pop-complete-holiday .list-wrap.v1 table {min-width: 3640px;}
+
+/* 지도 팝업 */
+.pop-manage-area .datum .tab-wrap.v1 {padding-top: 20px;}
+.pop-manage-area .datum .tab-wrap.v1 .tab-btn-wrap {width: calc(100% - 40px); margin: 0 auto;}
+.pop-manage-area .datum .scroll-y {flex: 1 0 !important; }
+.pop-manage-area .datum .scroll-y .list-wrap.v4 {padding: 10px 20px;}
+.pop-manage-area .datum .select-area .no-data {height: 85px; background-color: #F8F9FA; border-radius: 8px; display: flex; align-items: center; justify-content: center;}
+.pop-manage-area .datum .select-area .no-data p {text-align: center; color: #868E96; font-size: 11px; line-height: 1.182; text-align: center;}
+.pop-manage-area .datum .select-area .scroll-y {height: 85px; background-color: #F8F9FA; border-radius: 8px; padding: 10px 10px;}
+.pop-manage-area .datum .select-area .scroll-y ul {display: flex; flex-wrap: wrap; gap: 4px 4px;}
+.pop-manage-area .datum .select-area .scroll-y ul li {cursor: pointer; display: flex; width: fit-content; align-items: center; justify-content: flex-start; border: 1px solid #F1F3F5; background-color: #ffffff; height: 25px; border-radius: 30px; padding: 0 12px; gap: 0 4px;}
+.pop-manage-area .datum .select-area .scroll-y ul li p {font-size: 11px; line-height: 1.182;}
+.pop-manage-area .datum .select-area .text {font-size: 11px; line-height: 1.182; text-align: center; color: #868E96;}
+.pop-manage-area .datum .select-area .check-group.v1 {width: 260px; margin: 20px auto 0;}
+.pop-manage-area .datum .select-area .check-group.v1 .check.v3 {flex: 1 0;}
+.pop-manage-area .datum .list-wrap.v5 .list-body {max-height: 131px;}
+
+/* 하위 지역 선택 여부 팝업 */
+.pop-lower-area {width: 880px;}
+.pop-lower-area .pop-body {padding-top: 20px;}
+.pop-lower-area .map {height: 540px; margin-top: 20px;}
+
+/* 차량정보 안내 툴팁 */
+.tooltip-car-info {width: 840px;}
+.tooltip-car-info .list-wrap.v2 .list-head table thead tr th.partition::before {left: 50px; top: 6px;}
+
+/* 차량번호 범례 툴팁 */
+.tooltip-car-legend {width: 840px;}
+.tooltip-car-legend .list-wrap.v2 .list-head table thead tr th.partition::before {left: 50px; top: 6px;}
