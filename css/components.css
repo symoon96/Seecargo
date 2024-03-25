@@ -73,7 +73,7 @@ i[class^='ic-'] {display: block; flex: none; background-size: 100%; background-r
 .ic-gnb01 {width: 24px; height: 24px; background-image: url('../img/icon/ic_gnb01.png');}
 .ic-add.dark {width: 16px; height: 16px; background-image: url('../img/icon/ic_add_default_d.png');}
 button:hover > .ic-add.dark {background-image: url('../img/icon/ic_add_hover_d.png');}
-.ic-add.white {width: 16px; height: 16px; background-image: url('../img/icon/ic_add_default_W.png');}
+.ic-add.white {width: 16px; height: 16px; background-image: url('../img/icon/ic_add_default_w.png');}
 .ic-schedule {width: 16px; height: 16px; background-image: url('../img/icon/ic_schedule_default.png');}
 button:hover > .ic-schedule {background-image: url('../img/icon/ic_schedule_hover.png');}
 .ic-group {width: 16px; height: 16px; background-image: url('../img/icon/ic_group_default.png');}
