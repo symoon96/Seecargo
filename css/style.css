@@ -7,7 +7,7 @@
 /*-------------------------------------------------------------------
     @레이아웃
 -------------------------------------------------------------------*/
-.title-wrap {display: flex; align-items: center; justify-content: space-between; height: 52px;}
+.title-wrap {display: flex; align-items: center; justify-content: space-between; height: 52px; flex: none !important;}
 .title-wrap .title-area {display: flex; align-items: center; justify-content: flex-start; gap: 0 10px;}
 .title-wrap .title-area .title {font-size: 16px; font-weight: 700; line-height: 1.25;}
 .title-wrap .title-area .text {font-size: 12px; font-weight: 600; line-height: 1.5; color: #868E96;}
@@ -58,7 +58,7 @@
 /* 운전자(차량) 관리 */
 .prepare {height: 100%; padding-bottom: 10px;}
 .prepare .container {display: flex; flex-direction: column; align-items: flex-start; height: 100%;}
-.prepare .container > div {width: 100%;}
+.prepare .container > div {width: 100%; flex: 1 0;}
 .prepare .bx-area:last-of-type {flex: 1 0; min-height: 0;}
 .prepare .list-wrap.v1 {height: calc(100% - 80px);}
 
