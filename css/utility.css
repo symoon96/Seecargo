@@ -121,9 +121,19 @@
 .pb100{ padding-bottom: 100px !important; }
 
 /* width */
+.w45 {width: 45px !important;}
 .w50 {width: 50px !important;}
+.w55 {width: 55px !important;}
+.w60 {width: 60px !important;}
+.w70 {width: 70px !important;}
+.w75 {width: 75px !important;}
+.w80 {width: 80px !important;}
+.w85 {width: 85px !important;}
+.w90 {width: 90px !important;}
 .w100 {width: 100px !important;}
+.w110 {width: 110px !important;}
 .w120 {width: 120px !important;}
+.w130 {width: 130px !important;}
 .w180 {width: 180px !important;}
 
 /* Align*/
@@ -134,19 +144,19 @@
 /* 말줄임 */
 
 /* Flexible */
-.fx{ display: flex; }
+.fx{ display: flex !important; }
 
-.fx.fd-c{ flex-direction: column; }
+.fd-c{ flex-direction: column !important; }
 
-.fx.wrap{ flex-wrap: wrap; }
+.fx.wrap{ flex-wrap: wrap !important; }
 
-.fx.jc-c{ justify-content: center; }
-.fx.jc-sb{ justify-content: space-between; }
+.jc-c{ justify-content: center !important; }
+.jc-sb{ justify-content: space-between !important; }
 
-.fx.ai-fs{ align-items: flex-start; }
-.fx.ai-fe{ align-items: flex-end; }
-.fx.ai-c{ align-items: center; }
-.fx.ai-s{ align-items: stretch; }
+.ai-fs{ align-items: flex-start !important; }
+.ai-fe{ align-items: flex-end !important; }
+.ai-c{ align-items: center !important; }
+.ai-s{ align-items: stretch !important; }
 
 .fx-none{ flex: none !important; }
 
@@ -183,5 +193,7 @@
 /* 텍스트 */
 .txt-blue {color: #4C6EF5 !important;}
 .txt-red {color: #FA5252 !important;}
+.txt-violet {color: #6741D9 !important;}
+.txt-yellow {color: #FAB005 !important;}
 
 /* 라인 */

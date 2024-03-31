@@ -10,7 +10,8 @@ $(document).ready(function(){
     dropdown();
     date();
     tab();
-    accList()
+    accList();
+    clickRightBtn();
 })
 
 function sitemapAct(){
@@ -59,7 +60,8 @@ function bodyAuto() {
 function popOpen(target){
     $("." + target).addClass('on');
     listColumnResize();
-    scrollEvent()
+    scrollEvent();
+    simpleDate()
 }
 
 // 팝업닫기
@@ -106,8 +108,7 @@ function listColumnResize(){
     $(".list-wrap.resize").each(function(){
         let thisThHeight = $(this).children('.list-head > table > thead > tr > th:first-child').height();
         let thisTh = $(this).find('.list-head').children('table').children('thead').children('tr').children('th')
-        
-        
+
         thisTh.resizable({
             handles: "e",
             minHeight: thisThHeight,
@@ -171,7 +172,8 @@ function scrollX() {
             axis:"x", // horizontal scrollbar
             advanced:{ 
                 updateOnContentResize: true 
-            }
+            },
+            scrollbarPosition: "outside",
         });
     })
 }
@@ -182,7 +184,8 @@ function scrollY() {
             axis:"y", // horizontal scrollbar
             advanced:{ 
                 updateOnContentResize: true 
-            }
+            },
+            scrollbarPosition: "outside",
         });
     });
 }
@@ -194,13 +197,14 @@ function scrollYX() {
             advanced:{ 
                 updateOnContentResize: true 
             },
+            scrollbarPosition: "outside",
             callbacks: {
                 whileScrolling: function () {
                     var scrollPos = $(this).find('.mCSB_container').position();
                     $(this).siblings('.list-head').find('table').css('transform', 'translateX(' + scrollPos.left + 'px)');
                 }
             }
-        });
+        })
     });
 }
 
@@ -222,7 +226,7 @@ function tooltip(){
                 let html = element.data('cont');
                 return html;
             }
-        }
+        },
     })
     
 }
@@ -239,7 +243,7 @@ function dropdown(){
 
     $('.dropdown .drop-list li').click(function(){
         $(this).closest('.dropdown').removeClass('active')
-        $(this).closest('.drop-list').siblings('.txt-pick').text($(this).text())
+        $(this).closest('.drop-list').siblings('.txt-pick').html($(this).html())
     })
 
     $('html').click(function(e) {
@@ -284,6 +288,24 @@ function priodDate(){
     });
 }
 
+function simpleDate(){
+    $('.date').each(function(){
+        if(!$(this).closest('div').hasClass('.priod')) {
+            $(this).datepicker({
+                dateFormat: "yy.mm.dd",
+                showOtherMonths : true,
+                changeMonth: true,
+                selectOtherMonths: true,
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+                monthNamesShort : [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+            })
+        }
+    })
+}
+
 function getDate( element ) {
     var date;
     var dateFormat = "mm/dd/yy"
@@ -305,6 +327,7 @@ function date(){
         });
     }
     
+    simpleDate()
 }
 
 // 탭
@@ -350,7 +373,29 @@ function accList(){
     $('.acc-wrap [data-click]').click(function(){
         $(this).closest('.acc-list').toggleClass('on');
         $(this).closest('.acc-list').children('.acc-cont').slideToggle(300);
-        $(this).closest('.acc-list').siblings().removeClass('on');
-        $(this).closest('.acc-list').siblings().children('.acc-cont').slideUp(300);
     });
+}
+
+function clickRightBtn(){
+    /* 우클릭 이벤트 */
+    $(".hidden-btn").on('contextmenu', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        $(document).tooltip("disable");
+        $(".hidden-btn").find('.btn').remove();
+
+        let thisClass = $(event.target).data('style');
+        let thisAct = $(event.target).data('action');
+        let thisTxt = $(event.target).data('btn-text');
+
+        if($(event.target).find('button').length <= 0){
+            $(event.target).append('<button class="'+ thisClass + '" onclick="' + thisAct +'">'+ thisTxt + '</button>')
+        }
+
+        $(event.target).find('button').click(function(){
+            $(event.target).find('button').remove();
+            
+            $(document).tooltip("enable");
+        })
+    })
 }
