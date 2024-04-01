@@ -150,6 +150,7 @@
 
 .fx.wrap{ flex-wrap: wrap !important; }
 
+.jc-fs{ justify-content: flex-start !important; }
 .jc-c{ justify-content: center !important; }
 .jc-sb{ justify-content: space-between !important; }
 

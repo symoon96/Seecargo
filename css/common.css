@@ -168,7 +168,7 @@
 .popup.alert .pop-body {min-height: 160px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
 .popup.alert .txt-alert {font-size: 12px; font-weight: 600; line-height: 1.167; text-align: center;}
 
-.popup.full {width: 100%; height: calc(100% - 50px); top: 50px; transform: translate(0, 0); left: 0; z-index: 1;}
+.popup.full {width: 100%; min-width: 1200px; height: calc(100% - 50px); top: 50px; transform: translate(0, 0); left: 0; z-index: 1;}
 
 .popup.full .pop-head {width: 100%; display: flex; align-items: center; justify-content: space-between; height: 50px; padding: 0 20px; box-shadow: 0px 1px 1px 0px #0000000D; border-bottom: 1px solid #E9ECEF;}
 .popup.full .pop-head .tit-area {display: flex; align-items: center; justify-content: flex-start; gap: 0 10px;}

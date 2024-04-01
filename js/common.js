@@ -180,13 +180,22 @@ function scrollX() {
 
 function scrollY() {
     $('.scroll-y').each(function(){
-        $(this).mCustomScrollbar({
-            axis:"y", // horizontal scrollbar
-            advanced:{ 
-                updateOnContentResize: true 
-            },
-            scrollbarPosition: "outside",
-        });
+        if($(this).hasClass('pop-body')){
+            $(this).mCustomScrollbar({
+                axis:"y", // horizontal scrollbar
+                advanced:{ 
+                    updateOnContentResize: true 
+                },
+            });
+        } else {
+            $(this).mCustomScrollbar({
+                axis:"y", // horizontal scrollbar
+                advanced:{ 
+                    updateOnContentResize: true 
+                },
+                scrollbarPosition: "outside",
+            });
+        }
     });
 }
 
@@ -236,6 +245,15 @@ function dropdown(){
         $('.dropdown').not($(this).closest('.dropdown')).removeClass('active');
         if(!$(this).closest('.dropdown').hasClass('active')){
             $(this).closest('.dropdown').addClass('active');
+
+            if($(this).closest('.dropdown').hasClass('v1') && $(this).closest('.dropdown').hasClass('row')) {
+                $(this).siblings('.drop-list').mCustomScrollbar({
+                    axis:"y", // horizontal scrollbar
+                    advanced:{ 
+                        updateOnContentResize: true 
+                    },
+                });
+            }
         } else {
             $(this).closest('.dropdown').removeClass('active');
         }

@@ -124,7 +124,8 @@ button:hover > .ic-modify {background-image: url('../img/icon/ic_modify_hover.pn
 .ic-circle {width: 12px; height: 12px; background-image: url('../img/icon/ic_circle.png');}
 .ic-line-normal {width: 20px; height: 20px; background-image: url('../img/icon/ic_line_normal.png');}
 .ic-line-bold {width: 20px; height: 20px; background-image: url('../img/icon/ic_line_bold.png');}
-.ic-dispatch {width: 16px; height: 16px; background-image: url('../img/icon/ic_dispatch.png');}
+.ic-dispatch {width: 16px; height: 16px; background-image: url('../img/icon/ic_dispatch_default.png');}
+button:hover > .ic-dispatch {background-image: url('../img/icon/ic_dispatch_hover.png');}
 .ic-save {width: 16px; height: 16px; background-image: url('../img/icon/ic_save.png');}
 .ic-add-work {width: 16px; height: 16px;}
 .ic-add-work.dark {background-image: url('../img/icon/ic_add_work_d.png');}
@@ -225,6 +226,7 @@ button:hover > .ic-modify {background-image: url('../img/icon/ic_modify_hover.pn
 .list-wrap.v5 .list-body .row + .row {margin-top: 1px;}
 .list-wrap.v5 .list-body .row .col {height: 32px;}
 .list-wrap.v5 .list-body .row .col p {font-size: 12px; line-height: 1.334; color: #343a34;}
+.list-wrap.v5 .list-body .row .col.jc-fs {padding: 0 10px;}
 
 .list-wrap.v6 ul li {color: #868E96; position: relative; font-size: 11px; line-height: 1.455; padding-left: 16px;}
 .list-wrap.v6 ul li::before {content: ""; width: 2px; height: 2px; border-radius: 50%; position: absolute; left: 8px; top: 7px; background-color: #868E96;}
@@ -782,7 +784,7 @@ button:hover > .ic-modify {background-image: url('../img/icon/ic_modify_hover.pn
 .dropdown.v1.active .drop-list {display: block;}
 .dropdown.v1 .drop-list li {cursor: pointer;}
 
-.dropdown.v1.row .drop-list {border: 1px solid #CED4DA; border-radius: 8px; min-width: 200px; background-color: #ffffff; z-index: 9; padding: 10px 0;}
+.dropdown.v1.row .drop-list {border: 1px solid #CED4DA; border-radius: 8px; min-width: 200px; background-color: #ffffff; z-index: 9; padding: 10px 0; max-height: 133px;}
 .dropdown.v1.row .drop-list li {font-size: 12px; line-height: 1.167; padding: 8px 10px;}
 .dropdown.v1.row .drop-list li:hover {background-color: #EDF2FF;}
 .dropdown.v1.row .drop-list li strong {font-weight: 400;}
