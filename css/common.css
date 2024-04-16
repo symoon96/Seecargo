@@ -7,7 +7,7 @@
 /*-------------------------------------------------------------------
     @header
 -------------------------------------------------------------------*/
-#header {background: linear-gradient(90.19deg, #7950F2 77.91%, #462E8C 100%); position: relative; z-index: 9; min-width: 1200px;}
+#header {background: linear-gradient(90.19deg, #7950F2 77.91%, #462E8C 100%); position: relative; z-index: 999; min-width: 1200px;}
 #header.on {}
 
 #header .container {display: flex; align-items: center; height: 50px;}
@@ -137,7 +137,7 @@
 .lnb .depth01 {display: flex; align-items: center; justify-content: flex-start; font-size: 20px; font-weight: 500; line-height: 1; color: #6741D9; gap: 0 4px;}
 .lnb .depth02 {margin-top: 20px;}
 .lnb .depth02 > ul > li + li {margin-top: 4px;}
-.lnb .depth02 > ul > li > a {display: block; font-size: 12px; line-height: 1.3334; font-weight: 600; background-color: #E9ECEF; border-radius: 10px; padding: 10px 20px; color: #343A40;}
+.lnb .depth02 > ul > li > a {display: flex; align-items: center; justify-content: flex-start; gap: 0 4px; font-size: 12px; line-height: 1.3334; font-weight: 600; background-color: #E9ECEF; border-radius: 10px; padding: 10px 20px; color: #343A40;}
 .lnb .depth02 > ul > li.on > a,
 .lnb .depth02 > ul > li:hover > a {background-color: #7950F2; color: #ffffff;}
 

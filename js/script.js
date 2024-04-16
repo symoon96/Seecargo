@@ -34,12 +34,27 @@ $(document).ready(function(){
         }
     });
 
-    $('.map .pin-wrap .detail .detail-body').mCustomScrollbar({
+    $('.map .pin-wrap .detail.v1 .detail-body').mCustomScrollbar({
         axis:"y", // horizontal scrollbar
         advanced:{ 
             updateOnContentResize: true 
         },
     });
+
+    $('.map .pin-wrap .pin.v3').click(function(){
+        $(this).closest('.pin-wrap').toggleClass('on')
+    });
+
+    let cardSwiper = new Swiper('.card-swiper .swiper', {
+        navigation: {
+            nextEl: ".card-swiper .swiper-button-next",
+            prevEl: ".card-swiper .swiper-button-prev",
+        },
+        slidesPerView: 3,
+        spaceBetween: 20,
+        observer: true,
+        observeParents: true,
+    })
 });
 
 function btnFilterAct(){

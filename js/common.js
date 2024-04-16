@@ -275,35 +275,181 @@ function dropdown(){
 
 function priodDate(){
     $('.priod').each(function(){
-        var from = $(this).find('.from').children('input').datepicker({
-                changeMonth: true,
-                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
-                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
-                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-                monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
-                monthNamesShort : [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
-                showOtherMonths: true,
-
-            selectOtherMonths: true,
+        if($(this).find('.from').length > 0 && $(this).find('.to').length > 0) {
+            var from = $(this).find('.from').children('input').datepicker({
+                    changeMonth: true,
+                    dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                    dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                    dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                    monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+                    monthNamesShort : [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+                    showOtherMonths: true,
+    
+                    selectOtherMonths: true,
             }).on( "change", function() {
                 to.datepicker( "option", "minDate", getDate( this ) );
                 from.datepicker( "option", "dateFormat", "yy.mm.dd");
             }),
-            to = $( "#dateTo" ).datepicker({
-                changeMonth: true,
-                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
-                dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
-                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
-                monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
-                monthNamesShort : [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
-                showOtherMonths: true,
-
-            selectOtherMonths: true,
+                to = $( "#dateTo" ).datepicker({
+                    changeMonth: true,
+                    dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                    dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+                    dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                    monthNames: [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+                    monthNamesShort : [ "1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월" ],
+                    showOtherMonths: true,
+                    selectOtherMonths: true,
             }).on( "change", function() {
                 from.datepicker( "option", "maxDate", getDate( this ) );
                 to.datepicker( "option", "dateFormat", "yy.mm.dd");
             });
+        }
+
+        
+        if($(this).find('.one-form').length > 0){
+            let datepicker
+            $(this).find('.one-form').find('.picker').datepicker({
+                dateFormat: "yy.mm.dd",
+                dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+                dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+                monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+                numberOfMonths: 2,
+                defaultDate: 2,
+                stepMonths: 2,
+                todayHighlight: false,
+                beforeShow: function (input, inst) {
+                    var rect = input.getBoundingClientRect();
+                    setTimeout(function () {
+                        inst.dpDiv.css({ top: rect.top + 40, left: rect.left + 0 });
+                    }, 0);
+                    datepicker = inst.dpDiv
+                },
+                beforeShowDay: function(date) {
+                    var date1 = $.datepicker.parseDate('yy.mm.dd', $(".date01").val());
+                    var date2 = $.datepicker.parseDate('yy.mm.dd', $(".date02").val());
+                    var isHighlight = date1 && ((date.getTime() == date1.getTime()) || (date2 && date >= date1 && date <= date2));
+                    periodStyle($(".date01").val().split('.')[1]);
+                    periodStyle($(".date02").val().split('.')[1]);
+                    // periodStyle($.datepicker.formatDate('mm', $(this).datepicker("getDate")));
+                    return [true, isHighlight ? "period-day" : ""];
+                },
+                onSelect: function(dateText, inst) {
+                    var date1 = $(".date01").val();
+                    var date2 = $(".date02").val();
+                    var selectedDate = dateText;
+                    if (!date1 || date2) {
+                        $(".date01").val(dateText);  
+                        $(".date02").val("");
+                        $(this).datepicker();
+                        $(this).data('datepicker').inline = true;
+                        periodStyle($(".date01").val().split('.')[1]);
+                        // periodStyle($.datepicker.formatDate('mm', $(this).datepicker("getDate")));
+                    } else if (selectedDate < date1) {
+                        $(".date02").val($(".date01").val()); 
+                        $(".date01").val(dateText);
+                        $(this).data('datepicker').inline = true;
+                        periodStyle($(".date01").val().split('.')[1]);
+                        periodStyle($(".date02").val().split('.')[1]);
+                        // periodStyle($.datepicker.formatDate('mm', $(this).datepicker("getDate")));
+                    } else {
+                        $(".date02").val(dateText);
+                        $(this).data('datepicker').inline = true;
+                        periodStyle($(".date01").val().split('.')[1]);
+                        periodStyle($(".date02").val().split('.')[1]);
+                        // periodStyle($.datepicker.formatDate('mm', $(this).datepicker("getDate")));
+                    }
+                },
+                onChangeMonthYear: function(year, month, inst){
+                    periodStyle(month);
+                },
+                onUpdateDatepicker: function(inst, month){
+                    $(this).data('datepicker').inline = false;
+                    let html = ''
+                    html += '<div class="datepicker-foot">'
+                    html += '<p class="date-result">'
+
+                    if($(".date01").val() !== '' || $(".date02").val() !== ''){
+                        html += $(".date01").val() + '~' + $(".date02").val()
+                    } else {
+                        html += ''
+                    }
+                    
+                    html += '</p>'
+                    html += '<div class="btn-wrap">'
+                    html += '<button class="btn md fill-dark w90"><i class="ic-close"></i>닫기</button>'
+                    html += '<button class="btn md fill-purple w90"><i class="ic-submit"></i>적용</button>'
+                    html += '</div>'
+                    html += '</div>'
+                    inst.dpDiv.prepend('<p class="txt-warning">* 종료날짜는 시작날짜보다 이전일 수 없습니다.</p>')
+                    inst.dpDiv.append(html);
+
+                    $('.ui-datepicker').on('click', '.btn', function() {
+                        $('.priod').find('.one-form').find('.picker').datepicker( "hide" );
+                    });
+                }
+            });
+            
+        }
     });
+}
+
+// 원본
+// function getElByDate(date, cb){
+//     setTimeout(()=>{
+//         var result;
+//         $('.ui-datepicker table tbody a').each(function(){
+//             if(date == $(this).data('date')){
+//                 result = $(this).closest('td');
+//                 if(cb instanceof Function){
+//                     cb(result);
+//                 }
+//             } 
+//         }), 0
+//     })
+
+// }
+
+function getElByDate(date, month, cb){
+    setTimeout(()=>{
+        var result;
+        $('.ui-datepicker table tbody a').each(function(){
+            if(month - 1 == $(this).closest('td').data('month')){
+                if(date == $(this).data('date')){
+                    result = $(this).closest('td');
+                    if(cb instanceof Function){
+                        cb(result);
+                    }
+                }
+            }
+        }), 0
+    })
+
+}
+
+function periodStyle(month){
+    if(month == null){
+        return;
+    }
+
+    var date1 = $(".date01").val();
+    var date2 = $(".date02").val();
+
+    if(Number(date1.split('.')[1]) == month){
+        getElByDate(date1.split('.')[2], month, (targetFirst)=>{
+            if(targetFirst != null){
+                targetFirst.addClass('first');
+            }
+        });
+    }
+    
+    if(Number(date2.split('.')[1]) == month) {
+        getElByDate(date2.split('.')[2], month, (targetLast)=>{
+            if(targetLast != null){
+                targetLast.addClass('last');
+            }
+        });
+    }
 }
 
 function simpleDate(){

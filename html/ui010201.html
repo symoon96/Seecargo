@@ -614,7 +614,7 @@
     <div class="popup layer pop-search-address">
         <div class="pop-head">
             <p class="tit">주소등록</p>
-            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-search-address', true);">팝업닫기</button>
+            <button class="btn-ic btn-pop-close" onclick="popClose('pop-search-address');">팝업닫기</button>
         </div>
         <div class="pop-body">
             <div class="search-address">
@@ -633,12 +633,12 @@
                         </div>
                     </div>
                     <!-- case1: 검색결과 -->
-                    <!-- <div class="form row mt20">
+                    <div class="form row mt20">
                         <div class="form-title">
                             <p>검색결과</p>
                         </div>
                         <div class="form-cont">
-                            <div class="list-wrap v3">
+                            <div class="list-wrap v3 scroll-y"><!-- 20240408 수정 -->
                                 <ul>
                                     <li>
                                         <a href="javascript:void(0);">
@@ -691,11 +691,11 @@
                                 </ul>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                     <!--// case1: 검색결과 -->
 
                     <!-- case2: 검색결과 클릭시 -->
-                    <div class="form row mt20">
+                    <!-- <div class="form row mt20">
                         <div class="form-title">
                             <p>상세주소 입력</p>
                         </div>
@@ -729,7 +729,7 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--// case2: 검색결과 클릭시 -->
                 </div>
                 <div class="map-area"></div>
@@ -737,8 +737,8 @@
         </div>
         <div class="pop-foot">
             <div class="btn-wrap">
-                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-search-address', true);"><i class="ic-close"></i>닫기</button>
-                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-search-address', true);"><i class="ic-submit"></i>등록</button>
+                <button class="btn md fill-dark" onclick="popClose('pop-search-address');"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-search-address');"><i class="ic-submit"></i>등록</button>
             </div>
         </div>
     </div>

@@ -1,0 +1,1257 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Seecargo</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/chart.js"></script>
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    <script src="../dist/js/jquery-ui.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <h1 class="logo"><a href="javascript:void(0);">Seecargo</a></h1>
+
+            <div class="gnb">
+                <ul class="depth01">
+                    <li>
+                        <a href="javascript:void(0);">업무준비</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">운전자(차량) 관리</a></li>
+                            <li><a href="javascript:void(0);">업무환경설정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">배차</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">배차 생성</a></li>
+                            <li><a href="javascript:void(0);">OMS 배차 생성</a></li>
+                            <li><a href="javascript:void(0);">배차 이력</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">모니터링</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">실시간 모니터링</a></li>
+                        </ul>
+                    </li>
+                    <li class="on">
+                        <a href="javascript:void(0);">통계</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">Dashboard</a></li>
+                            <li><a href="javascript:void(0);">종합분석</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">설정</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">계정 관리</a></li>
+                            <li><a href="javascript:void(0);">알림톡 관리</a></li>
+                            <li><a href="javascript:void(0);">운전자 공지사항 관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="util">
+                <button class="btn-ic btn-tutorial" onclick="popOpenAndDim('pop-tutorial', true)">동영상 튜토리얼</button>
+                <div class="support">
+                    <button class="btn-ic btn-cscenter">고객센터</button>
+                    <div class="support-menu">
+                        <ul>
+                            <li><a href="javascript:void(0);">공지사항</a></li>
+                            <li><a href="javascript:void(0);">문의하기</a></li>
+                            <li><a href="javascript:void(0);">이용약관</a></li>
+                            <li><a href="javascript:void(0);">이용방법</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="support">
+                    <button class="btn-user">에스엘솔루션</button>
+                    <div class="support-menu">
+                        <div class="user-info">
+                            <div class="account">
+                                <p class="name"><strong>에스엘솔루션</strong> 고객님</p>
+                                <p class="id">aaaaaaaaaa</p>
+                                <div class="belong">
+                                    <span>씨카고</span>
+                                    <!-- <span>A지점</span> -->
+                                    <select name="" id="" class="select v1">
+                                        <option value="">A지점</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="user-link">내 정보</a>
+                            <div class="plan-state">
+                                <div class="plan">
+                                    <p class="label v1 pink">엔터프라이즈</p><!-- case1: .gray, case2: .blue, case3: .cyan, case4: .lime, case5: .purple, case6: .pinkm, case7: .dark -->
+                                    <a href="javascript:void(0);" class="user-link">요금제 이용중</a>
+                                </div>
+                                <div class="state">
+                                    <dl>
+                                        <dd>75%</dd>
+                                        <dt>현재 사용량</dt>
+                                    </dl>
+                                    <dl>
+                                        <dd>8일</dd>
+                                        <dt>남은 잔여일</dt>
+                                    </dl>
+                                    <p class="now">(2024.01.29 09:35:02 기준)</p>
+                                </div>
+                            </div>
+                            <div class="mate">
+                                <p class="title">씨카고 고객센터</p>
+                                <p class="txt-phone">1544-8232</p>
+                                <p class="txt-email">seecargo@slsolution.co.kr</p>
+                                <button class="btn md fill-deepgray to-dark"><i class="ic-logout"></i>로그아웃</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-ic btn-menu">전체메뉴</button>
+            </div>
+        </div>
+        <div class="sitemap">
+            <div class="menu">
+                <button class="btn-ic btn-sitemap-close"></button>
+                <ul class="depth01">
+                    <li>
+                        <a href="javascript:void(0);">업무준비</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>운전자(차량)관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">운전자(차량) 등록</a></li>
+                                    <li><a href="javascript:void(0);">지역관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>업무환경설정</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">업무환경설정</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">배차</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>배차 생성</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">배송지 등록</a></li>
+                                    <li><a href="javascript:void(0);">업무생성</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>OMS 배차 생성</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">주문내역 확인 및 배차</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>배차이력</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">배차 업무관리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">모니터링</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>실시간 모니터링</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">전체 차량 실시간 모니터링</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">통계</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="javascript:void(0);">Dashboard</a>
+                            </li>
+                            <li>
+                                <p>종합분석</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">업무</a></li>
+                                    <li><a href="javascript:void(0);">운행</a></li>
+                                    <li><a href="javascript:void(0);">운전자</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">설정</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>계정 관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">기본정보</a></li>
+                                    <li><a href="javascript:void(0);">지점 정보</a></li>
+                                    <li><a href="javascript:void(0);">사용자 정보</a></li>
+                                    <li><a href="javascript:void(0);">요금정보</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>알림톡 관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">알림톡 관리 <br>(설정/발송내역)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">운전자 공지사항 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">고객지원</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="javascript:void(0);">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">문의하기</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">이용약관</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">이용방법</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">사용자 정보</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>내 정보</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">사용자 정보(확인/수정)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>요금정보</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">사용 요금제명</a></li>
+                                    <li><a href="javascript:void(0);">서비스 사용량</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">로그아웃</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content">
+        <div class="lnb">
+            <p class="depth01"><i class="ic-gnb08"></i>종합분석</p>
+            <div class="depth02">
+                <ul>
+                    <li><a href="javascript:void(0);"><i class="ic-sub01"></i>업무</a></li>
+                    <li class="on"><a href="javascript:void(0);"><i class="ic-sub02"></i>운행</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-sub03"></i>운전자</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- contents -->
+        <div class="contents">
+            <div class="dashboard">
+                <div class="container">
+                    <div class="title-wrap">
+                        <div class="dashboard-lookup">
+                            <dl>
+                                <dt>씨카고</dt>
+                                <dd>
+                                    <div class="inp-wrap ai-c">
+                                        <div class="inp-item">
+                                            <select name="" id="" class="select v3 w160">
+                                                <option value="">지점전체</option>
+                                            </select>
+                                        </div>
+                                        <div class="priod">
+                                            <div class="one-form">
+                                                <input type="text" name="" id="" class="picker">
+                                                <input type="text" name="" id="" class="date01">
+                                                <span class="split">~</span>
+                                                <input type="text" name="" id="" class="date02">
+                                            </div>
+                                        </div>
+                                        <div class="inp-item">
+                                            <button class="btn-ic btn-search"></button>
+                                        </div>
+                                        <div class="inp-item">
+                                            <p class="txt-comment">* 당일운행 집계는 24:00 이후 반영됩니다.</p>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="etc-area">
+                            <div class="btn-wrap">
+                                <button class="btn-txt v1" onclick="popOpenAndDim('pop-add-worker', true)"><i class="ic-excel-down"></i>엑셀 다운로드</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bx-group">
+                        <div class="bx-area">
+                            <div class="tab-wrap v2">
+                                <div class="tab-btn-wrap">
+                                    <button class="tab-btn on">차트</button>
+                                    <button class="tab-btn">목록(운전자 기준)</button>
+                                    <button class="tab-btn">목록(회차 기준)</button>
+                                </div>
+                                <div class="tab-cont-wrap">
+                                    <div class="tab-cont">
+                                        <div class="fx fd-c">
+                                            <div class="fx jc-sb ai-c fx-none">
+                                                <div class="radio-group v1">
+                                                    <div class="radio v2"><input type="radio" name="" id="" checked>
+                                                        <label for="">
+                                                            <p>일별</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio v2"><input type="radio" name="" id="">
+                                                        <label for="">
+                                                            <p>주별</p>
+                                                        </label>
+                                                    </div>
+                                                    <div class="radio v2"><input type="radio" name="" id="">
+                                                        <label for="">
+                                                            <p>월별</p>
+                                                        </label>
+                                                    </div>
+                                                </div>
+    
+                                                <div class="data-info">
+                                                    <dl>
+                                                        <dt>부서</dt>
+                                                        <dd>전체</dd>
+                                                    </dl>
+                                                    <dl>
+                                                        <dt>기간</dt>
+                                                        <dd>2024.01.01 ~ 2024.04.01 (60일)</dd>
+                                                    </dl>
+                                                </div>
+                                            </div>
+                                            <div class="card-group fx-none mt20">
+                                                <div class="card">
+                                                    <div class="card-head">
+                                                        <p>총 운행수<strong>20개</strong></p>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="race-summary">
+                                                            <dl>
+                                                                <dt>운전자수</dt>
+                                                                <dd>10명</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>차량수</dt>
+                                                                <dd>10대</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>운행횟수</dt>
+                                                                <dd>10개</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>평균 주행거리</dt>
+                                                                <dd>00.00km</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>평균 주행시간</dt>
+                                                                <dd>00시간 00분</dd>
+                                                            </dl>
+                                                            <dl>
+                                                                <dt>평균 통행요금</dt>
+                                                                <dd>000,000원</dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card">
+                                                    <div class="card-head">
+                                                        <p>유류비</p>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <div class="cost-summary">
+                                                            <ul>
+                                                                <li>
+                                                                    <dl>
+                                                                        <dt>합계</dt>
+                                                                        <dd>000,000원</dd>
+                                                                    </dl>
+                                                                    <p class="compare down">이전기간 평균값 대비<strong>10% 감소</strong></p>
+                                                                </li>
+                                                                <li>
+                                                                    <dl>
+                                                                        <dt>평균</dt>
+                                                                        <dd>000,000원</dd>
+                                                                    </dl>
+                                                                    <p class="compare up">이전기간 평균값 대비<strong>10% 증가</strong></p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr class="line v1 mt20">
+                                            <div class="scroll-y fx1 mt20">
+                                                <p class="tit v2">운행</p>
+                                                <div class="fx ai-s gap30 mt20">
+                                                    <div class="division fx1">
+                                                        <div class="chart-area">
+                                                            <div class="legend-area">
+                                                                <p><span class="label v5 clr07"></span>운전자 수</p>
+                                                                <p><span class="label v5 clr02"></span>총 운행횟수</p>
+                                                                <p><span class="label v5 clr08"></span>(운전자당) 평균 운행횟수</p>
+                                                            </div>
+                                                            <div class="chart">
+                                                                <img src="../img/img_graph08.png" alt="" height="305">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="division fx1">
+                                                        <div class="tbl-wrap v3">
+                                                            <table>
+                                                                <colgroup>
+                                                                    <col style="width: 23.959%;">
+                                                                    <col>
+                                                                    <col>
+                                                                    <col>
+                                                                </colgroup>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>구분</th>
+                                                                        <th>운전자수</th>
+                                                                        <th>운행횟수</th>
+                                                                        <th>(운전자당) 평균 운행횟수</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>24.03.05 (화)</td>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>24.03.05 (화)</td>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>24.03.05 (화)</td>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>24.03.05 (화)</td>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>24.03.05 (화)</td>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>24.03.05 (화)</td>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>24.03.05 (화)</td>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>24.03.05 (화)</td>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>24.03.05 (화)</td>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                                <tfoot>
+                                                                    <tr>
+                                                                        <th>합계</th>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>전체 평균</th>
+                                                                        <td>10</td>
+                                                                        <td>20</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                </tfoot>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="fx ai-s gap30 mt50">
+                                                    <div class="division fx1">
+                                                        <p class="tit v2">주행거리</p>
+                                                        <div class="chart-area mt20">
+                                                            <div class="legend-area">
+                                                                <p><span class="label v5 clr09"></span>예측 주행거리</p>
+                                                                <p><span class="label v5 clr06"></span>실제 주행거리</p>
+                                                            </div>
+                                                            <div class="chart">
+                                                                <img src="../img/img_graph09.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="division fx1">
+                                                        <p class="tit v2">주행시간</p>
+                                                        <div class="chart-area mt20">
+                                                            <div class="legend-area">
+                                                                <p><span class="label v5 clr09"></span>예측 주행거리</p>
+                                                                <p><span class="label v5 clr08"></span>실제 주행거리</p>
+                                                            </div>
+                                                            <div class="chart">
+                                                                <img src="../img/img_graph10.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="fx ai-s gap30 mt60">
+                                                    <div class="division fx1">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit-area">
+                                                                <p class="tit v2">통행요금</p>
+                                                                <div class="chart-summary">
+                                                                    <dl>
+                                                                        <dt>합계</dt>
+                                                                        <dd class="txt-malibu">52,300원</dd>
+                                                                    </dl>
+                                                                    <dl>
+                                                                        <dt>평균</dt>
+                                                                        <dd class="txt-royalblue">5,811원</dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-area mt20">
+                                                            <p class="tit v4">합계</p>
+                                                            <div class="legend-area mt12">
+                                                                <p><i class="ic-chart02"></i>이전기간</p>
+                                                                <p><i class="ic-chart03"></i>조회기간</p>
+                                                            </div>
+                                                            <div class="chart">
+                                                                <img src="../img/img_graph11.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-area mt30">
+                                                            <p class="tit v4">평균</p>
+                                                            <div class="legend-area mt12">
+                                                                <p><i class="ic-chart02"></i>이전기간</p>
+                                                                <p><i class="ic-chart04"></i>조회기간</p>
+                                                            </div>
+                                                            <div class="chart">
+                                                                <img src="../img/img_graph12.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="division fx1">
+                                                        <div class="tit-wrap">
+                                                            <div class="tit-area">
+                                                                <p class="tit v2">유류비</p>
+                                                                <div class="chart-summary">
+                                                                    <dl>
+                                                                        <dt>합계</dt>
+                                                                        <dd class="txt-yellow">52,300원</dd>
+                                                                    </dl>
+                                                                    <dl>
+                                                                        <dt>평균</dt>
+                                                                        <dd class="txt-mango">5,811원</dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-area mt20">
+                                                            <p class="tit v4">합계</p>
+                                                            <div class="legend-area mt12">
+                                                                <p><i class="ic-chart02"></i>이전기간</p>
+                                                                <p><i class="ic-chart05"></i>조회기간</p>
+                                                            </div>
+                                                            <div class="chart">
+                                                                <img src="../img/img_graph13.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="chart-area mt30">
+                                                            <p class="tit v4">평균</p>
+                                                            <div class="legend-area mt12">
+                                                                <p><i class="ic-chart02"></i>이전기간</p>
+                                                                <p><i class="ic-chart06"></i>조회기간</p>
+                                                            </div>
+                                                            <div class="chart">
+                                                                <img src="../img/img_graph14.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-cont pb0">
+                                        <div class="fx fd-c">
+                                            <div class="fx jc-sb ai-c fx-none">
+                                                <div class="tit-wrap">
+                                                    <div class="tit-area">
+                                                        <button class="btn-ic btn-full-close"></button>
+                                                        <p class="tit v5">운행 상세정보</p>
+                                                        <p>2024.01.01 ~ 2024.04.01 (60일)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fx1 mt20 fx fd-c">
+                                                <div class="list-top fx-none">
+                                                    <div class="division">
+                                                        <p class="txt-count">전체 <strong>10</strong></p>
+                                                    </div>
+                                                    <div class="division">
+                                                        <button class="btn md circle fill-gray" onclick="popOpenAndDim('pop-set-items01', true)"><i class="ic-setting"></i>조회항목 설정</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-wrap v1 resize fx1 mt10">
+                                                    <div class="list-head">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-width="50">No.</th>
+                                                                    <th data-width="100"><span>운행일자</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="90"><span>배송지수</span><button class="btn-ic btn-sort up"></button></th>
+                                                                    <th data-width="120"><span>출발시각</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="120"><span>종료시각</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="110"><span>예측주행거리</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="110"><span>실제주행거리</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="110"><span>실제주행시간</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="110"><span>예측통행요금</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="110"><span>실제통행요금</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="85"><span>유류비</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="120"><span>유류비구입지역</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="110"><span>통행요금 구분</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="60"><span>연료</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="85"><span>차량형태</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="85"><span>총 중량</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="85"><span>적제 중량</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="305">비고</th>
+                                                                </tr>
+                                                            </thead>
+                                                        </table>
+                                                    </div>
+                                                    <div class="list-body scroll-yx">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>10</td>
+                                                                    <td>2024.01.01 (월)</td>
+                                                                    <td>31</td>
+                                                                    <td>2024.01.01  21:30</td>
+                                                                    <td>2024.01.01  21:30</td>
+                                                                    <td>00.0km</td>
+                                                                    <td>00.0km</td>
+                                                                    <td>00시간 00분</td>
+                                                                    <td>00,000원</td>
+                                                                    <td>00,000원</td>
+                                                                    <td>00,000원</td>
+                                                                    <td>경기도 고양시</td>
+                                                                    <td>1종</td>
+                                                                    <td>경유</td>
+                                                                    <td>카고</td>
+                                                                    <td>1톤</td>
+                                                                    <td>0.5톤</td>
+                                                                    <td>
+                                                                        <div class="has-unit">
+                                                                            <input type="text" name="" id="">
+                                                                            <span class="unit">0/20</span>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="paging mt20 fx-none">
+                                                <ul>
+                                                    <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                                                    <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                                                    <li class="on"><a href="javascript:void(0);">1</a></li>
+                                                    <li><a href="javascript:void(0);">2</a></li>
+                                                    <li><a href="javascript:void(0);">3</a></li>
+                                                    <li><a href="javascript:void(0);">4</a></li>
+                                                    <li><a href="javascript:void(0);">5</a></li>
+                                                    <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                                                    <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-cont pb0">
+                                        <div class="fx fd-c">
+                                            <div class="fx jc-sb ai-c fx-none">
+                                                <div class="tit-wrap">
+                                                    <div class="tit-area">
+                                                        <button class="btn-ic btn-full-close"></button>
+                                                        <p class="tit v5">운행 상세정보</p>
+                                                        <p>2024.01.01 ~ 2024.04.01 (60일)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="fx1 mt20 fx fd-c">
+                                                <div class="list-top fx-none">
+                                                    <div class="division">
+                                                        <p class="txt-count">전체 <strong>10</strong></p>
+                                                    </div>
+                                                    <div class="division">
+                                                        <button class="btn md circle fill-gray" onclick="popOpenAndDim('pop-set-items02', true)"><i class="ic-setting"></i>조회항목 설정</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="list-wrap v1 resize fx1 mt10">
+                                                    <div class="list-head">
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-width="50">No.</th>
+                                                                    <th data-width="85"><span>배차회차</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="100"><span>운행일자</span><button class="btn-ic btn-sort up"></button></th>
+                                                                    <th data-width="120"><span>운전자</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="120"><span>지점</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="90"><span>차량번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="90"><span>배송지수</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="130"><span>출발시각</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="130"><span>종료시각</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="120"><span>예측주행거리</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="120"><span>실제주행거리</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="120"><span>실제주행시간</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="120"><span>예측통행요금</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="120"><span>실제통행요금</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="85"><span>유류비</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="120"><span>유류비구입지역</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="110"><span>통행요금 구분</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="60"><span>연료</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="85"><span>차량형태</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="85"><span>총 중량</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="85"><span>적재중량</span><button class="btn-ic btn-sort down"></button></th>
+                                                                    <th data-width="305">비고</th>
+                                                                </tr>
+                                                            </thead>
+                                                        </table>
+                                                    </div>
+                                                    <div class="list-body scroll-yx">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>10</td>
+                                                                    <td>1회차</td>
+                                                                    <td>2023.01.01 (금)</td>
+                                                                    <td>홍길동</td>
+                                                                    <td>수도권지점</td>
+                                                                    <td>00가0000</td>
+                                                                    <td>10</td>
+                                                                    <td>2023.01.01 (08:00)</td>
+                                                                    <td>2023.01.01 (08:00)</td>
+                                                                    <td>00.0km</td>
+                                                                    <td>00.0km</td>
+                                                                    <td>00시간 00분</td>
+                                                                    <td>00,000원</td>
+                                                                    <td>00,000원</td>
+                                                                    <td>00,000원</td>
+                                                                    <td>경기도 고양시</td>
+                                                                    <td>1종</td>
+                                                                    <td>경유</td>
+                                                                    <td>카고</td>
+                                                                    <td>1톤</td>
+                                                                    <td>0.5톤</td>
+                                                                    <td>
+                                                                        <div class="has-unit">
+                                                                            <input type="text" name="" id="">
+                                                                            <span class="unit">0/20</span>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="paging mt20 fx-none">
+                                                <ul>
+                                                    <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                                                    <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                                                    <li class="on"><a href="javascript:void(0);">1</a></li>
+                                                    <li><a href="javascript:void(0);">2</a></li>
+                                                    <li><a href="javascript:void(0);">3</a></li>
+                                                    <li><a href="javascript:void(0);">4</a></li>
+                                                    <li><a href="javascript:void(0);">5</a></li>
+                                                    <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                                                    <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// contents -->
+    </div>
+    <!-- // content -->
+
+    <!-- 레이어팝업-조회항목 설정 -->
+    <div class="popup layer pop-set-items pop-set-items01">
+        <div class="pop-head">
+            <p class="tit">조회항목 설정</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-set-items', true)"></button>
+        </div>
+        <div class="pop-body">
+            <p class="pop-txt">
+                운전자 목록에서 조회할 항목을 선택합니다. <br>
+                항목의 순서를 변경하면 목록도 함께 변경됩니다.
+            </p>
+
+            <div class="sortable scroll-y mt20">
+                <ul>
+                    <li>
+                        <div class="check v1">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>전체</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2 mt4">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>출발시각</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>종료시각</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>예측주행거리</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>실제주행거리</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>예측주행시간</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>실제주행시간</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>예측통행요금</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>실제통행요금</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>실제유류비</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>예측유류비</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>유류비 구입지역</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>통행요금구분</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>연료</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>차량형태</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>총 중량</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>적재중량</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>비고(입력)</p>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pop-foot">
+            <button class="btn-txt v2"><i class="ic-reset"></i>초기화</button>
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-set-items', true)"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-set-items', true)"><i class="ic-submit"></i>저장</button>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-조회항목 설정 -->
+
+    <!-- 레이어팝업-조회항목 설정 -->
+    <div class="popup layer pop-set-items pop-set-items02">
+        <div class="pop-head">
+            <p class="tit">조회항목 설정</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-set-items', true)"></button>
+        </div>
+        <div class="pop-body">
+            <p class="pop-txt">
+                운전자 목록에서 조회할 항목을 선택합니다. <br>
+                항목의 순서를 변경하면 목록도 함께 변경됩니다.
+            </p>
+
+            <div class="sortable scroll-y mt20">
+                <ul>
+                    <li>
+                        <div class="check v1">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>전체</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2 mt4">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>예측주행거리</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>실제주행거리</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>예측주행시간</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>실제주행시간</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>예측통행요금</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>실제통행요금</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>유류비/L</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>유류비 구입지역</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>통행요금구분</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>연료</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>차량형태</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>총 중량</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="" checked>
+                            <label for="">
+                                <p>적재중량</p>
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="check v2">
+                            <input type="checkbox" name="" id="">
+                            <label for="">
+                                <p>비고(입력)</p>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="pop-foot">
+            <button class="btn-txt v2"><i class="ic-reset"></i>초기화</button>
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-set-items', true)"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-set-items', true)"><i class="ic-submit"></i>저장</button>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-조회항목 설정 -->
+
+    <!-- 레이어팝업-동영상 튜토리얼 -->
+    <div class="popup layer pop-tutorial">
+        <div class="pop-head">
+            <p class="tit">동영상 튜토리얼</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-tutorial', true)">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="step-area">
+                <ul>
+                    <li class="on">
+                        <span class="num">1</span>
+                        <p class="text">업무준비</p>
+                    </li>
+                    <li>
+                        <span class="num">2</span>
+                        <p class="text">배차</p>
+                    </li>
+                    <li>
+                        <span class="num">3</span>
+                        <p class="text">모니터링</p>
+                    </li>
+                    <li>
+                        <span class="num">4</span>
+                        <p class="text">통계</p>
+                    </li>
+                    <li>
+                        <span class="num">5</span>
+                        <p class="text">설정</p>
+                    </li>
+                    <li>
+                        <span class="num">6</span>
+                        <p class="text">고객지원</p>
+                    </li>
+                    <li>
+                        <span class="num">7</span>
+                        <p class="text">사용자 정보</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-area">
+                <p class="text01">업무준비</p>
+                <p class="text02">배송업무를 수행할 운전자정보를 등록합니다.</p>
+                <p class="text03">운전자 등록이 완료되면 배차 업무를 지정할 수 있습니다.</p>
+            </div>
+
+            <div class="tutorial-swiper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-controller">
+                    <div class="swiper-paging-prev"></div>
+                    <div class="paging">
+                        <ul></ul>
+                    </div>
+                    <div class="swiper-paging-next"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-동영상 튜토리얼 -->
+</body>
+</html>
