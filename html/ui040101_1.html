@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Seecargo</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/chart.js"></script>
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    <script src="../dist/js/jquery-ui.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <h1 class="logo"><a href="javascript:void(0);">Seecargo</a></h1>
+
+            <div class="gnb">
+                <ul class="depth01">
+                    <li>
+                        <a href="javascript:void(0);">업무준비</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">운전자(차량) 관리</a></li>
+                            <li><a href="javascript:void(0);">업무환경설정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">배차</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">배차 생성</a></li>
+                            <li><a href="javascript:void(0);">OMS 배차 생성</a></li>
+                            <li><a href="javascript:void(0);">배차 이력</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">모니터링</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">실시간 모니터링</a></li>
+                        </ul>
+                    </li>
+                    <li class="on">
+                        <a href="javascript:void(0);">통계</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">Dashboard</a></li>
+                            <li><a href="javascript:void(0);">종합분석</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">설정</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">계정 관리</a></li>
+                            <li><a href="javascript:void(0);">알림톡 관리</a></li>
+                            <li><a href="javascript:void(0);">운전자 공지사항 관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="util">
+                <button class="btn-ic btn-tutorial" onclick="popOpenAndDim('pop-tutorial', true)">동영상 튜토리얼</button>
+                <div class="support">
+                    <button class="btn-ic btn-cscenter">고객센터</button>
+                    <div class="support-menu">
+                        <ul>
+                            <li><a href="javascript:void(0);">공지사항</a></li>
+                            <li><a href="javascript:void(0);">문의하기</a></li>
+                            <li><a href="javascript:void(0);">이용약관</a></li>
+                            <li><a href="javascript:void(0);">이용방법</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="support">
+                    <button class="btn-user">에스엘솔루션</button>
+                    <div class="support-menu">
+                        <div class="user-info">
+                            <div class="account">
+                                <p class="name"><strong>에스엘솔루션</strong> 고객님</p>
+                                <p class="id">aaaaaaaaaa</p>
+                                <div class="belong">
+                                    <span>씨카고</span>
+                                    <!-- <span>A지점</span> -->
+                                    <select name="" id="" class="select v1">
+                                        <option value="">A지점</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="user-link">내 정보</a>
+                            <div class="plan-state">
+                                <div class="plan">
+                                    <p class="label v1 pink">엔터프라이즈</p><!-- case1: .gray, case2: .blue, case3: .cyan, case4: .lime, case5: .purple, case6: .pinkm, case7: .dark -->
+                                    <a href="javascript:void(0);" class="user-link">요금제 이용중</a>
+                                </div>
+                                <div class="state">
+                                    <dl>
+                                        <dd>75%</dd>
+                                        <dt>현재 사용량</dt>
+                                    </dl>
+                                    <dl>
+                                        <dd>8일</dd>
+                                        <dt>남은 잔여일</dt>
+                                    </dl>
+                                    <p class="now">(2024.01.29 09:35:02 기준)</p>
+                                </div>
+                            </div>
+                            <div class="mate">
+                                <p class="title">씨카고 고객센터</p>
+                                <p class="txt-phone">1544-8232</p>
+                                <p class="txt-email">seecargo@slsolution.co.kr</p>
+                                <button class="btn md fill-deepgray to-dark"><i class="ic-logout"></i>로그아웃</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-ic btn-menu">전체메뉴</button>
+            </div>
+        </div>
+        <div class="sitemap">
+            <div class="menu">
+                <button class="btn-ic btn-sitemap-close"></button>
+                <ul class="depth01">
+                    <li>
+                        <a href="javascript:void(0);">업무준비</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>운전자(차량)관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">운전자(차량) 등록</a></li>
+                                    <li><a href="javascript:void(0);">지역관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>업무환경설정</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">업무환경설정</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">배차</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>배차 생성</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">배송지 등록</a></li>
+                                    <li><a href="javascript:void(0);">업무생성</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>OMS 배차 생성</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">주문내역 확인 및 배차</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>배차이력</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">배차 업무관리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">모니터링</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>실시간 모니터링</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">전체 차량 실시간 모니터링</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">통계</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="javascript:void(0);">Dashboard</a>
+                            </li>
+                            <li>
+                                <p>종합분석</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">업무</a></li>
+                                    <li><a href="javascript:void(0);">운행</a></li>
+                                    <li><a href="javascript:void(0);">운전자</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">설정</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>계정 관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">기본정보</a></li>
+                                    <li><a href="javascript:void(0);">지점 정보</a></li>
+                                    <li><a href="javascript:void(0);">사용자 정보</a></li>
+                                    <li><a href="javascript:void(0);">요금정보</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>알림톡 관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">알림톡 관리 <br>(설정/발송내역)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">운전자 공지사항 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">고객지원</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="javascript:void(0);">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">문의하기</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">이용약관</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">이용방법</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">사용자 정보</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>내 정보</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">사용자 정보(확인/수정)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>요금정보</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">사용 요금제명</a></li>
+                                    <li><a href="javascript:void(0);">서비스 사용량</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">로그아웃</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content">
+        <!-- contents -->
+        <div class="contents">
+            <div class="dashboard">
+                <img src="../img/@temp_dashboard01.png" alt="">
+            </div>
+        </div>
+        <!--// contents -->
+    </div>
+    <!-- // content -->
+
+    <!-- 레이어팝업-동영상 튜토리얼 -->
+    <div class="popup layer pop-tutorial">
+        <div class="pop-head">
+            <p class="tit">동영상 튜토리얼</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-tutorial', true)">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="step-area">
+                <ul>
+                    <li class="on">
+                        <span class="num">1</span>
+                        <p class="text">업무준비</p>
+                    </li>
+                    <li>
+                        <span class="num">2</span>
+                        <p class="text">배차</p>
+                    </li>
+                    <li>
+                        <span class="num">3</span>
+                        <p class="text">모니터링</p>
+                    </li>
+                    <li>
+                        <span class="num">4</span>
+                        <p class="text">통계</p>
+                    </li>
+                    <li>
+                        <span class="num">5</span>
+                        <p class="text">설정</p>
+                    </li>
+                    <li>
+                        <span class="num">6</span>
+                        <p class="text">고객지원</p>
+                    </li>
+                    <li>
+                        <span class="num">7</span>
+                        <p class="text">사용자 정보</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-area">
+                <p class="text01">업무준비</p>
+                <p class="text02">배송업무를 수행할 운전자정보를 등록합니다.</p>
+                <p class="text03">운전자 등록이 완료되면 배차 업무를 지정할 수 있습니다.</p>
+            </div>
+
+            <div class="tutorial-swiper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-controller">
+                    <div class="swiper-paging-prev"></div>
+                    <div class="paging">
+                        <ul></ul>
+                    </div>
+                    <div class="swiper-paging-next"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-동영상 튜토리얼 -->
+</body>
+</html>
