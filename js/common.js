@@ -12,7 +12,61 @@ $(document).ready(function(){
     tab();
     accList();
     clickRightBtn();
+
+    dashScroll()
 })
+
+/* 20240509 수정 */
+function getCurrentSnapIdx(snapValue, top){
+    for(let i in snapValue){
+        i = Number(i)
+        if(snapValue[i] >= top){
+            return snapValue[i] > top ? i-1 : i
+        }
+    }
+}
+
+function dashScroll(){
+    let snapValue = [0]
+    // let lastScrollTop = 0;
+    // let snapIdx = 1
+    // let snapResult = 100
+    // let snapIsLock = false
+    // let lastDraggerTop = 0;
+
+    // let dragDir = 0
+    
+    snapValue = [0]
+    $('.snap').find('.gap30').each(function(){
+        snapValue.push(snapValue[snapValue.length - 1] + $(this).outerHeight() + 50)
+    })
+
+    snapValue.pop()
+    
+    $('.snap').on("mousewheel", function(e){
+        snapMcs.mCustomScrollbar("stop")
+        const currentTop = Math.abs(this.mcs.content.css("top").replace("px", ""))
+        const currentSnapIdx = getCurrentSnapIdx(snapValue, currentTop)
+        let deltaOffset = e.originalEvent.wheelDelta < 0 ? 1 : 0
+        if(deltaOffset == 0 && snapValue[currentSnapIdx] == currentTop){
+            deltaOffset = -1
+        }
+        const targetSnapIdx = getCurrentSnapIdx(snapValue, currentTop) + deltaOffset
+        snapMcs.mCustomScrollbar('scrollTo', snapValue[targetSnapIdx]);
+    })
+    
+    let snapMcs = $('.snap').mCustomScrollbar({
+        axis:"y",
+        scrollbarPosition: "outside",
+        advanced:{ 
+            updateOnContentResize: true 
+        },
+        mouseWheel:{
+            enable: false,
+        },
+    })
+}
+/* // 20240509 수정 */
 
 function sitemapAct(){
     sitemapOpen();
@@ -180,7 +234,7 @@ function scrollX() {
 
 function scrollY() {
     $('.scroll-y').each(function(){
-        if($(this).hasClass('pop-body')){
+        if($(this).hasClass('pop-body') || $(this).hasClass('inside')){/* 20240522 수정 */
             $(this).mCustomScrollbar({
                 axis:"y", // horizontal scrollbar
                 advanced:{ 

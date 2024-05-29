@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Seecargo</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/chart.js"></script>
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    <script src="../dist/js/jquery-ui.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- content -->
+    <div id="content">
+        <!-- contents -->
+        <div class="contents">
+            <div class="login">
+                <h1 class="logo"></h1>
+                <select class="select v5 w120">
+                    <option value="">한국어</option>
+                </select>
+
+                <div class="inner">
+                    <p class="text-greet01">안녕하세요!</p>
+                    <p class="text-greet02">씨카고 4.0 웹서비스에 오신 것을 환영합니다.</p>
+                    <div class="login-form">
+                        <p class="headline">로그인</p>
+
+                        <div class="cirtify">
+                            <p class="title">인증번호 입력</p>
+                            <p class="text">
+                                안전한 로그인을 위해 인증번호가 발송되었습니다(유효시간 3분)
+                                010-****-****로 전송된 인증번호를 입력해주세요.
+                            </p>
+                        </div>
+
+                        <div class="inp-wrap v1">
+                            <div class="inp-item has-unit fx1">
+                                <input type="text" name="" id="">
+                                <p class="unit">03:00</p>
+                            </div>
+                            <button class="btn lg line-gray w125">인증번호 재요청</button>
+                        </div>
+
+                        <button class="btn lg fill-purple mt40 wp100" onclick="popOpenAndDim('pop-alert01', true)"><i class="ic-submit"></i>로그인</button>
+
+                        <div class="support">
+                            <div class="find">
+                                <ul>
+                                    <li><a href="javascript:void(0);">아이디 찾기</a></li>
+                                    <li><a href="javascript:void(0);">비밀번호 찾기</a></li>
+                                </ul>
+                            </div>
+                            <div class="join">
+                                <a href="javascript:void(0);">회원가입</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer">
+                    <div class="fnb">
+                        <ul>
+                            <li><a href="">이용약관</a></li>
+                            <li><a href="">위치기반 서비스 이용약관</a></li>
+                            <li><a href="">개인(위치)정보처리방침</a></li>
+                        </ul>
+                    </div>
+        
+                    <p class="txt-cs">고객센터 : 1544-8232 (평일오전 9시~오후6시)</p>
+                    <p class="copyright">Copyright &copy; 2024 SLSolution. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!--// contents -->
+    </div>
+    <!-- // content -->
+
+    <!-- 알럿팝업-인증 실패 -->
+    <div class="popup alert pop-alert01">
+        <div class="pop-head">
+            <p class="tit">인증 실패</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">
+                인증에 실패했습니다. <br>
+                인증번호를 다시 확인해 주세요.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert01', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-인증 실패 -->
+
+    <!-- 알럿팝업-로그인 실패 -->
+    <div class="popup alert pop-alert02">
+        <div class="pop-head">
+            <p class="tit">로그인 실패</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">
+                로그인 실패 횟수가 5회를 초과했습니다. <br>
+                씨카고 고객센터로 문의 바랍니다.
+            </p>
+            <p class="txt-alert mt15">
+                <strong>고객센터 1544-8232</strong>
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert02', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-로그인 실패 -->
+</body>
+</html>

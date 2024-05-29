@@ -1,0 +1,441 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Seecargo</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/chart.js"></script>
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    <script src="../dist/js/jquery-ui.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- content -->
+    <div id="content">
+        <!-- contents -->
+        <div class="contents">
+            <div class="login">
+                <h1 class="logo"></h1>
+                <select class="select v5 w120">
+                    <option value="">한국어</option>
+                </select>
+
+                <div class="inner">
+                    <p class="headline">회원가입</p>
+                    <div class="join-form">
+                        <div class="tab-wrap v3">
+                            <div class="tab-btn-wrap">
+                                <button class="tab-btn on" disabled>약관 동의</button>
+                                <button class="tab-btn" disabled>정보 입력</button>
+                                <button class="tab-btn">가입 완료</button>
+                            </div>
+                            <div class="tab-cont-wrap">
+                                <div class="tab-cont">
+                                    <p class="title01">씨카고 서비스를 시작합니다.</p>
+                                    <p class="title02">서비스 이용약관에 동의해 주세요.</p>
+                                    <div class="terms-area">
+                                        <div class="check v7">
+                                            <input type="checkbox" name="" id="">
+                                            <label for="">
+                                                <p><strong>전체 동의하기</strong></p>
+                                            </label>
+                                        </div>
+                                        <p class="txt-usher mt5">전체 동의하기는 씨카고 이용약관, 위치기반서비스 이용약관, 개인(위치)정보처리방침에 대한 동의를 포함합니다.</p>
+                                        <div class="fx ai-c jc-sb mt20">
+                                            <div class="check v7">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                    <p><span class="txt-violet">[필수]</span>씨카고 이용약관</p>
+                                                </label>
+                                            </div>
+
+                                            <button class="btn-txt v4"><i class="ic-terms"></i>전체</button>
+                                        </div>
+                                        <div class="fx ai-c jc-sb mt20">
+                                            <div class="check v7">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                    <p><span class="txt-violet">[필수]</span>위치기반서비스 이용약관</p>
+                                                </label>
+                                            </div>
+
+                                            <button class="btn-txt v4"><i class="ic-terms"></i>전체</button>
+                                        </div>
+                                        <div class="fx ai-c jc-sb mt20">
+                                            <div class="check v7">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                    <p><span class="txt-violet">[필수]</span>개인(위치)정보처리방침</p>
+                                                </label>
+                                            </div>
+
+                                            <button class="btn-txt v4"><i class="ic-terms"></i>전체</button>
+                                        </div>
+                                        <p class="txt-warning mt20">[필수] 항목을 모두 체크해 주세요.</p>
+                                    </div>
+                                    <div class="line v2"></div>
+                                    <div class="btn-wrap jc-c mt30">
+                                        <button class="btn lg fill-purple w340" data-tab="2"><i class="ic-next"></i>다음</button>
+                                    </div>
+                                </div>
+                                <div class="tab-cont">
+                                    <p class="title01">회원가입 정보입력</p>
+                                    <div class="form-group mt30">
+                                        <div class="form col">
+                                            <div class="form-title w105">
+                                                <p>아이디</p>
+                                                <i class="ic-tooltip" data-cont="
+                                                <div class='tooltip-wrap help'>
+                                                    <p class='txt-tooltip'>아이디</p>
+                                                    <div class='list-wrap v6'>
+                                                        <ul>
+                                                            <li>아이디는 6자리 이상의 영문과 숫자를 조합하여 입력해야 합니다.</li>
+                                                            <li>필수 항목입니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                "></i>
+                                            </div>
+                                            <div class="form-cont">
+                                                <div class="inp-wrap">
+                                                    <div class="inp-item fx-none w260">
+                                                        <input type="text" name="" id="" placeholder="영문+숫자 조합 6자리 이상 입력">
+                                                    </div>
+                                                    <div class="inp-item fx-none">
+                                                        <button class="btn md line-purple w90">중복확인</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>비밀번호</p>
+                                                <i class="ic-tooltip" data-cont="
+                                                <div class='tooltip-wrap help'>
+                                                    <p class='txt-tooltip'>비밀번호</p>
+                                                    <div class='list-wrap v6'>
+                                                        <ul>
+                                                            <li>관리자 비밀번호 암호는 최소 8자리이고, 영어, 숫자, 특수문자 3종류 조합으로 입력합니다.</li>
+                                                            <li>동일한 문자/숫자가 5자리 이상 반복해 들어가는 비밀번호는 사용하실 수 없습니다.(예_aaaaa, 11111 등)</li>
+                                                            <li>연속된 문자/ 숫자가 5자리 이상 계속해 들어가는 비밀번호는 사용하실 수 없습니다.(예_abcde, 12345 등)</li>
+                                                            <li>한글/공백이 들어가는 비밀번호는 사용하실 수 업습니다.</li>
+                                                            <li>비밀번호 변경 주기는 180일 이내 변경하셔야 합니다.</li>
+                                                            <li>필수 항목입니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                "></i>
+                                            </div>
+                                            <div class="form-cont">
+                                                <input type="password" name="" id="" class="w260" placeholder="영문+숫자+특수문자 조합 8자리 이상 입력">
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>비밀번호 확인</p>
+                                                <i class="ic-tooltip" data-cont="
+                                                <div class='tooltip-wrap help'>
+                                                    <p class='txt-tooltip'>비밀번호 확인</p>
+                                                    <div class='list-wrap v6'>
+                                                        <ul>
+                                                            <li>입력하신 비밀번호를 다시 한번 입력해주세요.</li>
+                                                            <li>필수 항목입니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                "></i>
+                                            </div>
+                                            <div class="form-cont">
+                                                <input type="password" name="" id="" class="w260" placeholder="비밀번호 재입력">
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>회사명</p>
+                                                <i class="ic-tooltip" data-cont="
+                                                <div class='tooltip-wrap help'>
+                                                    <p class='txt-tooltip'>회사명</p>
+                                                    <div class='list-wrap v6'>
+                                                        <ul>
+                                                            <li>필수 항목입니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                "></i>
+                                            </div>
+                                            <div class="form-cont">
+                                                <input type="text" name="" id="" class="w260" placeholder="회사명 입력">
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>이름</p>
+                                                <i class="ic-tooltip" data-cont="
+                                                <div class='tooltip-wrap help'>
+                                                    <p class='txt-tooltip'>이름</p>
+                                                    <div class='list-wrap v6'>
+                                                        <ul>
+                                                            <li>필수 항목입니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                "></i>
+                                            </div>
+                                            <div class="form-cont">
+                                                <input type="text" name="" id="" class="w260" placeholder="이름 입력">
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>부서</p>
+                                                <i class="ic-tooltip" data-cont="
+                                                <div class='tooltip-wrap help'>
+                                                    <p class='txt-tooltip'>부서</p>
+                                                    <div class='list-wrap v6'>
+                                                        <ul>
+                                                            <li>필수 항목입니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                "></i>
+                                            </div>
+                                            <div class="form-cont">
+                                                <input type="text" name="" id="" class="w260" placeholder="부서 입력">
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>직급</p>
+                                                <i class="ic-tooltip" data-cont="
+                                                <div class='tooltip-wrap help'>
+                                                    <p class='txt-tooltip'>직급</p>
+                                                    <div class='list-wrap v6'>
+                                                        <ul>
+                                                            <li>필수 항목입니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                "></i>
+                                            </div>
+                                            <div class="form-cont">
+                                                <input type="text" name="" id="" class="w260" placeholder="직위 입력">
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>휴대폰 번호</p>
+                                                <i class="ic-tooltip" data-cont="
+                                                <div class='tooltip-wrap help'>
+                                                    <p class='txt-tooltip'>휴대폰 번호</p>
+                                                    <div class='list-wrap v6'>
+                                                        <ul>
+                                                            <li>필수 항목입니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                "></i>
+                                            </div>
+                                            <div class="form-cont">
+                                                <div class="inp-wrap v1">
+                                                    <div class="fx-none w100">
+                                                        <div class="dropdown v1 row">
+                                                            <button class="txt-pick">선택</button>
+                                                            <ul class="drop-list">
+                                                                <li>화물차</li>
+                                                                <li>카고</li>
+                                                                <li>냉장탑</li>
+                                                                <li>냉동탑</li>
+                                                                <li>윙바디</li>
+                                                                <li>리프트탑</li>
+                                                                <li>탱크로리</li>
+                                                                <li>밴</li>
+                                                                <li>승용차</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fx-none w150">
+                                                        <input type="text" name="" id="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>이메일</p>
+                                                <i class="ic-tooltip" data-cont="
+                                                <div class='tooltip-wrap help'>
+                                                    <p class='txt-tooltip'>이메일</p>
+                                                    <div class='list-wrap v6'>
+                                                        <ul>
+                                                            <li>필수 항목입니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                "></i>
+                                            </div>
+                                            <div class="form-cont">
+                                                <div class="inp-wrap v1 ai-c">
+                                                    <div class="inp-item fx-none w260">
+                                                        <input type="text" name="" id="" placeholder="이메일 주소 입력">
+                                                    </div>
+                                                    <p class="txt-form">@</p>
+                                                    <div class="fx-none w140">
+                                                        <div class="dropdown v1 row">
+                                                            <button class="txt-pick">선택</button>
+                                                            <ul class="drop-list">
+                                                                <li>화물차</li>
+                                                                <li>카고</li>
+                                                                <li>냉장탑</li>
+                                                                <li>냉동탑</li>
+                                                                <li>윙바디</li>
+                                                                <li>리프트탑</li>
+                                                                <li>탱크로리</li>
+                                                                <li>밴</li>
+                                                                <li>승용차</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="txt-warning mt10">모든 항목을 입력해 주세요.</p>
+                                    <div class="line v2 mt20"></div>
+                                    <div class="btn-wrap jc-c mt30">
+                                        <button class="btn lg fill-purple w340" onclick="popOpenAndDim('pop-alert01', true)"><i class="ic-next"></i>다음</button>
+                                    </div>
+                                </div>
+                                <div class="tab-cont">
+                                    <p class="title01 txt-violet">씨카고 회원가입이 완료되었습니다.</p>
+                                    <div class="finish">
+                                        <div class="form-group">
+                                            <div class="form col">
+                                                <div class="form-title w80">
+                                                    <p>아이디</p>
+                                                </div>
+                                                <div class="form-cont">
+                                                    <p class="txt-form">abcd1234</p>
+                                                </div>
+                                            </div>
+                                            <div class="form col mt20">
+                                                <div class="form-title w80">
+                                                    <p>비밀번호</p>
+                                                </div>
+                                                <div class="form-cont">
+                                                    <p class="txt-form">********************</p>
+                                                </div>
+                                            </div>
+                                            <div class="form col mt20">
+                                                <div class="form-title w80">
+                                                    <p>회사명</p>
+                                                </div>
+                                                <div class="form-cont">
+                                                    <p class="txt-form">(주)에스엘솔루션</p>
+                                                </div>
+                                            </div>
+                                            <div class="form col mt20">
+                                                <div class="form-title w80">
+                                                    <p>이름</p>
+                                                </div>
+                                                <div class="form-cont">
+                                                    <p class="txt-form">홍길동</p>
+                                                </div>
+                                            </div>
+                                            <div class="form col mt20">
+                                                <div class="form-title w80">
+                                                    <p>부서</p>
+                                                </div>
+                                                <div class="form-cont">
+                                                    <p class="txt-form">운영팀</p>
+                                                </div>
+                                            </div>
+                                            <div class="form col mt20">
+                                                <div class="form-title w80">
+                                                    <p>직급</p>
+                                                </div>
+                                                <div class="form-cont">
+                                                    <p class="txt-form">과장</p>
+                                                </div>
+                                            </div>
+                                            <div class="form col mt20">
+                                                <div class="form-title w80">
+                                                    <p>휴대폰 번호</p>
+                                                </div>
+                                                <div class="form-cont">
+                                                    <p class="txt-form">010-1234-5678</p>
+                                                </div>
+                                            </div>
+                                            <div class="form col mt20">
+                                                <div class="form-title w80">
+                                                    <p>이메일</p>
+                                                </div>
+                                                <div class="form-cont">
+                                                    <p class="txt-form">aaaaaaaa@gmail.com</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="line v2 mt45"></div>
+                                    <div class="btn-wrap jc-c mt40">
+                                        <button class="btn lg fill-purple w340"><i class="ic-login"></i>로그인하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// contents -->
+    </div>
+    <!-- // content -->
+
+    <!-- 알럿팝업-인증 실패 -->
+    <div class="popup alert pop-alert01">
+        <div class="pop-head">
+            <p class="tit">입력 오류</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">
+                사용하실 수 없는 아이디입니다. <br>
+                다른 아이디를 입력해주세요.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert01', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-인증 실패 -->
+</body>
+</html>

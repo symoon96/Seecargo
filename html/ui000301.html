@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Seecargo</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/chart.js"></script>
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    <script src="../dist/js/jquery-ui.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- content -->
+    <div id="content">
+        <!-- contents -->
+        <div class="contents">
+            <div class="login">
+                <h1 class="logo"></h1>
+                <select class="select v5 w120">
+                    <option value="">한국어</option>
+                </select>
+
+                <div class="inner">
+                    <p class="headline">아이디/비밀번호 찾기</p>
+                    <div class="find-area">
+                        <div class="tab-wrap v3">
+                            <div class="tab-btn-wrap">
+                                <button class="tab-btn on">아이디 찾기</button>
+                                <button class="tab-btn">비밀번호 찾기</button>
+                            </div>
+                            <div class="tab-cont-wrap">
+                                <div class="tab-cont">
+                                    <p class="title01">아이디, 휴대폰 번호를 입력해 주세요.</p>
+
+                                    <div class="form-group mt30">
+                                        <div class="form col">
+                                            <div class="form-title w105">
+                                                <p>이름</p>
+                                            </div>
+                                            <div class="form-cont">
+                                                <div class="inp-wrap">
+                                                    <div class="inp-item fx-none w260">
+                                                        <input type="text" name="" id="" placeholder="이름 입력">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>휴대폰 번호</p>
+                                            </div>
+                                            <div class="form-cont">
+                                                <div class="inp-wrap v1">
+                                                    <div class="fx-none w100">
+                                                        <div class="dropdown v1 row">
+                                                            <button class="txt-pick">선택</button>
+                                                            <ul class="drop-list">
+                                                                <li>화물차</li>
+                                                                <li>카고</li>
+                                                                <li>냉장탑</li>
+                                                                <li>냉동탑</li>
+                                                                <li>윙바디</li>
+                                                                <li>리프트탑</li>
+                                                                <li>탱크로리</li>
+                                                                <li>밴</li>
+                                                                <li>승용차</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fx-none w150">
+                                                        <input type="text" name="" id="" placeholder="‘-’ 없이 숫자만 입력">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cs-area">
+                                        <button class="btn-shortcuts">아이디 찾기 고객지원 바로가기</button>
+                                        <p class="txt-cs">고객센터 : 1544-8232 (평일 오전 9시 ~ 오후 6시)</p>
+                                    </div>
+
+                                    <div class="line v2 mt30"></div>
+                                    <div class="btn-wrap mt30 jc-c gap10">
+                                        <button class="btn lg fill-dark w160"><i class="ic-close"></i>취소</button>
+                                        <button class="btn lg fill-purple w160" onclick="popOpenAndDim('pop-alert01', true)"><i class="ic-submit"></i>아이디 찾기</button>
+                                    </div>
+                                </div>
+                                <div class="tab-cont">
+                                    <p class="title01">아이디, 이름과 휴대폰 번호를 입력해 주세요.</p>
+
+                                    <div class="form-group mt30">
+                                        <div class="form col">
+                                            <div class="form-title w105">
+                                                <p>아이디</p>
+                                            </div>
+                                            <div class="form-cont">
+                                                <div class="inp-wrap">
+                                                    <div class="inp-item fx-none w260">
+                                                        <input type="text" name="" id="" placeholder="아이디 입력">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>이름</p>
+                                            </div>
+                                            <div class="form-cont">
+                                                <div class="inp-wrap">
+                                                    <div class="inp-item fx-none w260">
+                                                        <input type="text" name="" id="" placeholder="이름 입력">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>휴대폰 번호</p>
+                                            </div>
+                                            <div class="form-cont">
+                                                <div class="inp-wrap v1">
+                                                    <div class="fx-none w100">
+                                                        <div class="dropdown v1 row">
+                                                            <button class="txt-pick">선택</button>
+                                                            <ul class="drop-list">
+                                                                <li>화물차</li>
+                                                                <li>카고</li>
+                                                                <li>냉장탑</li>
+                                                                <li>냉동탑</li>
+                                                                <li>윙바디</li>
+                                                                <li>리프트탑</li>
+                                                                <li>탱크로리</li>
+                                                                <li>밴</li>
+                                                                <li>승용차</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fx-none w150">
+                                                        <input type="text" name="" id="" placeholder="‘-’ 없이 숫자만 입력">
+                                                    </div>
+                                                    <div class="fx1"><button class="btn line-purple md" onclick="popOpenAndDim('pop-alert02', true)">인증번호 받기</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form col mt10">
+                                            <div class="form-title w105">
+                                                <p>휴대폰 번호</p>
+                                            </div>
+                                            <div class="form-cont">
+                                                <div class="inp-wrap v1">
+                                                    <div class="inp-item has-unit fx-none w160">
+                                                        <input type="text" name="" id="" placeholder="인증번호 입력">
+                                                        <p class="unit">03:00</p>
+                                                    </div>
+                                                    <button class="btn md line-purple w90" onclick="popOpenAndDim('pop-alert03', true)">확인</button>
+                                                </div>
+                                    
+                                                <p class="txt-warning mt10">
+                                                    인증번호가 발송되었습니다(유효시간 3분) <br>
+                                                    입력한 휴대폰 번호로 전송된 인증번호를 입력해주세요.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cs-area">
+                                        <button class="btn-shortcuts">비밀번호 찾기 고객지원 바로가기</button>
+                                        <p class="txt-cs">고객센터 : 1544-8232 (평일 오전 9시 ~ 오후 6시)</p>
+                                    </div>
+
+                                    <div class="line v2 mt30"></div>
+                                    <div class="btn-wrap mt30 jc-c gap10">
+                                        <button class="btn lg fill-dark w160"><i class="ic-close"></i>취소</button>
+                                        <button class="btn lg fill-purple w160" onclick="popOpenAndDim('pop-alert01', true)"><i class="ic-submit"></i>비밀번호 찾기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// contents -->
+    </div>
+    <!-- // content -->
+
+    <!-- 알럿팝업-인증 실패 -->
+    <div class="popup alert pop-alert01">
+        <div class="pop-head">
+            <p class="tit">입력 오류</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">
+                가입되지 않은 정보입니다. <br>
+                이름과 휴대폰 번호를 다시 입력해주세요.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert01', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-인증 실패 -->
+
+    <!-- 알럿팝업-발송 완료 -->
+    <div class="popup alert pop-alert02">
+        <div class="pop-head">
+            <p class="tit">발송 완료</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">
+                인증번호를 발송했습니다.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert02', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-발송 완료 -->
+
+    <!-- 알럿팝업-인증 실패 -->
+    <div class="popup alert pop-alert03">
+        <div class="pop-head">
+            <p class="tit">발송 완료</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">
+                인증에 실패하였습니다. <br>
+                인증번호를 다시 확인해주세요.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert03', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-발송 완료 -->
+</body>
+</html>

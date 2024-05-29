@@ -7,7 +7,7 @@
 /*-------------------------------------------------------------------
     @header
 -------------------------------------------------------------------*/
-#header {background: linear-gradient(90.19deg, #7950F2 77.91%, #462E8C 100%); position: relative; z-index: 999; min-width: 1200px;}
+#header {background: linear-gradient(90.19deg, #7950F2 77.91%, #462E8C 100%); position: relative; z-index: 999; min-width: 1600px;}
 #header.on {}
 
 #header .container {display: flex; align-items: center; height: 50px;}
@@ -125,7 +125,7 @@
 /*-------------------------------------------------------------------
     @content
 -------------------------------------------------------------------*/
-#content {display: flex; align-items: stretch; justify-content: flex-start; min-width: 1280px; height: 100vh;}
+#content {display: flex; align-items: stretch; justify-content: flex-start; min-width: 1600px; height: 100vh;}
 #header + #content {height: calc(100vh - 50px);}
 
 .contents {background-color: #F1F3F5; width: 100%; height: 100%;}
@@ -158,19 +158,24 @@
 .popup.layer > div + div {border-top: 1px solid #CED4DA;}
 .popup.layer .pop-head {position: relative; width: 100%; flex: none;}
 .popup.layer .pop-head .btn-pop-close {position: absolute; right: 24px; top: 16px;}
-.popup.layer .pop-body {overflow: auto; width: 100%; flex: 1 0; min-height: 0; max-height: calc(100vh - 201px);}
+.popup.layer .pop-head .tit-area {display: flex; align-items: center; justify-content: center; gap: 0 20px; padding: 15px 0;}
+.popup.layer .pop-head .tit-area dl {display: flex; align-items: center; justify-self: center; gap: 0 4px;}
+.popup.layer .pop-head .tit-area dl dt {font-size: 14px; color: #868E96; font-weight: 700; line-height: 1.215;}
+.popup.layer .pop-head .tit-area dl dd {font-size: 14px; color: #343A40; font-weight: 700; line-height: 1.215;}
+.popup.layer .pop-body {overflow: auto; width: 100%; flex: 1 0; min-height: 0; max-height: calc(100vh - 350px);}
 .popup.layer .pop-body .list-wrap.v1 table {width: 100%; min-width: 0;}
 .popup.layer .pop-txt {font-size: 12px; line-height: 1.3334; text-align: center; color: #868e86;}
 
 .popup.alert {width: 400px; flex-direction: column; max-height: calc(100vh - 90px); border-radius: 20px;}
-.popup.alert .pop-head {background-color: #CED4DA;}
+.popup.alert .pop-head {background-color: #CED4DA; border-top-right-radius: 20px; border-top-left-radius: 20px;}
 
 .popup.alert .pop-body {min-height: 160px; display: flex; align-items: center; justify-content: center; flex-direction: column;}
 .popup.alert .txt-alert {font-size: 12px; font-weight: 600; line-height: 1.167; text-align: center;}
+.popup.alert .txt-alert strong {display: inline-block; font-size: 14px; line-height: 1.215;}
 
-.popup.full {width: 100%; min-width: 1200px; height: calc(100% - 50px); top: 50px; transform: translate(0, 0); left: 0; z-index: 1;}
+.popup.full {width: 100%; min-width: 1600px; height: calc(100% - 50px); top: 50px; transform: translate(0, 0); left: 0; z-index: 1;}
 
-.popup.full .pop-head {width: 100%; display: flex; align-items: center; justify-content: space-between; height: 50px; padding: 0 20px; box-shadow: 0px 1px 1px 0px #0000000D; border-bottom: 1px solid #E9ECEF;}
+.popup.full .pop-head {width: 100%; display: flex; align-items: center; justify-content: space-between; height: 50px; padding: 0 20px; box-shadow: 0px 1px 1px 0px #0000000D; border-bottom: 1px solid #E9ECEF; background-color: #ffffff;}
 .popup.full .pop-head .tit-area {display: flex; align-items: center; justify-content: flex-start; gap: 0 10px;}
 .popup.full .pop-head .tit-area .tit {padding: 0;}
 .popup.full .pop-head .tit-area .txt {padding-left: 10px; font-size: 12px; line-height: 1.3334; color: #868E96;}
@@ -187,10 +192,12 @@
 .popup.full .area-search .form.col .form-cont .dropdown.v2:first-of-type .drop-list {left: -105px}
 .popup.full .area-search .form.col .form-cont .dropdown.v2:last-of-type .drop-list {left: -35px}
 
-.popup.full .pop-body {display: flex; height: calc(100% - 50px); justify-content: flex-start; align-items: stretch; width: 100%; position: relative; flex-wrap: wrap;}
+.popup.full .pop-body {display: flex; height: calc(100% - 50px); justify-content: flex-start; align-items: stretch; width: 100%; position: relative; flex-wrap: wrap; background-color: #F1F3F5;}
+.popup.full .pop-body > .container {width: 100%; padding-top: 10px; padding-bottom: 20px; display: flex; min-height: 0; min-width: 0; flex-direction: column; flex: 1 0; flex-direction: column;}
+.popup.full .pop-body .bx-area {width: 100%;}
 
-.popup.full .datum {flex: none; height: 100%; border-left: 360px; border-right: 1px solid #E9ECEF; display: flex; flex-direction: column; position: relative;}
-.popup.full .btn-fold {position: absolute; top: 50%; right: -15px; transform: translateY(-50%); z-index: 1;}
+.popup.full .datum {flex: none; height: 100%; border-left: 360px; border-right: 1px solid #E9ECEF; display: flex; flex-direction: column; position: relative; background-color: #ffffff;}
+.popup.full .btn-fold {position: absolute; top: 50%; right: -20px; transform: translateY(-50%); z-index: 1;}
 .popup.full .datum .datum-head {flex: none; padding: 20px 20px 0; border-bottom: 1px solid #CED4DA;}
 .popup.full .datum .datum-cont {flex: 1 0; min-height: 0; display: flex; flex-direction: column;}
 
@@ -208,11 +215,18 @@
 
 .popup.full .datum .datum-foot {flex: none; border-top: 1px solid #CED4DA; padding: 15px 0;}
 
-.popup.full .datum-detail {position: absolute; top: 0; height: 100%; background-color: #ffffff; border-right: 1px solid #CED4DA; display: none; flex-direction: column; z-index: 2;}
+.popup.full .datum-detail {position: absolute; top: 0; height: 100%; background-color: #ffffff; border-right: 1px solid #CED4DA; display: none; flex-direction: column; z-index: 2; background-color: #ffffff;}
 .popup.full .datum-detail .btn-close-detail {position: absolute; right: 0; top: 0; transform: translateX(100%)}
 .popup.full .datum-detail .detail-head {flex: none; padding: 20px 20px 0; border-bottom: 1px solid #CED4DA;}
 .popup.full .datum-detail .detail-cont {flex: 1 0; min-height: 0; display: flex; flex-direction: column; min-height: 0;}
 .popup.full .datum-detail .detail-foot {flex: none; border-top: 1px solid #CED4DA; padding: 15px 0;}
+
+.popup.full .datum-result {position: absolute; top: 0; height: 100%; background-color: #ffffff; border-right: 1px solid #CED4DA; display: none; flex-direction: column; z-index: 2; background-color: #ffffff;}
+
+.popup.full .datum-result .btn-close-detail {position: absolute; right: 0; top: 0; transform: translateX(100%)}
+.popup.full .datum-result .result-head {flex: none; padding: 20px 20px 0; border-bottom: 1px solid #CED4DA;}
+.popup.full .datum-result .result-cont {flex: 1 0; min-height: 0; display: flex; flex-direction: column; min-height: 0;}
+.popup.full .datum-result .result-foot {flex: none; border-top: 1px solid #CED4DA; padding: 15px 0;}
 
 .popup.full .map .map-category {position: absolute; right: 30px; top: 15px;}
 .popup.full .map .map-category ul {display: flex; gap: 0 4px;}

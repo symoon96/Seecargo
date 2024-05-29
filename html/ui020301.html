@@ -1,0 +1,1452 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Seecargo</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/chart.js"></script>
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    <script src="../dist/js/jquery-ui.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <h1 class="logo"><a href="javascript:void(0);">Seecargo</a></h1>
+
+            <div class="gnb">
+                <ul class="depth01">
+                    <li>
+                        <a href="javascript:void(0);">업무준비</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">운전자(차량) 관리</a></li>
+                            <li><a href="javascript:void(0);">업무환경설정</a></li>
+                        </ul>
+                    </li>
+                    <li class="on">
+                        <a href="javascript:void(0);">배차</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">배차 생성</a></li>
+                            <li><a href="javascript:void(0);">OMS 배차 생성</a></li>
+                            <li><a href="javascript:void(0);">배차 이력</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">모니터링</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">실시간 모니터링</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">통계</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">Dashboard</a></li>
+                            <li><a href="javascript:void(0);">종합분석</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">설정</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">계정 관리</a></li>
+                            <li><a href="javascript:void(0);">알림톡 관리</a></li>
+                            <li><a href="javascript:void(0);">운전자 공지사항 관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="util">
+                <button class="btn-ic btn-tutorial" onclick="popOpenAndDim('pop-tutorial', true)">동영상 튜토리얼</button>
+                <div class="support">
+                    <button class="btn-ic btn-cscenter">고객센터</button>
+                    <div class="support-menu">
+                        <ul>
+                            <li><a href="javascript:void(0);">공지사항</a></li>
+                            <li><a href="javascript:void(0);">문의하기</a></li>
+                            <li><a href="javascript:void(0);">이용약관</a></li>
+                            <li><a href="javascript:void(0);">이용방법</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="support">
+                    <button class="btn-user">에스엘솔루션</button>
+                    <div class="support-menu">
+                        <div class="user-info">
+                            <div class="account">
+                                <p class="name"><strong>에스엘솔루션</strong> 고객님</p>
+                                <p class="id">aaaaaaaaaa</p>
+                                <div class="belong">
+                                    <span>씨카고</span>
+                                    <!-- <span>A지점</span> -->
+                                    <select name="" id="" class="select v1">
+                                        <option value="">A지점</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="user-link">내 정보</a>
+                            <div class="plan-state">
+                                <div class="plan">
+                                    <p class="label v1 pink">엔터프라이즈</p><!-- case1: .gray, case2: .blue, case3: .cyan, case4: .lime, case5: .purple, case6: .pinkm, case7: .dark -->
+                                    <a href="javascript:void(0);" class="user-link">요금제 이용중</a>
+                                </div>
+                                <div class="state">
+                                    <dl>
+                                        <dd>75%</dd>
+                                        <dt>현재 사용량</dt>
+                                    </dl>
+                                    <dl>
+                                        <dd>8일</dd>
+                                        <dt>남은 잔여일</dt>
+                                    </dl>
+                                    <p class="now">(2024.01.29 09:35:02 기준)</p>
+                                </div>
+                            </div>
+                            <div class="mate">
+                                <p class="title">씨카고 고객센터</p>
+                                <p class="txt-phone">1544-8232</p>
+                                <p class="txt-email">seecargo@slsolution.co.kr</p>
+                                <button class="btn md fill-deepgray to-dark"><i class="ic-logout"></i>로그아웃</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-ic btn-menu">전체메뉴</button>
+            </div>
+        </div>
+        <div class="sitemap">
+            <div class="menu">
+                <button class="btn-ic btn-sitemap-close"></button>
+                <ul class="depth01">
+                    <li>
+                        <a href="javascript:void(0);">업무준비</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>운전자(차량)관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">운전자(차량) 등록</a></li>
+                                    <li><a href="javascript:void(0);">지역관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>업무환경설정</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">업무환경설정</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">배차</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>배차 생성</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">배송지 등록</a></li>
+                                    <li><a href="javascript:void(0);">업무생성</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>OMS 배차 생성</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">주문내역 확인 및 배차</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>배차이력</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">배차 업무관리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">모니터링</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>실시간 모니터링</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">전체 차량 실시간 모니터링</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">통계</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="javascript:void(0);">Dashboard</a>
+                            </li>
+                            <li>
+                                <p>종합분석</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">업무</a></li>
+                                    <li><a href="javascript:void(0);">운행</a></li>
+                                    <li><a href="javascript:void(0);">운전자</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">설정</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>계정 관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">기본정보</a></li>
+                                    <li><a href="javascript:void(0);">지점 정보</a></li>
+                                    <li><a href="javascript:void(0);">사용자 정보</a></li>
+                                    <li><a href="javascript:void(0);">요금정보</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>알림톡 관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">알림톡 관리 <br>(설정/발송내역)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">운전자 공지사항 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">고객지원</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="javascript:void(0);">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">문의하기</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">이용약관</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">이용방법</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">사용자 정보</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>내 정보</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">사용자 정보(확인/수정)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>요금정보</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">사용 요금제명</a></li>
+                                    <li><a href="javascript:void(0);">서비스 사용량</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">로그아웃</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content">
+        <!-- contents -->
+        <div class="contents">
+            <div class="dispatch">
+                <div class="container">
+                    <div class="title-wrap">
+                        <div class="title-area">
+                            <h2 class="title">배차이력</h2>
+                            <p class="text">생성된 운전자의 배차 업무를 확인할 수 있습니다.</p>
+                        </div>
+
+                        <div class="etc-area">
+                            <div class="btn-wrap">
+                                <button class="btn-txt v1"><i class="ic-convey"></i>업무 전달</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bx-area fx-none">
+                        <div class="inner">
+                            <div class="sort">
+                                <dl class="ai-c">
+                                    <dt>업무상태</dt>
+                                    <dd>
+                                        <div class="radio-group v1">
+                                            <div class="radio v2"><input type="radio" name="" id="" checked>
+                                                <label for="">
+                                                    <p>전체</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v2"><input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>준비</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v2"><input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>진행</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v2"><input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>완료</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v2"><input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>취소</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl class="ai-c">
+                                    <dt>업무전달</dt>
+                                    <dd>
+                                        <div class="radio-group v1">
+                                            <div class="radio v2"><input type="radio" name="" id="" checked>
+                                                <label for="">
+                                                    <p>전체</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v2"><input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>전달</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v2"><input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>전달완료</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>업무회차</dt>
+                                    <dd>
+                                        <div class="dropdown v1 row w120">
+                                            <p class="txt-pick">송장 입력일</p>
+                                            <ul class="drop-list">
+                                                <li>송장 입력일</li>
+                                            </ul>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>업무 시작일자</dt>
+                                    <dd>
+                                        <input type="text" name="" id="" class="date w130">
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="list-search">
+                                <div class="keyword">
+                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                                <button class="btn-ic btn-refresh">새로고침</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="bx-area">
+                        <div class="inner">
+                            <div class="list-top">
+                                <div class="division">
+                                    <p class="txt-count">전체 업무 <strong>10개</strong></p>
+                                    <p class="txt-count">업무 배정 <strong>10개</strong></p>
+                                    <p class="txt-count">업무 미배정 <strong>10개</strong></p>
+                                    <select name="" id="" class="select v2" disabled>
+                                        <option value="">10개씩 보기</option>
+                                        <option value="">30개씩 보기</option>
+                                        <option value="">50개씩 보기</option>
+                                        <option value="">100개씩 보기</option>
+                                        <option value="">200개씩 보기</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="list-wrap v1 resize mt10">
+                                <!-- case1: 정보가 없을 때 -->
+                                <!-- <div class="no-data">
+                                    <p>등록된 정보가 없습니다.</p>
+                                </div> -->
+                                <!--// case1: 정보가 없을 때 -->
+
+                                <!-- case2: 정보가 있을 때 -->
+                                <div class="list-head">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th><span>번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>업무ID</span><button class="btn-ic btn-sort up"></button></th>
+                                                <th><span>업무전달</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>업무 시작일시</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>회차</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>배차형태</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>전체 배송지수</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>투입 운전자수</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>생성자</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>생성일시</span><button class="btn-ic btn-sort down"></button></th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+                                </div>
+                                <div class="list-body scroll-yx">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <button class="btn sm line-blue circle" onclick="popOpen('pop-order-info')">20240225W000001</button>
+                                                </td>
+                                                <td>
+                                                    <p class="label v6 clr01">전달완료</p>
+                                                </td>
+                                                <td>-</td>
+                                                <td>1</td>
+                                                <td>
+                                                    <p class="label v7 clr01">반복배차</p>
+                                                </td>
+                                                <td>400</td>
+                                                <td>40</td>
+                                                <td>홍길동</td>
+                                                <td>2024.01.01 01:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <button class="btn sm line-blue circle" onclick="popOpen('pop-order-info')">20240225W000001</button>
+                                                </td>
+                                                <td>
+                                                    <p class="label v6 clr02">전달대기</p>
+                                                </td>
+                                                <td>2024.01.01 15:20</td>
+                                                <td>1</td>
+                                                <td>
+                                                    <p class="label v7 clr02">수동배차</p>
+                                                </td>
+                                                <td>400</td>
+                                                <td>40</td>
+                                                <td>홍길동</td>
+                                                <td>2024.01.01 01:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <button class="btn sm line-blue circle" onclick="popOpen('pop-order-info')">20240225W000001</button>
+                                                </td>
+                                                <td>
+                                                    <p class="label v6 clr01">전달완료</p>
+                                                </td>
+                                                <td>2024.01.01 15:20</td>
+                                                <td>1</td>
+                                                <td>
+                                                    <p class="label v7 clr03">자동배차</p>
+                                                </td>
+                                                <td>400</td>
+                                                <td>40</td>
+                                                <td>홍길동</td>
+                                                <td>2024.01.01 01:00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <button class="btn sm line-blue circle" onclick="popOpen('pop-order-info')">20240225W000001</button>
+                                                </td>
+                                                <td>
+                                                    <p class="label v6 clr01">전달완료</p>
+                                                </td>
+                                                <td>2024.01.01 15:20</td>
+                                                <td>1</td>
+                                                <td>
+                                                    <p class="label v7 clr01">반복배차</p>
+                                                </td>
+                                                <td>400</td>
+                                                <td>40</td>
+                                                <td>홍길동</td>
+                                                <td>2024.01.01 01:00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--// case2: 정보가 있을 때 -->
+                            </div>
+                            <div class="paging mt45 pb10">
+                                <ul>
+                                    <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                                    <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                                    <li class="on"><a href="javascript:void(0);">1</a></li>
+                                    <li><a href="javascript:void(0);">2</a></li>
+                                    <li><a href="javascript:void(0);">3</a></li>
+                                    <li><a href="javascript:void(0);">4</a></li>
+                                    <li><a href="javascript:void(0);">5</a></li>
+                                    <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                                    <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// contents -->
+    </div>
+    <!-- // content -->
+
+    <!-- 레이어팝업-운전자 목록 -->
+    <div class="popup full pop-order-info">
+        <div class="pop-head">
+            <div class="tit-area">
+                <button class="btn-ic btn-full-close" onclick="popCloseAndDim('pop-order-info', true);">팝업닫기</button>
+                <p class="tit">운전자 목록</p>
+            </div>
+            <div class="btn-wrap">
+                <!-- case1: 리스트 체크 전 -->
+                <button class="btn-txt v1"><i class="ic-excel-down"></i>엑셀 다운로드</button>
+                <button class="btn-txt v1"><i class="ic-convey"></i>전체 전달</button>
+                <!--// case1: 리스트 체크 전 -->
+                <!-- case2: 리스트 체크 후 -->
+                <button class="btn-txt v1" onclick="popDuble(this, 'pop-alert01', true)"><i class="ic-delete"></i>업무 삭제</button>
+                <!--// case2: 리스트 체크 전 -->
+            </div>
+        </div>
+        <div class="pop-body">
+            <div class="container">
+                <div class="bx-area fx-none">
+                    <div class="inner">
+                        <div class="sort">
+                            <dl class="ai-c">
+                                <dt>업무상태</dt>
+                                <dd>
+                                    <div class="radio-group v1">
+                                        <div class="radio v2"><input type="radio" name="" id="" checked>
+                                            <label for="">
+                                                <p>전체</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v2"><input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>전달대기</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v2"><input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>준비</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v2"><input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>진행</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v2"><input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>완료</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v2"><input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>취소</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="ai-c">
+                                <dt>업무전달</dt>
+                                <dd>
+                                    <div class="radio-group v1">
+                                        <div class="radio v2"><input type="radio" name="" id="" checked>
+                                            <label for="">
+                                                <p>전체</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v2"><input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>전달</p>
+                                            </label>
+                                        </div>
+                                        <div class="radio v2"><input type="radio" name="" id="">
+                                            <label for="">
+                                                <p>전달완료</p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="list-search">
+                            <div class="keyword">
+                                <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
+                                <button class="btn-ic btn-search">검색</button>
+                            </div>
+                            <button class="btn-ic btn-refresh">새로고침</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bx-area">
+                    <div class="inner">
+                        <div class="list-top">
+                            <div class="division">
+                                <p class="txt-count">업무 ID <strong>20240225W000001</strong></p>
+                                <p class="txt-count">업무 시작일시 <strong>2024.01.01 15:00</strong></p>
+                            </div>
+                        </div>
+                        <div class="list-top mt5">
+                            <div class="division">
+                                <p class="txt-count">전체 업무 <strong>100개</strong></p>
+                                <p class="txt-count">전달완료 <strong>10개</strong></p>
+                                <p class="txt-count">전달대기 <strong>10개</strong></p>
+                                <select name="" id="" class="select v2">
+                                    <option value="">10개씩 보기</option>
+                                    <option value="">30개씩 보기</option>
+                                    <option value="">50개씩 보기</option>
+                                    <option value="">100개씩 보기</option>
+                                    <option value="">200개씩 보기</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="list-wrap v1 resize mt10">
+                            <div class="list-head">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th data-width="35">
+                                                <div class="check v1">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for=""></label>
+                                                </div>
+                                            </th>
+                                            <th><span>번호</span><button class="btn-ic btn-sort up"></button></th>
+                                            <th><span>경로ID</span><button class="btn-ic btn-sort down"></button></th>
+                                            <th><span>업무상태</span><button class="btn-ic btn-sort down"></button></th>
+                                            <th><span>경로명</span><button class="btn-ic btn-sort down"></button></th>
+                                            <th><span>배송지</span><button class="btn-ic btn-sort down"></button></th>
+                                            <th><span>소속</span><button class="btn-ic btn-sort down"></button></th>
+                                            <th><span>운전자</span><button class="btn-ic btn-sort down"></button></th>
+                                            <th><span>업무전달</span><button class="btn-ic btn-sort down"></button></th>
+                                            <th><span>생성자</span><button class="btn-ic btn-sort down"></button></th>
+                                            <th><span>전달일시</span><button class="btn-ic btn-sort down"></button></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div class="list-body scroll-yx">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="check v1">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for=""></label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>R00000014</td>
+                                            <td>
+                                                <p class="label v6 clr02 w60">전달대기</p>
+                                            </td>
+                                            <td><button class="btn sm line-blue circle" onclick="popDuble(this, 'pop-work-list', true)">홍길동_2024.01.0.1</button></td>
+                                            <td>1</td>
+                                            <td>직영</td>
+                                            <td>홍길동 (11가1111)</td>
+                                            <td>-</td>
+                                            <td>홍길동</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check v1">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for=""></label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>R00000014</td>
+                                            <td>
+                                                <p class="label v6 clr03 w60">준비</p>
+                                            </td>
+                                            <td><button class="btn sm line-blue circle" onclick="popDuble(this, 'pop-work-list', true)">홍길동_2024.01.0.1</button></td>
+                                            <td>1</td>
+                                            <td>직영</td>
+                                            <td>홍길동 (11가1111)</td>
+                                            <td>
+                                                <button class="btn sm line-green circle w80" onclick="popDuble(this, 'pop-convey-list', true)">전달완료</button>
+                                            </td>
+                                            <td>홍길동</td>
+                                            <td>2024.01.01 01:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check v1">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for=""></label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>R00000014</td>
+                                            <td>
+                                                <p class="label v6 clr01 w60">진행</p>
+                                            </td>
+                                            <td><button class="btn sm line-blue circle" onclick="popDuble(this, 'pop-work-list', true)">홍길동_2024.01.0.1</button></td>
+                                            <td>1</td>
+                                            <td>직영</td>
+                                            <td>홍길동 (11가1111)</td>
+                                            <td>
+                                                <button class="btn sm line-blue circle w80">전달</button>
+                                            </td>
+                                            <td>홍길동</td>
+                                            <td>2024.01.01 01:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check v1">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for=""></label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>R00000014</td>
+                                            <td>
+                                                <p class="label v6 clr04 w60">완료</p>
+                                            </td>
+                                            <td><button class="btn sm line-blue circle" onclick="popDuble(this, 'pop-work-list', true)">홍길동_2024.01.0.1</button></td>
+                                            <td>1</td>
+                                            <td>직영</td>
+                                            <td>홍길동 (11가1111)</td>
+                                            <td>
+                                                <button class="btn sm line-blue circle w80" onclick="popDuble(this, 'pop-convey-list', true)" disabled>전달완료</button>
+                                            </td>
+                                            <td>홍길동</td>
+                                            <td>2024.01.01 01:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check v1">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for=""></label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>R00000014</td>
+                                            <td>
+                                                <p class="label v6 clr05 w60">취소</p>
+                                            </td>
+                                            <td><button class="btn sm line-blue circle" onclick="popDuble(this, 'pop-work-list', true)">홍길동_2024.01.0.1</button></td>
+                                            <td>1</td>
+                                            <td>직영</td>
+                                            <td>홍길동 (11가1111)</td>
+                                            <td>
+                                                <button class="btn sm line-blue circle w80">전달</button>
+                                            </td>
+                                            <td>홍길동</td>
+                                            <td>2024.01.01 01:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="check v1">
+                                                    <input type="checkbox" name="" id="">
+                                                    <label for=""></label>
+                                                </div>
+                                            </td>
+                                            <td>1</td>
+                                            <td>R00000014</td>
+                                            <td>
+                                                <p class="label v6 clr02 w60">전달대기</p>
+                                            </td>
+                                            <td><button class="btn sm line-blue circle" onclick="popDuble(this, 'pop-work-list', true)">홍길동_2024.01.0.1</button></td>
+                                            <td>1</td>
+                                            <td>직영</td>
+                                            <td>홍길동 (11가1111)</td>
+                                            <td>
+                                                <button class="btn sm line-blue circle w80">전달</button>
+                                            </td>
+                                            <td>홍길동</td>
+                                            <td>2024.01.01 01:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="paging mt45 pb10">
+                            <ul>
+                                <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                                <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                                <li class="on"><a href="javascript:void(0);">1</a></li>
+                                <li><a href="javascript:void(0);">2</a></li>
+                                <li><a href="javascript:void(0);">3</a></li>
+                                <li><a href="javascript:void(0);">4</a></li>
+                                <li><a href="javascript:void(0);">5</a></li>
+                                <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                                <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-운전자 목록 -->
+
+    <!-- 레이어팝업-운전자 배송지 목록 -->
+    <div class="popup layer pop-convey-list">
+        <div class="pop-head">
+            <div class="tit-area">
+                <dl>
+                    <dt>경로</dt>
+                    <dd>R00000014</dd>
+                </dl>
+                <dl>
+                    <dt>업무명</dt>
+                    <dd>홍길동_2024.01.01</dd>
+                </dl>
+            </div>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-convey-list', true)"></button>
+        </div>
+        <div class="pop-body">
+            <div class="fx ai-c">
+                <div class="fx1">
+                    <div class="fx gap30">
+                        <div class="form-group">
+                            <div class="form col">
+                                <div class="form-title w50">
+                                    <p>업무상태</p>
+                                </div>
+                                <div class="form-cont">
+                                    <p class="label v6 clr03 w60">준비</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form col">
+                                <div class="form-title w50">
+                                    <p>경로생성</p>
+                                </div>
+                                <div class="form-cont">
+                                    <p class="txt-form">경유지 최적화</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form col">
+                                <div class="form-title w75">
+                                    <p>업무시작시간</p>
+                                </div>
+                                <div class="form-cont">
+                                    <p class="txt-form">2024.01.01 15:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form col">
+                                <div class="form-title w75">
+                                    <p>업무종료시간</p>
+                                </div>
+                                <div class="form-cont">
+                                    <p class="txt-form">2024.01.01 15:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fx gap30 mt15">
+                        <div class="form-group">
+                            <div class="form col">
+                                <div class="form-title w50">
+                                    <p>출발지</p>
+                                </div>
+                                <div class="form-cont">
+                                    <p class="txt-form">주소주소주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form col">
+                                <div class="form-title w75">
+                                    <p>도착지</p>
+                                </div>
+                                <div class="form-cont">
+                                    <p class="txt-form">주소주소주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- case1: 업무대기 시 -->
+                <div class="fx-none">
+                    <button class="btn md fill-dark" onclick="popDuble(this, 'pop-alert01', true)"><i class="ic-delete white"></i>업무삭제</button>
+                </div>
+                <!--// case1: 업무대기 시 -->
+            </div>
+            <div class="tbl-wrap v4 mt40">
+                <table>
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="6">배송예측</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>배송지</th>
+                            <td>4</td>
+                            <th>배송거리</th>
+                            <td>15.028km</td>
+                            <th>배송시간</th>
+                            <td>01:10</td>
+                        </tr>
+                        <tr>
+                            <th>배송지 정차</th>
+                            <td>00:30</td>
+                            <th>업무시작</th>
+                            <td>15:00</td>
+                            <th>업무종료</th>
+                            <td>18:30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tbl-wrap v4 mt40">
+                <div class="tbl-head">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col style="width: 70px;">
+                            <col style="width: 70px;">
+                            <col style="width: 70px;">
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">순서</th>
+                                <th rowspan="2">주문번호</th>
+                                <th rowspan="2">송장번호</th>
+                                <th rowspan="2">배송지명</th>
+                                <th rowspan="2">
+                                    운행거리 <br>
+                                    (KM)
+                                </th>
+                                <th colspan="3">도착 ・출발</th>
+                                <th rowspan="2">
+                                    화물무게 <br>
+                                    (KG)
+                                </th>
+                                <th rowspan="2">화물개수</th>
+                            </tr>
+                            <tr>
+                                <th>도착</th>
+                                <th>정차</th>
+                                <th>출발</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="tbl-body scroll-y">
+                    <table>
+                        <colgroup>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col style="width: 70px;">
+                            <col style="width: 70px;">
+                            <col style="width: 70px;">
+                            <col>
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>240101_0004</td>
+                                <td>-</td>
+                                <td>배송지4</td>
+                                <td>3.009</td>
+                                <td>17:30</td>
+                                <td>5분</td>
+                                <td>17:35</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-업무생성 -->
+
+    <!-- 알럿팝업-삭제 -->
+    <div class="popup alert pop-alert01">
+        <div class="pop-head">
+            <p class="tit">업무 삭제</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">해당 업무를 삭제하시겠습니까?</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-alert01', true);"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-alert01'); popDuble('.pop-convey-list', 'pop-alert02', true)"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-삭제 -->
+
+    <!-- 알럿팝업-삭제 완료 -->
+    <div class="popup alert pop-alert02">
+        <div class="pop-head">
+            <p class="tit">완료</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">업무가 삭제되었습니다.</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert02', false);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-삭제 완료 -->
+
+    <!-- 레이어팝업-로딩 -->
+    <div class="popup layer pop-loading">
+        <div class="pop-body">
+            <div class="loadindg"></div>
+            <p class="pop-txt">
+                배차 업무를 생성하고 있습니다. <br>
+                배송지 / 차량의 수에 따라 시간이 소요될 수 있습니다. <br>
+                <span class="txt-violet">경과 시간 : 00:12</span>
+            </p>
+        </div>
+    </div>
+    <!--// 레이어팝업-로딩 -->
+
+    <!-- 레이어팝업-동영상 튜토리얼 -->
+    <div class="popup layer pop-tutorial">
+        <div class="pop-head">
+            <p class="tit">동영상 튜토리얼</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-tutorial', true)">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="step-area">
+                <ul>
+                    <li class="on">
+                        <span class="num">1</span>
+                        <p class="text">업무준비</p>
+                    </li>
+                    <li>
+                        <span class="num">2</span>
+                        <p class="text">배차</p>
+                    </li>
+                    <li>
+                        <span class="num">3</span>
+                        <p class="text">모니터링</p>
+                    </li>
+                    <li>
+                        <span class="num">4</span>
+                        <p class="text">통계</p>
+                    </li>
+                    <li>
+                        <span class="num">5</span>
+                        <p class="text">설정</p>
+                    </li>
+                    <li>
+                        <span class="num">6</span>
+                        <p class="text">고객지원</p>
+                    </li>
+                    <li>
+                        <span class="num">7</span>
+                        <p class="text">사용자 정보</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-area">
+                <p class="text01">업무준비</p>
+                <p class="text02">배송업무를 수행할 운전자정보를 등록합니다.</p>
+                <p class="text03">운전자 등록이 완료되면 배차 업무를 지정할 수 있습니다.</p>
+            </div>
+
+            <div class="tutorial-swiper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-controller">
+                    <div class="swiper-paging-prev"></div>
+                    <div class="paging">
+                        <ul></ul>
+                    </div>
+                    <div class="swiper-paging-next"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-동영상 튜토리얼 -->
+</body>
+</html>

@@ -45,17 +45,62 @@ $(document).ready(function(){
         $(this).closest('.pin-wrap').toggleClass('on')
     });
 
+    let slideLength;
+
     let cardSwiper = new Swiper('.card-swiper .swiper', {
         navigation: {
             nextEl: ".card-swiper .swiper-button-next",
             prevEl: ".card-swiper .swiper-button-prev",
         },
-        slidesPerView: 3,
-        spaceBetween: 20,
+        slidesPerView: 5, // 20240522 수정
+        spaceBetween: 20, // 20240522 수정
         observer: true,
         observeParents: true,
-    })
+        on: {
+            observerUpdate: function(){
+                if(this.slides.length == 3) {
+                    this.el.offsetParent.style.width = '970px'
+                    this.slides.width = "280px"
+                    this.params.slidesPerView = 3
+                } else if(this.slides.length == 1) {
+                    this.el.offsetParent.style.width = '970px'
+                    this.slides.width = "280px"
+                    this.params.slidesPerView = 1
+                }
+            }
+        }
+    });
+    rowFixedTbl()/* 20240522 수정 */
+    layerSizeTransform()
 });
+
+/* 20240530 수정 */
+function rowFixedTbl(){
+    let target = document.querySelectorAll(".tbl-wrap.fixed");
+    let targetParent
+    let targetTh
+    let thHeight = []
+    let thMaxHeight
+
+    console.log()
+
+    if (target.length > 0) {
+        target.forEach(function(target) {
+            targetParent = target.parentElement;
+            targetTh = targetParent.querySelectorAll('th');
+        });
+    
+        targetTh.forEach((targetTh) => {
+            thHeight.push(targetTh.clientHeight)
+            thMaxHeight = Math.max(...thHeight)
+        });
+    
+        targetTh.forEach((targetTh) => {
+            targetTh.style.height = thMaxHeight + 'px'
+        });
+    }
+}
+/* // 20240530 수정 */
 
 function btnFilterAct(){
     $('.btn-filter').click(function(){
@@ -175,6 +220,18 @@ function viewDatumDetail(e){
     $('.datum .btn-fold.close').hide();
 }
 
+/* 20240513 수정 */
+function viewDatumResult(e){
+    let eventTarget = e
+    let el = eventTarget.closest('.pop-body').querySelector('.datum-result')
+
+    el.style.cssText = 'display: flex; left:' + eventTarget.closest('.datum').offsetWidth + 'px'
+
+    eventTarget.closest('.pop-body').querySelector('.btn-fold.open').style.display = 'block'
+    eventTarget.closest('.pop-body').querySelector('.btn-fold.close').style.display = 'none'
+}
+/* // 20240513 수정 */
+
 function hideDatumDetail(e){
     let target = $(e);
 
@@ -187,11 +244,67 @@ function hideDatumDetail(e){
     $('.datum .btn-fold.close').show();
 }
 
+/* 20240513 수정 */
+function hideDatumResult(e){
+    let eventTarget = e
+    let el = eventTarget.closest('.datum-result')
+
+    el.style.cssText = '';
+
+    eventTarget.closest('.pop-body').querySelector('.btn-fold.open').style.display = 'none'
+    eventTarget.closest('.pop-body').querySelector('.btn-fold.close').style.display = 'block'
+}
+/* // 20240513 수정 */
+
 function datumDetailListSort(){
     $( ".list-wrap.sortable .list-body" ).sortable({
         items: ".row",
         revert: true,
     });
+}
+
+function layerSizeTransform(){
+    $('.btn-size').click(function(){
+        if($(this).hasClass('expansion')) {
+            $(this).removeClass('expansion').addClass('shrink')
+            $(this).closest('.item').addClass('on')
+            $(this).closest('.side-area.detail').addClass('full')
+        } else if($(this).hasClass('shrink')) {
+            $(this).removeClass('shrink').addClass('expansion')
+            $(this).closest('.item').removeClass('on')
+            $(this).closest('.side-area.detail').removeClass('full')
+        }
+    })
+}
+
+function foldThis(e){
+    if($(e).closest('.side-area').hasClass('on')){
+        $(e).closest('.side-area').removeClass('on')
+        $(e).addClass('close').removeClass('open')
+    } else {
+        $(e).closest('.side-area').addClass('on')
+        $(e).addClass('open').removeClass('close')
+    }
+}
+
+function viewSideDetail(e){
+    let eventTarget = e
+    let el = eventTarget.closest('.contents').querySelector('.side-area.detail')
+
+    el.style.cssText = 'left:' + eventTarget.closest('.side-area.base').offsetWidth + 'px'
+    el.className += ' on';
+
+    eventTarget.closest('.contents').querySelector('.btn-fold.open').style.display = 'block'
+    eventTarget.closest('.contents').querySelector('.btn-fold.close').style.display = 'none'
+}
+
+function sideClose(e){
+    let eventTarget = e
+    let el = eventTarget.closest('.contents').querySelector('.side-area.detail')
+
+    el.style.cssText = 'left: 0px'
+    el.className = 'side-area detail';
+    el.querySelector('.btn-size').className = 'btn-ic btn-size expansion';
 }
 
 // function datumDetailListDrop(){

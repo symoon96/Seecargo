@@ -121,26 +121,44 @@
 .pb100{ padding-bottom: 100px !important; }
 
 /* width */
+.w30 {width: 30px !important;}
+.w40 {width: 40px !important;}
 .w45 {width: 45px !important;}
 .w50 {width: 50px !important;}
 .w55 {width: 55px !important;}
 .w60 {width: 60px !important;}
+.w65 {width: 65px !important;}
 .w70 {width: 70px !important;}
 .w75 {width: 75px !important;}
 .w80 {width: 80px !important;}
 .w85 {width: 85px !important;}
 .w90 {width: 90px !important;}
+.w95 {width: 95px !important;}
 .w100 {width: 100px !important;}
+.w105 {width: 105px !important;}
 .w110 {width: 110px !important;}
 .w120 {width: 120px !important;}
 .w130 {width: 130px !important;}
+.w140 {width: 140px !important;}
+.w150 {width: 150px !important;}
 .w160 {width: 160px !important;}
+.w165 {width: 165px !important;}
 .w180 {width: 180px !important;}
+.w200 {width: 200px !important;}
+.w260 {width: 260px !important;}
+.w280 {width: 280px !important;}
+.w340 {width: 340px !important;}
+.w365 {width: 365px !important;}
+.w400 {width: 400px !important;}
+.w500 {width: 500px !important;}
+.w800 {width: 800px !important;}
+
+.wp100 {width: 100% !important; max-width: none !important; min-width: 0 !important;}
 
 /* Align*/
-.ta-l{ text-align: left; }
-.ta-c{ text-align: center; }
-.ta-r{ text-align: right; }
+.ta-l{ text-align: left !important; }
+.ta-c{ text-align: center !important; }
+.ta-r{ text-align: right !important; }
 
 /* 말줄임 */
 
@@ -152,6 +170,7 @@
 .fx.wrap{ flex-wrap: wrap !important; }
 
 .jc-fs{ justify-content: flex-start !important; }
+.jc-fe{ justify-content: flex-end !important; }
 .jc-c{ justify-content: center !important; }
 .jc-sb{ justify-content: space-between !important; }
 
@@ -195,6 +214,7 @@
 .line-none {border-color:transparent !important;}
  
 /* 배경 */
+.bg-gray {background-color: #F8F9FA !important;}
 
 /* 텍스트 */
 .txt-malibu {color: #748FFC !important;}
@@ -202,7 +222,11 @@
 .txt-royalblue {color: #3B5BDB !important;}
 .txt-red {color: #FA5252 !important;}
 .txt-violet {color: #6741D9 !important;}
+.txt-slateblue {color: #7950F2 !important;}
 .txt-yellow {color: #FAB005 !important;}
 .txt-mango {color: #E67700 !important;}
+.txt-ecstasy {color: #FD7E14 !important;}
+.txt-dark {color: #343A40 !important;}
+.txt-gray {color: #868E96 !important;}
 
 /* 라인 */

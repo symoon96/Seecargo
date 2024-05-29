@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Seecargo</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/chart.js"></script>
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    <script src="../dist/js/jquery-ui.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- content -->
+    <div id="content">
+        <!-- contents -->
+        <div class="contents">
+            <div class="login">
+                <h1 class="logo"></h1>
+                <select class="select v5 w120">
+                    <option value="">한국어</option>
+                </select>
+
+                <div class="inner">
+                    <p class="headline">아이디/비밀번호 찾기</p>
+                    <div class="find-area">
+                        <div class="tab-wrap v3">
+                            <div class="tab-btn-wrap">
+                                <button class="tab-btn on">아이디 찾기</button>
+                                <button class="tab-btn">비밀번호 찾기</button>
+                            </div>
+                            <div class="tab-cont-wrap">
+                                <div class="tab-cont">
+                                    <div class="fx1 fx ai-c jc-c">
+                                        <div class="result">
+                                            <p class="txt-result01">
+                                                회원님의 아이디는 <br>
+                                                <strong class="txt-violet">abcd1234</strong> (으)로 등록되어 있습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="line v2"></div>
+                                    <div class="btn-wrap mt30 jc-c gap10">
+                                        <button class="btn lg line-purple w160"><i class="ic-login purple"></i>로그인 하기</button>
+                                        <button class="btn lg fill-purple w160" onclick="popOpenAndDim('pop-alert04', true)"><i class="ic-pw"></i>비밀번호 찾기</button>
+                                    </div>
+                                </div>
+                                <div class="tab-cont">
+                                    <div class="fx1 fx ai-c jc-c">
+                                        <div class="result">
+                                            <p class="txt-result01 txt-violet">
+                                                <strong>비밀번호 변경완료</strong>
+                                            </p>
+                                            <p class="txt-result02">새로운 비밀번호로 로그인해주세요.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="line v2"></div>
+                                    <div class="btn-wrap mt30 jc-c gap10">
+                                        <button class="btn lg fill-purple w340" onclick="popOpenAndDim('pop-alert04', true)"><i class="ic-submit"></i>로그인하기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// contents -->
+    </div>
+    <!-- // content -->
+</body>
+</html>

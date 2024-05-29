@@ -314,14 +314,6 @@
                     </div>
                     <div class="bx-area fx-none">
                         <div class="inner">
-                            <div class="list-search">
-                                <div class="keyword">
-                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
-                                    <button class="btn-ic btn-search">검색</button>
-                                </div>
-                                <button class="btn-ic btn-refresh">새로고침</button>
-                            </div>
-        
                             <div class="sort">
                                 <dl>
                                     <dt>배송유형</dt>
@@ -368,6 +360,16 @@
                                     </dd>
                                 </dl>
                             </div>
+
+                            <!-- 20240509 수정 -->
+                            <div class="list-search">
+                                <div class="keyword">
+                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                                <button class="btn-ic btn-refresh">새로고침</button>
+                            </div>
+                            <!--// 20240509 수정 -->
                         </div>
                     </div>
         
@@ -392,6 +394,7 @@
                             <div class="list-wrap v1 resize mt10">
                                 <div class="list-head">
                                     <table>
+                                        <!-- 20240509 수정 -->
                                         <thead>
                                             <tr>
                                                 <th data-width="35">
@@ -400,17 +403,18 @@
                                                         <label for=""></label>
                                                     </div>
                                                 </th>
-                                                <th data-width="80"><span>번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="125"><span>주문번호</span><button class="btn-ic btn-sort up"></button></th>
-                                                <th data-width="115"><span>송장번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="145"><span>배송지명</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="285"><span>배송지 주소</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="165"><span>상세주소</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="125"><span>고객명</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="155"><span>고객 연락처</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="300"><span>고객 메모</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>주문번호</span><button class="btn-ic btn-sort up"></button></th>
+                                                <th><span>송장번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>배송지명</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>배송지 주소</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>상세주소</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>고객명</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>고객 연락처</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>고객 메모</span><button class="btn-ic btn-sort down"></button></th>
                                             </tr>
                                         </thead>
+                                        <!--// 20240509 수정 -->
                                     </table>
                                 </div>
                                 <div class="list-body scroll-yx">
@@ -458,7 +462,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="paging mt20">
+                            <div class="paging mt45 pb10"><!-- 20240509 수정 -->
                                 <ul>
                                     <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
                                     <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
@@ -917,107 +921,109 @@
                 <div class="list-wrap v1 resize mt10">
                     <div class="list-head">
                         <table>
+                            <!-- 20240509 수정 -->
                             <thead>
                                 <tr>
                                     <th data-width="95">
                                         <span>번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="130">
+                                    <th>
                                         <span>오류메시지</span>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>주문번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>송장번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>배송지명</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="160">
+                                    <th>
                                         <span>배송지 주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>상세주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="135">
+                                    <th>
                                         <span>고객명</span>
                                     </th>
-                                    <th data-width="155">
+                                    <th>
                                         <span>고객연락처</span>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>고객메모</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="175">
+                                    <th>
                                         <span>화물 무게(kg)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>화물 개수</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>배송유형</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>배송 순위</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="170">
+                                    <th>
                                         <span>희망 도착시간</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>차량 그룹</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>차량지정</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>국가 언어</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="175">
+                                    <th>
                                         <span>정자시간(분)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고1</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고2</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고3</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고4</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고5</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="105">
+                                    <th>
                                         <span>등록일</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
                                 </tr>
                             </thead>
+                            <!--// 20240509 수정 -->
                         </table>
                     </div>
                     <div class="list-body scroll-yx">
@@ -1824,107 +1830,109 @@
                 <div class="list-wrap v1 resize mt10">
                     <div class="list-head">
                         <table>
+                            <!-- 20240509 수정 -->
                             <thead>
                                 <tr>
                                     <th data-width="95">
                                         <span>번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="130">
+                                    <th>
                                         <span>오류메시지</span>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>주문번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>송장번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>배송지명</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="160">
+                                    <th>
                                         <span>배송지 주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>상세주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="135">
+                                    <th>
                                         <span>고객명</span>
                                     </th>
-                                    <th data-width="155">
+                                    <th>
                                         <span>고객연락처</span>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>고객메모</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="175">
+                                    <th>
                                         <span>화물 무게(kg)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>화물 개수</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>배송유형</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>배송 순위</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="170">
+                                    <th>
                                         <span>희망 도착시간</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>차량 그룹</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>차량지정</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>국가 언어</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="175">
+                                    <th>
                                         <span>정자시간(분)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고1</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고2</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고3</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고4</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고5</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="105">
+                                    <th>
                                         <span>등록일</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
                                 </tr>
                             </thead>
+                            <!--// 20240509 수정 -->
                         </table>
                     </div>
                     <div class="list-body scroll-yx">
@@ -2226,14 +2234,17 @@
             <div class="datum">
                 <button class="btn-ic btn-fold close" onclick="viewDatumDetail(this)"></button>
                 <div class="datum-head">
-                    <div class="search">
+                    <div class="search pb20"><!-- 20240509 수정 -->
                         <div class="word">
                             <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디등 검색">
                             <button class="btn-ic btn-search">검색</button>
                         </div>
                         <button class="btn-ic btn-refresh"></button>
                     </div>
-                    <div class="list-top p0 mt20 pb10">
+                </div>
+                <div class="datum-cont">
+                    <!-- 20240509 수정 -->
+                    <div class="list-top p0 pb10">
                         <div class="division">
                             <p class="txt-count">운전자 <strong>100명</strong></p>
                         </div>
@@ -2247,8 +2258,7 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="datum-cont">
+                    <!--// 20240509 수정 -->
                     <div class="list-wrap v5 sortable">
                         <div class="list-head">
                             <div class="row">
@@ -3165,7 +3175,7 @@
                         <p class="text">111가 1111</p>
                         <button class="btn md fill-blue" disabled><i class="ic-route"></i>경로 재계산</button>
                     </div>
-                    <div class="tbl-wrap v2 mt20">
+                    <div class="tbl-wrap v2 mt20 mt20"><!-- 20240509 수정 -->
                         <table>
                             <colgroup>
                                 <col style="width: 65px;">
@@ -3194,7 +3204,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="list-top p0 mt20 pb10">
+                </div>
+                <div class="detail-cont">
+                    <!-- 20240509 수정 -->
+                    <div class="list-top p0 pb10">
                         <div class="division">
                             <p class="txt-count">배송지 <strong>4개</strong></p>
                         </div>
@@ -3208,8 +3221,7 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="detail-cont">
+                    <!--// 20240509 수정 -->
                     <div class="list-wrap v5 sortable">
                         <div class="list-head">
                             <div class="row">
@@ -3361,9 +3373,9 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -3388,9 +3400,9 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -3415,9 +3427,9 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -3442,9 +3454,9 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -3470,21 +3482,21 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -3585,9 +3597,10 @@
                             </div>
                             <button class="btn-ic btn-option-toggle open"></button>
                         </div>
+                        <!-- 20240509 수정 -->
+                        <p class="tit v3 mt10">배차 옵션 선택</p>
                         <div class="option-area">
-                            <p class="tit v3">배차 옵션 선택</p>
-                            <div class="check-group v3 mt10">
+                            <div class="check-group v3"><!--// 20240509 수정 -->
                                 <div class="check v6">
                                     <input type="checkbox" name="" id="" checked>
                                     <label for="">
@@ -3698,6 +3711,22 @@
                                         </select>
                                     </label>
                                 </div>
+                                <!-- 20240509 수정 -->
+                                <div class="check v6">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">
+                                        <img src="../img/img_dispatch_option05.png" alt="">
+                                        <p class="tit">경로균등화 옵션</p>
+                                        <p class="txt">
+                                            배차시, 배송에 대한 <br>
+                                            균등 옵션
+                                        </p>
+                                        <select name="" id="" class="select v4" disabled>
+                                            <option value="">균등 옵션 미설정</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <!--// 20240509 수정 -->
                             </div>
                         </div>
                     </div>
@@ -3705,14 +3734,6 @@
                 <div class="container">
                     <div class="bx-area fx-none">
                         <div class="inner">
-                            <div class="list-search">
-                                <div class="keyword">
-                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
-                                    <button class="btn-ic btn-search">검색</button>
-                                </div>
-                                <button class="btn-ic btn-refresh">새로고침</button>
-                            </div>
-        
                             <div class="sort">
                                 <dl>
                                     <dt>소속</dt>
@@ -3742,6 +3763,16 @@
                                     </dd>
                                 </dl>
                             </div>
+
+                            <!-- 20240509 수정 -->
+                            <div class="list-search">
+                                <div class="keyword">
+                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                                <button class="btn-ic btn-refresh">새로고침</button>
+                            </div>
+                            <!--// 20240509 수정 -->
                         </div>
                     </div>
                     <div class="bx-area">
@@ -3774,15 +3805,17 @@
                                                         <label for=""></label>
                                                     </div>
                                                 </th>
-                                                <th data-width="105"><span>업무</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="110"><span>이름</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="125"><span>소속</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="170"><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="165"><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="130"><span>차종</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="150"><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="120"><span>권역</span><button class="btn-ic btn-sort down"></button></th>
+                                                <!-- 20240509 수정 -->
+                                                <th><span>업무</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>이름</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>소속</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>차종</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>권역</span><button class="btn-ic btn-sort down"></button></th>
                                                 <th><span>제목제목</span><button class="btn-ic btn-sort down"></button></th>
+                                                <!--// 20240509 수정 -->
                                             </tr>
                                         </thead>
                                     </table>
@@ -4100,7 +4133,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="paging mt20">
+                            <div class="paging mt45 pb10"><!-- 20240509 수정 -->
                                 <ul>
                                     <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
                                     <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
@@ -4194,13 +4227,15 @@
                                 <li>최대업무시간(8시간)</li>
                             </ul>
                         </div>
-                        <div class="btn-wrap">
-                            <button class="btn md line-purple"><i class="ic-download"></i>엑셀 다운로드</button>
+                        <div class="btn-wrap pb15"> --><!-- 20240509 수정 -->
+                            <!-- <button class="btn md line-purple"><i class="ic-download"></i>엑셀 다운로드</button>
                             <button class="btn md fill-purple"><i class="ic-add-work white"></i>배차 업무 생성</button>
                         </div>
                     </div>
-
-                    <div class="list-top p0 mt25 pb10">
+                </div>
+                <div class="datum-cont"> -->
+                    <!-- 20240509 수정 -->
+                    <!-- <div class="list-top p0 pb10">
                         <div class="division">
                             <p class="txt-count">운전자 <strong>3명</strong></p>
                             
@@ -4221,10 +4256,9 @@
                                 <option value="">200개씩 보기</option>
                             </select>
                         </div>
-                    </div>
-                </div>
-                <div class="datum-cont">
-                    <div class="list-wrap v5">
+                    </div> -->
+                    <!--// 20240509 수정 -->
+                    <!-- <div class="list-wrap v5">
                         <div class="list-head">
                             <div class="row">
                                 <div class="col">
@@ -4593,9 +4627,9 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -4620,9 +4654,9 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -4647,9 +4681,9 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -4674,9 +4708,9 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -4702,21 +4736,81 @@
                                     <ul>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                         <li>
                                             <p class="num">1</p>
-                                            <p class="txt">
-                                                서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호
-                                            </p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pin-wrap" style="left: 300px; top: 400px;">
+                    <i class="ic-back"></i>
+                    <div class="pin v1 clr13">
+                        <div class="inner">
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <div class="detail v1">
+                        <div class="inner">
+                            <div class="detail-head">
+                                <p>배송지2 외 1곳</p>
+                            </div>
+                            <div class="detail-body">
+                                <div class="list-wrap v8">
+                                    <ul>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                                <div class="data">
+                                                    <ul>
+                                                        <li>
+                                                            <span class="label v1 blue">배송</span>
+                                                            <span class="label v1 lime">보통</span>
+                                                        </li>
+                                                        <li>-</li>
+                                                        <li>도착예정 14:20</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                                <div class="data">
+                                                    <ul>
+                                                        <li>
+                                                            <span class="label v1 orange">회수</span>
+                                                            <span class="label v1 pink">우선</span>
+                                                        </li>
+                                                        <li>2H 이내</li>
+                                                        <li>도착예정 14:20</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>
@@ -5346,9 +5440,10 @@
                             </div>
                             <button class="btn-ic btn-option-toggle open"></button>
                         </div>
+                        <!-- 20240509 수정 -->
+                        <p class="tit v3 mt10">배차 옵션 선택</p>
                         <div class="option-area">
-                            <p class="tit v3">배차 옵션 선택</p>
-                            <div class="check-group v3 mt10">
+                            <div class="check-group v3"><!--// 20240509 수정 -->
                                 <div class="check v6">
                                     <input type="checkbox" name="" id="" checked>
                                     <label for="">
@@ -5459,6 +5554,22 @@
                                         </select>
                                     </label>
                                 </div>
+                                <!-- 20240509 수정 -->
+                                <div class="check v6">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">
+                                        <img src="../img/img_dispatch_option05.png" alt="">
+                                        <p class="tit">경로균등화 옵션</p>
+                                        <p class="txt">
+                                            배차시, 배송에 대한 <br>
+                                            균등 옵션
+                                        </p>
+                                        <select name="" id="" class="select v4" disabled>
+                                            <option value="">균등 옵션 미설정</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <!--// 20240509 수정 -->
                             </div>
                         </div>
                     </div>
@@ -5466,14 +5577,6 @@
                 <div class="container">
                     <div class="bx-area fx-none">
                         <div class="inner">
-                            <div class="list-search">
-                                <div class="keyword">
-                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
-                                    <button class="btn-ic btn-search">검색</button>
-                                </div>
-                                <button class="btn-ic btn-refresh">새로고침</button>
-                            </div>
-        
                             <div class="sort">
                                 <dl>
                                     <dt>소속</dt>
@@ -5503,6 +5606,16 @@
                                     </dd>
                                 </dl>
                             </div>
+                            
+                            <!-- 20240509 수정 -->
+                            <div class="list-search">
+                                <div class="keyword">
+                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                                <button class="btn-ic btn-refresh">새로고침</button>
+                            </div>
+                            <!--// 20240509 수정 -->
                         </div>
                     </div>
                     <div class="bx-area">
@@ -5535,15 +5648,17 @@
                                                         <label for=""></label>
                                                     </div>
                                                 </th>
-                                                <th data-width="105"><span>업무</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="110"><span>이름</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="125"><span>소속</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="170"><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="165"><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="130"><span>차종</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="150"><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="120"><span>권역</span><button class="btn-ic btn-sort down"></button></th>
+                                                <!-- 20240509 수정 -->
+                                                <th><span>업무</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>이름</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>소속</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>차종</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>권역</span><button class="btn-ic btn-sort down"></button></th>
                                                 <th><span>제목제목</span><button class="btn-ic btn-sort down"></button></th>
+                                                <!--// 20240509 수정 -->
                                             </tr>
                                         </thead>
                                     </table>
@@ -5861,7 +5976,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="paging mt20">
+                            <div class="paging mt45 pb10"><!-- 20240509 수정 -->
                                 <ul>
                                     <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
                                     <li class="prev"><a href="javascript:void(0);">이전으로</a></li>

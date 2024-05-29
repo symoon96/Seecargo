@@ -1,0 +1,1652 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<title>Seecargo</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+
+	<!-- reset css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/utility.css" rel="stylesheet" type="text/css">
+
+    <!-- dist/css -->
+    <link href="../dist/css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="../dist/css/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+
+    <!-- custom css -->
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/components.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <!-- jquery -->
+    <script src="../js/jquery.min.js"></script>
+
+    <!-- dist/js -->
+    <script src="../dist/js/chart.js"></script>
+    <script src="../dist/js/jquery.mCustomScrollbar.js"></script>
+    <script src="../dist/js/jquery-ui.js"></script>
+    <script src="../dist/js/swiper-bundle.min.js"></script>
+    
+    <!-- custom js -->
+    <script src="../js/common.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <h1 class="logo"><a href="javascript:void(0);">Seecargo</a></h1>
+
+            <div class="gnb">
+                <ul class="depth01">
+                    <li>
+                        <a href="javascript:void(0);">업무준비</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">운전자(차량) 관리</a></li>
+                            <li><a href="javascript:void(0);">업무환경설정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">배차</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">배차 생성</a></li>
+                            <li><a href="javascript:void(0);">OMS 배차 생성</a></li>
+                            <li><a href="javascript:void(0);">배차 이력</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">모니터링</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">실시간 모니터링</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">통계</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">Dashboard</a></li>
+                            <li><a href="javascript:void(0);">종합분석</a></li>
+                        </ul>
+                    </li>
+                    <li class="on">
+                        <a href="javascript:void(0);">설정</a>
+                        <ul class="depth02">
+                            <li><a href="javascript:void(0);">계정 관리</a></li>
+                            <li><a href="javascript:void(0);">알림톡 관리</a></li>
+                            <li><a href="javascript:void(0);">운전자 공지사항 관리</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="util">
+                <button class="btn-ic btn-tutorial" onclick="popOpenAndDim('pop-tutorial', true)">동영상 튜토리얼</button>
+                <div class="support">
+                    <button class="btn-ic btn-cscenter">고객센터</button>
+                    <div class="support-menu">
+                        <ul>
+                            <li><a href="javascript:void(0);">공지사항</a></li>
+                            <li><a href="javascript:void(0);">문의하기</a></li>
+                            <li><a href="javascript:void(0);">이용약관</a></li>
+                            <li><a href="javascript:void(0);">이용방법</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="support">
+                    <button class="btn-user">에스엘솔루션</button>
+                    <div class="support-menu">
+                        <div class="user-info">
+                            <div class="account">
+                                <p class="name"><strong>에스엘솔루션</strong> 고객님</p>
+                                <p class="id">aaaaaaaaaa</p>
+                                <div class="belong">
+                                    <span>씨카고</span>
+                                    <!-- <span>A지점</span> -->
+                                    <select name="" id="" class="select v1">
+                                        <option value="">A지점</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="user-link">내 정보</a>
+                            <div class="plan-state">
+                                <div class="plan">
+                                    <p class="label v1 pink">엔터프라이즈</p><!-- case1: .gray, case2: .blue, case3: .cyan, case4: .lime, case5: .purple, case6: .pinkm, case7: .dark -->
+                                    <a href="javascript:void(0);" class="user-link">요금제 이용중</a>
+                                </div>
+                                <div class="state">
+                                    <dl>
+                                        <dd>75%</dd>
+                                        <dt>현재 사용량</dt>
+                                    </dl>
+                                    <dl>
+                                        <dd>8일</dd>
+                                        <dt>남은 잔여일</dt>
+                                    </dl>
+                                    <p class="now">(2024.01.29 09:35:02 기준)</p>
+                                </div>
+                            </div>
+                            <div class="mate">
+                                <p class="title">씨카고 고객센터</p>
+                                <p class="txt-phone">1544-8232</p>
+                                <p class="txt-email">seecargo@slsolution.co.kr</p>
+                                <button class="btn md fill-deepgray to-dark"><i class="ic-logout"></i>로그아웃</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-ic btn-menu">전체메뉴</button>
+            </div>
+        </div>
+        <div class="sitemap">
+            <div class="menu">
+                <button class="btn-ic btn-sitemap-close"></button>
+                <ul class="depth01">
+                    <li>
+                        <a href="javascript:void(0);">업무준비</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>운전자(차량)관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">운전자(차량) 등록</a></li>
+                                    <li><a href="javascript:void(0);">지역관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>업무환경설정</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">업무환경설정</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">배차</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>배차 생성</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">배송지 등록</a></li>
+                                    <li><a href="javascript:void(0);">업무생성</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>OMS 배차 생성</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">주문내역 확인 및 배차</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>배차이력</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">배차 업무관리</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">모니터링</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>실시간 모니터링</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">전체 차량 실시간 모니터링</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">통계</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="javascript:void(0);">Dashboard</a>
+                            </li>
+                            <li>
+                                <p>종합분석</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">업무</a></li>
+                                    <li><a href="javascript:void(0);">운행</a></li>
+                                    <li><a href="javascript:void(0);">운전자</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">설정</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>계정 관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">기본정보</a></li>
+                                    <li><a href="javascript:void(0);">지점 정보</a></li>
+                                    <li><a href="javascript:void(0);">사용자 정보</a></li>
+                                    <li><a href="javascript:void(0);">요금정보</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>알림톡 관리</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">알림톡 관리 <br>(설정/발송내역)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">운전자 공지사항 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">고객지원</a>
+                        <ul class="depth02">
+                            <li>
+                                <a href="javascript:void(0);">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">문의하기</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">이용약관</a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">이용방법</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);">사용자 정보</a>
+                        <ul class="depth02">
+                            <li>
+                                <p>내 정보</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">사용자 정보(확인/수정)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p>요금정보</p>
+                                <ul class="depth03">
+                                    <li><a href="javascript:void(0);">사용 요금제명</a></li>
+                                    <li><a href="javascript:void(0);">서비스 사용량</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">로그아웃</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // header -->
+
+    <!-- content -->
+    <div id="content">
+        <div class="lnb">
+            <p class="depth01"><i class="ic-gnb09"></i>설정</p>
+            <div class="depth02">
+                <ul>
+                    <li class="on"><a href="javascript:void(0);"><i class="ic-sub08"></i>계정관리</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-sub09"></i>알림톡 관리</a></li>
+                    <li><a href="javascript:void(0);"><i class="ic-sub10"></i>운전자 공지사항 관리</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- contents -->
+        <div class="contents">
+            <div class="setting">
+                <div class="container">
+                    <div class="title-wrap">
+                        <div class="title-area">
+                            <h3 class="title">계정관리</h3>
+                        </div>
+                    </div>
+
+                    <div class="bx-area">
+                        <div class="tab-wrap v2">
+                            <div class="tab-btn-wrap">
+                                <button class="tab-btn on">기본 정보</button>
+                                <button class="tab-btn">지점 정보</button>
+                                <button class="tab-btn">사용자 정보</button>
+                                <button class="tab-btn">요금 정보</button>
+                            </div>
+                            <div class="tab-cont-wrap">
+                                <div class="tab-cont">
+                                    <div class="panel-wrap">
+                                        <div class="panel">
+                                            <div class="panel-head">
+                                                <div class="tit-area">
+                                                    <i class="ic-member"></i>
+                                                    <p class="tit">로그인 사용자 정보</p>
+                                                </div>
+                                                <div class="etc-area">
+                                                    <button class="btn-txt v2" onclick="popOpenAndDim('pop-info-member', true)"><i class="ic-modify"></i>수정</button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-content">
+                                                <div class="inner">
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w80">
+                                                                    <p>권한</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">일반 관리자</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>지점</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">A 지점</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w80">
+                                                                    <p>이름</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">홍길동</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>부서</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">기획팀</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>직급</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">과장</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w80">
+                                                                    <p>아이디</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">seecargo@#!</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>비밀번호</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">******************</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>휴대폰 번호</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">010-0000-0000</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>이메일</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">seecargo@slsolution.co.kr</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                            <div class="panel-head">
+                                                <div class="tit-area">
+                                                    <i class="ic-company"></i>
+                                                    <p class="tit">회사정보</p>
+                                                </div>
+                                                <div class="etc-area">
+                                                    <button class="btn-txt v2" onclick="popOpenAndDim('pop-info-company', true)"><i class="ic-modify"></i>수정</button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-content">
+                                                <div class="inner">
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w80">
+                                                                    <p>회사명</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">(주)에스엘솔루션</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>대표자명</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">차효준</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w80">
+                                                                    <p>사업자번호</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">000-00-00000</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>대표전화</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">02-1234-5678</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>주소</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">서울특별시 마포구 만리재로 47, 15층(신공덕동, 공덕코어)</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                            <div class="panel-head">
+                                                <div class="tit-area">
+                                                    <i class="ic-contractor"></i>
+                                                    <p class="tit">계약담당자 정보</p>
+                                                </div>
+                                                <div class="etc-area">
+                                                    <button class="btn-txt v2" onclick="popOpenAndDim('pop-info-contractor', true)"><i class="ic-modify"></i>수정</button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-content">
+                                                <div class="inner">
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w80">
+                                                                    <p>이름</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">홍길동</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>부서</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">기획팀</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>직급</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">과장</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w80">
+                                                                    <p>휴대폰 번호</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">010-0000-0000</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w80">
+                                                                    <p>이메일</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">seecargo@slsolution.co.kr</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel">
+                                            <div class="panel-head">
+                                                <div class="tit-area">
+                                                    <i class="ic-tax"></i>
+                                                    <p class="tit">세금계산서 정보</p>
+                                                </div>
+                                                <div class="etc-area">
+                                                    <button class="btn-txt v2" onclick="popOpenAndDim('pop-info-tax', true)"><i class="ic-modify"></i>수정</button>
+                                                </div>
+                                            </div>
+                                            <div class="panel-content">
+                                                <div class="inner">
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w120">
+                                                                    <p>세금계산서 발행여부</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">신청</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w120">
+                                                                    <p>발행담당자 이름</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">홍길동</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w120">
+                                                                    <p>발행 이메일1</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">seecargo@slsolution.co.kr</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w120">
+                                                                    <p>발행 이메일2</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">seecargo@slsolution.co.kr</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="division">
+                                                        <div class="form-group">
+                                                            <div class="form col">
+                                                                <div class="form-title w120">
+                                                                    <p>사업자 구분</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">법인</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w120">
+                                                                    <p>업태/업종</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">내용내용내용 / 내용내용내용</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form col mt20">
+                                                                <div class="form-title w120">
+                                                                    <p>사업자 등록증</p>
+                                                                </div>
+                                                                <div class="form-cont">
+                                                                    <p class="txt-form">㈜에스엘솔루션_사업자등록증.pdf</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-cont">
+                                    <div class="list-top">
+                                        <div class="division">
+                                            <p class="txt-count">전체 <strong>100</strong></p>
+                                            <select name="" id="" class="select v2">
+                                                <option value="">10개씩 보기</option>
+                                                <option value="">30개씩 보기</option>
+                                                <option value="">50개씩 보기</option>
+                                                <option value="">100개씩 보기</option>
+                                                <option value="">200개씩 보기</option>
+                                            </select>
+                                        </div>
+                                        <div class="division">
+                                            <div class="btn-wrap">
+                                                <button class="btn-txt v1" disabled><i class="ic-add dark"></i>추가</button>
+                                                <button class="btn-txt v1" onclick="popOpenAndDim('pop-alert02', true)"><i class="ic-delete"></i>삭제</button>
+                                                <button class="btn-txt v1" disabled><i class="ic-modify"></i>수정</button>
+                                                <button class="btn-txt v1" onclick="popOpenAndDim('pop-alert04', true)"><i class="ic-modify"></i>저장</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-wrap v1 fx1 mt10">
+                                        <div class="list-head">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th data-width="35">
+                                                            <div class="check v1">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </th>
+                                                        <th data-width="100">No.</th>
+                                                        <th data-width="120">사용여부</th>
+                                                        <th data-width="200">지점명</th>
+                                                        <th data-width="200">지점 대표자명</th>
+                                                        <th data-width="200">지점 전화번호</th>
+                                                        <th>메모</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                        <div class="list-body scroll-yx">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="check v1">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>4</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name="" id="" placeholder="부서명 입력">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name="" id="" placeholder="부서 대표자명 입력">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name="" id="" placeholder="부서 전화번호 입력">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name="" id="" class="wp100" placeholder="메모 입력">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="check v1">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>4</td>
+                                                        <td>
+                                                            <div class="switch">
+                                                                <input type="checkbox" name="" id="" checked>
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>수도권 지점</td>
+                                                        <td>홍길동</td>
+                                                        <td>070-0000-0000</td>
+                                                        <td>내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="paging mt10">
+                                        <ul>
+                                            <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                                            <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                                            <li class="on"><a href="javascript:void(0);">1</a></li>
+                                            <li><a href="javascript:void(0);">2</a></li>
+                                            <li><a href="javascript:void(0);">3</a></li>
+                                            <li><a href="javascript:void(0);">4</a></li>
+                                            <li><a href="javascript:void(0);">5</a></li>
+                                            <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                                            <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-cont">
+                                    <div class="inp-wrap">
+                                        <select name="" id="" class="select v3 w160">
+                                            <option value="">지점전체</option>
+                                        </select>
+                                        <div class="search w280">
+                                            <div class="word">
+                                                <input type="text" name="" id="">
+                                                <button class="btn-ic btn-search">검색</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-top mt20">
+                                        <div class="division">
+                                            <p class="txt-count">전체 <strong>100</strong></p>
+                                            <select name="" id="" class="select v2">
+                                                <option value="">10개씩 보기</option>
+                                                <option value="">30개씩 보기</option>
+                                                <option value="">50개씩 보기</option>
+                                                <option value="">100개씩 보기</option>
+                                                <option value="">200개씩 보기</option>
+                                            </select>
+                                        </div>
+                                        <div class="division">
+                                            <div class="btn-wrap">
+                                                <button class="btn-txt v1" disabled><i class="ic-add dark"></i>추가</button>
+                                                <button class="btn-txt v1" onclick="popOpenAndDim('pop-alert02', true)"><i class="ic-delete"></i>삭제</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="list-wrap v1 fx1 mt10">
+                                        <div class="list-head">
+                                            <table>
+                                                <thead>
+                                                    <tr>
+                                                        <th data-width="35">
+                                                            <div class="check v1">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </th>
+                                                        <th data-width="100">No.</th>
+                                                        <th>권한</th>
+                                                        <th>지점</th>
+                                                        <th>이름</th>
+                                                        <th>부서</th>
+                                                        <th>직급</th>
+                                                        <th>아이디</th>
+                                                        <th>휴대폰 번호</th>
+                                                        <th>이메일</th>
+                                                        <th>생성일</th>
+                                                    </tr>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                        <div class="list-body scroll-yx">
+                                            <table>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="check v1">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>4</td>
+                                                        <td>슈퍼관리자</td>
+                                                        <td>-</td>
+                                                        <td>홍길동</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>Abcd0000@#</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>00000000@000.co.kr</td>
+                                                        <td>2023.12.22 10:23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="check v1">
+                                                                <input type="checkbox" name="" id="">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>4</td>
+                                                        <td>슈퍼관리자</td>
+                                                        <td>A 지점</td>
+                                                        <td>홍길동</td>
+                                                        <td>기획팀</td>
+                                                        <td>과장</td>
+                                                        <td>Abcd0000@#</td>
+                                                        <td>010-1234-5678</td>
+                                                        <td>00000000@000.co.kr</td>
+                                                        <td>2023.12.22 10:23</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="paging mt10">
+                                        <ul>
+                                            <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                                            <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                                            <li class="on"><a href="javascript:void(0);">1</a></li>
+                                            <li><a href="javascript:void(0);">2</a></li>
+                                            <li><a href="javascript:void(0);">3</a></li>
+                                            <li><a href="javascript:void(0);">4</a></li>
+                                            <li><a href="javascript:void(0);">5</a></li>
+                                            <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                                            <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-cont">
+                                    <div class="list-top">
+                                        <div class="division">
+                                            <p>고객님의 서비스 이용요금 정보를 확인하세요.</p>
+                                            <div class="inp-wrap">
+                                                <div class="inp-item">
+                                                    <select name="" id="" class="select v3">
+                                                        <option value="">2024년 1월</option>
+                                                    </select>
+                                                </div>
+                                                <div class="inp-item">
+                                                    <button class="btn-ic btn-search square"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="fee-wrap mt10">
+                                        <div class="article charge-area">
+                                            <div class="headline">
+                                                <dl>
+                                                    <dt>회사명</dt>
+                                                    <dd>씨카고</dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt>이용기간</dt>
+                                                    <dd>2023년 12월 1일 ~2023년 12월 31일</dd>
+                                                </dl>
+                                            </div>
+                                            
+                                            <div class="inner">
+                                                <div class="title">
+                                                    <p>청구요금</p>
+                                                </div>
+                                                <div class="cont">
+                                                    <div class="summary">
+                                                        <p class="month">2024년 1월 청구요금</p>
+                                                        <div class="price">
+                                                            <p class="value">606,837 원</p>
+                                                            <p class="period">이용기간 2023년 12월 1일 ~2023년 12월 31일</p>
+                                                        </div>
+                                                        <button class="btn xl fill-purple w120 p0"><i class="ic-pay"></i>즉시납부</button>
+                                                    </div>
+                                                    <div class="segment">
+                                                        <div class="segment-item">
+                                                            <div class="tit-area">
+                                                                <p>이용요금제</p>
+                                                            </div>
+                                                            <div class="cont-area">
+                                                                <div class="inner">
+                                                                    <p class="label v1 pink">엔터프라이즈</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="segment-item">
+                                                            <div class="tit-area">
+                                                                <p>부가서비스</p>
+                                                            </div>
+                                                            <div class="cont-area">
+                                                                <div class="inner">
+                                                                    <p class="txt">
+                                                                        알림톡(ID연동) <br>
+                                                                        알림 메시지 사용료
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn-txt v5">청구내역보기<i class="ic-link blue"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="article pay-area">
+                                            <div class="inner">
+                                                <div class="title">
+                                                    <p>요금납부</p>
+                                                </div>
+                                                <div class="cont">
+                                                    <div class="segment">
+                                                        <div class="segment-item">
+                                                            <div class="tit-area">
+                                                                <p>미납요금</p>
+                                                            </div>
+                                                            <div class="cont-area">
+                                                                <div class="inner">
+                                                                    <p class="txt">신청중</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="segment-item">
+                                                            <div class="tit-area">
+                                                                <p>부가서비스</p>
+                                                            </div>
+                                                            <div class="cont-area">
+                                                                <div class="inner">
+                                                                    <p class="txt">신청중</p>
+                                                                    <button class="btn sm line-blue w80 p0"><i class="ic-write blue"></i>정보수정</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <p class="txt-note">* 납부기한 경과시 다음달 청구요금에 연체가산금이 포함될 수 있습니다.</p>
+                                                    </div>
+                                                    <button class="btn-txt v5">납부내역보기<i class="ic-link blue"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="article embezzle-area">
+                                            <div class="inner">
+                                                <div class="title">
+                                                    <p>요금제 신청내역</p>
+                                                </div>
+                                                <div class="cont">
+                                                    <div class="segment">
+                                                        <div class="segment-item">
+                                                            <div class="tit-area">
+                                                                <p>이용중인 요금제</p>
+                                                            </div>
+                                                            <div class="cont-area">
+                                                                <div class="inner">
+                                                                    <p class="label v1 pink">엔터프라이즈</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="segment-item">
+                                                            <div class="tit-area">
+                                                                <p>부가서비스</p>
+                                                            </div>
+                                                            <div class="cont-area">
+                                                                <div class="inner">
+                                                                    <p class="txt">카카오 알림톡 탬플릿 2개</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button class="btn-txt v5">신청내역보기<i class="ic-link blue"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="article plan-area">
+                                            <div class="inner">
+                                                <div class="title">
+                                                    <p>요금제 (신청)</p>
+                                                </div>
+                                                <div class="cont">
+                                                    <div class="list-wrap v10">
+                                                        <ul>
+                                                            <li>씨카고 요금제는 아래와 같으며, 씨카고 서비스/부가서비스로 구분하여 제공하고 있습니다.</li>
+                                                            <li>요금은 각 요금제 별 안내 시 별도 표기하고 있습니다.</li>
+                                                            <li>모든 서비스 이용요금은 부가세(VAT) 별도 기준 금액입니다.</li>
+                                                            <li>요금제 관련 상세설명은 고객지원 > 이용방법 > 설정 > 요금정보에서 확인 또는 고객센터로 문의주시기 바랍니다.</li>
+                                                            <li>씨카고 고객센터 1544-8232</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="btn-wrap">
+                                                        <button class="btn-box v1 purple">
+                                                            씨카고 서비스
+                                                            <i class="ic-link white"></i>
+                                                        </button>
+                                                        <button class="btn-box v1 blue">
+                                                            부가 서비스
+                                                            <i class="ic-link white"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// contents -->
+    </div>
+    <!-- // content -->
+
+    <!-- 레이어팝업-로그인 사용자 정보 -->
+    <div class="popup layer pop-info-member">
+        <div class="pop-head">
+            <p class="tit">로그인 사용자 정보</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-info-member', true);">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="form-group v2">
+                <div class="form row">
+                    <div class="form-title">
+                        <p>권한</p>
+                    </div>
+                    <div class="form-cont">
+                        <p class="txt-form">일반관리자</p>
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>지점</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>이름</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>부서</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>직급</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>아이디</p>
+                    </div>
+                    <div class="form-cont">
+                        <p class="txt-form">seecargo@#!</p>
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>
+                            새 비밀번호
+                            <i class="ic-tooltip" data-cont="
+                            <div class='tooltip-wrap help'>
+                                <p class='txt-tooltip'>비밀번호 조건</p>
+                                <div class='list-wrap v6'>
+                                    <ul>
+                                        <li>관리자 비밀번호의 최소 암호 길이는 8자리이고 영어, 숫자, 특수문자 3종류 조합으로 사용합니다.</li>
+                                        <li>동일한 문자/숫자 또는 연속된 문자/숫자 5자리 이상 반복해 들어가는 비밀번호는 사용하실 수 없습니다.(예.aaa, 111, abc, 123 등)</li>
+                                        <li>한글/공백이 들어가는 비밀번호는 사용하실 수 없습니다.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            "></i>
+                        </p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" placeholder="새 비밀번호 입력">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>새 비밀번호 확인</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" placeholder="새 비밀번호 재입력">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>휴대폰 번호</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="010-1234-5678">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>이메일</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="seecargo@slsolution.co.kr">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-info-member', true);"><i class="ic-cancle"></i>취소</button>
+                <button class="btn md fill-purple" onclick="popDuble(this, 'pop-alert01', true);"><i class="ic-submit"></i>저장</button>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-로그인 사용자 정보 -->
+
+    <!-- 레이어팝업-회사 정보 -->
+    <div class="popup layer pop-info-company">
+        <div class="pop-head">
+            <p class="tit">회사 정보</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-info-company', true);">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="form-group v2">
+                <div class="form row">
+                    <div class="form-title">
+                        <p>회사명</p>
+                    </div>
+                    <div class="form-cont">
+                        <p class="txt-form">일반관리자</p>
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>대표자명</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>사업자번호</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>대표전화</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt15">
+                <div class="form row">
+                    <div class="form-title">
+                        <p>주소</p>
+                    </div>
+                    <div class="form-cont">
+                        <div class="fx gap20">
+                            <div class="fx gap20 fx1">
+                                <input type="text" name="" id="" readonly onclick="popDuble(this, 'pop-search-address', true);" value="내용내용내용">
+                            </div>
+                            <div class="fx gap20 fx1">
+                                <input type="text" name="" id="" value="내용내용내용">
+                                <button class="btn md line-gray p0 fx-none w70">주소검색</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-info-company', true);"><i class="ic-cancle"></i>취소</button>
+                <button class="btn md fill-purple" onclick="popDuble(this, 'pop-alert01', true);"><i class="ic-submit"></i>저장</button>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-회사 정보 -->
+
+    <!-- 레이어팝업-계약담당자 정보 -->
+    <div class="popup layer pop-info-contractor">
+        <div class="pop-head">
+            <p class="tit">계약담당자 정보</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-info-contractor', true);">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="form-group v2">
+                <div class="form row">
+                    <div class="form-title">
+                        <p>이름</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="홍길동">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>부서</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>직급</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>휴대폰 번호</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="010-1234-5678">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>이메일</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="seecargo@slsolution.co.kr">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-info-contractor', true);"><i class="ic-cancle"></i>취소</button>
+                <button class="btn md fill-purple" onclick="popDuble(this, 'pop-alert01', true);"><i class="ic-submit"></i>저장</button>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-계약담당자 정보 -->
+
+    <!-- 레이어팝업-세금계산서 정보 -->
+    <div class="popup layer pop-info-tax">
+        <div class="pop-head">
+            <p class="tit">세금계산서 정보</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-info-tax', true);">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="form-group v2">
+                <div class="form row">
+                    <div class="form-title">
+                        <p>세금계산서 발행여부</p>
+                    </div>
+                    <div class="form-cont">
+                        <div class="radio-group v2">
+                            <div class="radio v1">
+                                <input type="radio" name="" id="" checked>
+                                <label for="">
+                                    <p>신청</p>
+                                </label>
+                            </div>
+                            <div class="radio v1">
+                                <input type="radio" name="" id="">
+                                <label for="">
+                                    <p>신청안함</p>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>발행 담당자 이름</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>발행 이메일1</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>발행 이메일2</p>
+                    </div>
+                    <div class="form-cont">
+                        <input type="text" name="" id="" value="내용내용내용">
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>사업자 구분</p>
+                    </div>
+                    <div class="form-cont">
+                        <select name="" id="" class="select v3 wp100">
+                            <option value="">법인</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-title">
+                        <p>업태/업종</p>
+                    </div>
+                    <div class="form-cont">
+                        <div class="inp-wrap v2">
+                            <div class="inp-item"><input type="text" name="" id=""></div>
+                            <div class="inp-item"><input type="text" name="" id=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mt15">
+                <div class="form row">
+                    <div class="form-title">
+                        <p>사업자 등록증</p>
+                    </div>
+                    <div class="form-cont">
+                        <div class="fx gap20">
+                            <div class="fx1">
+                                <input type="text" name="" id="" class="">
+                            </div>
+                            <div class="fx1">
+                                <button class="btn md line-gray p0 w70">파일선택</button>
+                            </div>
+                        </div>
+                        <p class="txt-comment mt5">∙ 최대 100MB, 30*30px 이하 JPG, GIF, PNG 파일만 업로드 가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-info-tax', true);"><i class="ic-cancle"></i>취소</button>
+                <button class="btn md fill-purple" onclick="popDuble(this, 'pop-alert01', true);"><i class="ic-submit"></i>저장</button>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-세금계산서 정보 -->
+    
+    <!-- 레이어팝업-주소등록 -->
+    <div class="popup layer pop-search-address">
+        <div class="pop-head">
+            <p class="tit">주소등록</p>
+            <button class="btn-ic btn-pop-close" onclick="popClose('pop-search-address');">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="search-address">
+                <div class="search-area">
+                    <div class="form row">
+                        <div class="form-title">
+                            <p>주소검색</p>
+                        </div>
+                        <div class="form-cont">
+                            <div class="search">
+                                <div class="word">
+                                    <input type="text" name="" id="">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- case1: 검색결과 -->
+                    <!-- <div class="form row mt20">
+                        <div class="form-title">
+                            <p>검색결과</p>
+                        </div>
+                        <div class="form-cont">
+                            <div class="list-wrap v3 scroll-y">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <p class="txt-zip">12345</p>
+                                            <p class="txt">[도로] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                            <p class="txt">[지번] 주소주소주소주소주소주소주소주소주소주소주소주소</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="paging mt10">
+                                <ul>
+                                    <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                                    <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                                    <li class="on"><a href="javascript:void(0);">1</a></li>
+                                    <li><a href="javascript:void(0);">2</a></li>
+                                    <li><a href="javascript:void(0);">3</a></li>
+                                    <li><a href="javascript:void(0);">4</a></li>
+                                    <li><a href="javascript:void(0);">5</a></li>
+                                    <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                                    <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!--// case1: 검색결과 -->
+
+                    <!-- case2: 검색결과 클릭시 -->
+                    <div class="form row mt20">
+                        <div class="form-title">
+                            <p>상세주소 입력</p>
+                        </div>
+                        <div class="form-cont">
+                            <div class="tbl-wrap v1">
+                                <table>
+                                    <colgroup>
+                                        <col style="width: 65px;">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>우편번호</th>
+                                            <td>12345</td>
+                                        </tr>
+                                        <tr>
+                                            <th>도로명주소</th>
+                                            <td>내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                                        </tr>
+                                        <tr>
+                                            <th>지번주소</th>
+                                            <td>내용내용내용내용내용내용내용내용내용내용내용내용</td>
+                                        </tr>
+                                        <tr>
+                                            <th>상세주소</th>
+                                            <td>
+                                                <input type="text" name="" id="" placeholder="상세주소 입력">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// case2: 검색결과 클릭시 -->
+                </div>
+                <div class="map-area"></div>
+            </div>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popClose('pop-search-address');"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-search-address');"><i class="ic-submit"></i>등록</button>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-주소등록 -->
+
+    <!-- 알럿팝업-저장 확인 -->
+    <div class="popup alert pop-alert01">
+        <div class="pop-head">
+            <p class="tit">저장 확인</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">수정내용이 저장되었습니다.</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert01', true); popClose('pop-info-member')"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-저장 확인 -->
+
+    <!-- 알럿팝업-삭제 확인 -->
+    <div class="popup alert pop-alert02">
+        <div class="pop-head">
+            <p class="tit">안내</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">선택 지점을 삭제 하시겠습니까?</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-alert02', true);"><i class="ic-cancle"></i>취소</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-alert02'); popOpen('pop-alert03')"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-삭제 확인 -->
+
+    <!-- 알럿팝업-삭제 완료 -->
+    <div class="popup alert pop-alert03">
+        <div class="pop-head">
+            <p class="tit">안내</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">선택 지점이 삭제되었습니다.</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert03', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-삭제 완료 -->
+
+    <!-- 알럿팝업-저장 안내 -->
+    <div class="popup alert pop-alert04">
+        <div class="pop-head">
+            <p class="tit">안내</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">지점명, 지점 대표자명, 지점 전화번호를 입력해주세요.</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-alert04', true);"><i class="ic-cancle"></i>취소</button>
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert04', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-저장 안내 -->
+
+    <!-- 레이어팝업-동영상 튜토리얼 -->
+    <div class="popup layer pop-tutorial">
+        <div class="pop-head">
+            <p class="tit">동영상 튜토리얼</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-tutorial', true)">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="step-area">
+                <ul>
+                    <li class="on">
+                        <span class="num">1</span>
+                        <p class="text">업무준비</p>
+                    </li>
+                    <li>
+                        <span class="num">2</span>
+                        <p class="text">배차</p>
+                    </li>
+                    <li>
+                        <span class="num">3</span>
+                        <p class="text">모니터링</p>
+                    </li>
+                    <li>
+                        <span class="num">4</span>
+                        <p class="text">통계</p>
+                    </li>
+                    <li>
+                        <span class="num">5</span>
+                        <p class="text">설정</p>
+                    </li>
+                    <li>
+                        <span class="num">6</span>
+                        <p class="text">고객지원</p>
+                    </li>
+                    <li>
+                        <span class="num">7</span>
+                        <p class="text">사용자 정보</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text-area">
+                <p class="text01">업무준비</p>
+                <p class="text02">배송업무를 수행할 운전자정보를 등록합니다.</p>
+                <p class="text03">운전자 등록이 완료되면 배차 업무를 지정할 수 있습니다.</p>
+            </div>
+
+            <div class="tutorial-swiper">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                        <div class="swiper-slide">
+                            <video src="" muted autoplay playsinline loop></video>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-controller">
+                    <div class="swiper-paging-prev"></div>
+                    <div class="paging">
+                        <ul></ul>
+                    </div>
+                    <div class="swiper-paging-next"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-동영상 튜토리얼 -->
+</body>
+</html>

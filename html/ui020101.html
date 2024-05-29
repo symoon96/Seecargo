@@ -314,14 +314,6 @@
                     </div>
                     <div class="bx-area fx-none">
                         <div class="inner">
-                            <div class="list-search">
-                                <div class="keyword">
-                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
-                                    <button class="btn-ic btn-search">검색</button>
-                                </div>
-                                <button class="btn-ic btn-refresh">새로고침</button>
-                            </div>
-        
                             <div class="sort">
                                 <dl>
                                     <dt>배송유형</dt>
@@ -368,6 +360,16 @@
                                     </dd>
                                 </dl>
                             </div>
+
+                            <!-- 20240509 수정 -->
+                            <div class="list-search">
+                                <div class="keyword">
+                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                                <button class="btn-ic btn-refresh">새로고침</button>
+                            </div>
+                            <!--// 20240509 수정 -->
                         </div>
                     </div>
         
@@ -392,6 +394,7 @@
                             <div class="list-wrap v1 resize mt10">
                                 <div class="list-head">
                                     <table>
+                                        <!-- 20240509 수정 -->
                                         <thead>
                                             <tr>
                                                 <th data-width="35">
@@ -400,17 +403,18 @@
                                                         <label for=""></label>
                                                     </div>
                                                 </th>
-                                                <th data-width="80"><span>번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="125"><span>주문번호</span><button class="btn-ic btn-sort up"></button></th>
-                                                <th data-width="115"><span>송장번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="145"><span>배송지명</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="285"><span>배송지 주소</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="165"><span>상세주소</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="125"><span>고객명</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="155"><span>고객 연락처</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="300"><span>고객 메모</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>주문번호</span><button class="btn-ic btn-sort up"></button></th>
+                                                <th><span>송장번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>배송지명</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>배송지 주소</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>상세주소</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>고객명</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>고객 연락처</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>고객 메모</span><button class="btn-ic btn-sort down"></button></th>
                                             </tr>
                                         </thead>
+                                        <!--// 20240509 수정 -->
                                     </table>
                                 </div>
                                 <div class="list-body scroll-yx">
@@ -458,7 +462,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="paging mt20">
+                            <div class="paging mt45 pb10"><!-- 20240509 수정 -->
                                 <ul>
                                     <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
                                     <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
@@ -917,107 +921,109 @@
                 <div class="list-wrap v1 resize mt10">
                     <div class="list-head">
                         <table>
+                            <!-- 20240509 수정 -->
                             <thead>
                                 <tr>
                                     <th data-width="95">
                                         <span>번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="130">
+                                    <th>
                                         <span>오류메시지</span>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>주문번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>송장번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>배송지명</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="160">
+                                    <th>
                                         <span>배송지 주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>상세주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="135">
+                                    <th>
                                         <span>고객명</span>
                                     </th>
-                                    <th data-width="155">
+                                    <th>
                                         <span>고객연락처</span>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>고객메모</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="175">
+                                    <th>
                                         <span>화물 무게(kg)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>화물 개수</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>배송유형</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>배송 순위</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="170">
+                                    <th>
                                         <span>희망 도착시간</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>차량 그룹</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>차량지정</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>국가 언어</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="175">
+                                    <th>
                                         <span>정자시간(분)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고1</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고2</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고3</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고4</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고5</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="105">
+                                    <th>
                                         <span>등록일</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
                                 </tr>
                             </thead>
+                            <!--// 20240509 수정 -->
                         </table>
                     </div>
                     <div class="list-body scroll-yx">
@@ -1540,6 +1546,34 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- 20230515 수정 -->
+                            <div class="form-group v3 mt15">
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>가로 (cm)</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="숫자만 입력해주세요.">
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>세로 (cm)</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="숫자만 입력해주세요.">
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>높이 (cm)</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="숫자만 입력해주세요.">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--// 20230515 수정 -->
                         </div>
                     </div>
                 </div>
@@ -1824,107 +1858,109 @@
                 <div class="list-wrap v1 resize mt10">
                     <div class="list-head">
                         <table>
+                            <!-- 20240509 수정 -->
                             <thead>
                                 <tr>
                                     <th data-width="95">
                                         <span>번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="130">
+                                    <th>
                                         <span>오류메시지</span>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>주문번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>송장번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>배송지명</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="160">
+                                    <th>
                                         <span>배송지 주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>상세주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="135">
+                                    <th>
                                         <span>고객명</span>
                                     </th>
-                                    <th data-width="155">
+                                    <th>
                                         <span>고객연락처</span>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>고객메모</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="175">
+                                    <th>
                                         <span>화물 무게(kg)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>화물 개수</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>배송유형</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>배송 순위</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="170">
+                                    <th>
                                         <span>희망 도착시간</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>차량 그룹</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>차량지정</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="150">
+                                    <th>
                                         <span>국가 언어</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="175">
+                                    <th>
                                         <span>정자시간(분)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고1</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고2</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고3</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고4</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>비고5</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="105">
+                                    <th>
                                         <span>등록일</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
                                 </tr>
                             </thead>
+                            <!--// 20240509 수정 -->
                         </table>
                     </div>
                     <div class="list-body scroll-yx">
@@ -2196,7 +2232,7 @@
                     </dt>
                     <dd>
                         <p class="text">고정된 배송지를 운행하기 위해 매일 배송경로를 매일 생성합니다.</p>
-                        <button class="btn md fill-crimson">반복배차 시작하기</button>
+                        <button class="btn md fill-crimson" onclick="popCloseAndDim('pop-select-dispatch', true); popOpen('pop-dispatch-repeat')">반복배차 시작하기</button><!-- 20240513 수정 -->
                     </dd>
                 </dl>
             </div>
@@ -2226,14 +2262,17 @@
             <div class="datum">
                 <button class="btn-ic btn-fold close" onclick="viewDatumDetail(this)"></button>
                 <div class="datum-head">
-                    <div class="search">
+                    <div class="search pb20"><!-- 20240509 수정 -->
                         <div class="word">
                             <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디등 검색">
                             <button class="btn-ic btn-search">검색</button>
                         </div>
                         <button class="btn-ic btn-refresh"></button>
                     </div>
-                    <div class="list-top p0 mt20 pb10">
+                </div>
+                <div class="datum-cont">
+                    <!-- 20240509 수정 -->
+                    <div class="list-top p0 pb10">
                         <div class="division">
                             <p class="txt-count">운전자 <strong>100명</strong></p>
                         </div>
@@ -2247,8 +2286,7 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="datum-cont">
+                    <!--// 20240509 수정 -->
                     <div class="list-wrap v5 sortable">
                         <div class="list-head">
                             <div class="row">
@@ -3165,7 +3203,7 @@
                         <p class="text">111가 1111</p>
                         <button class="btn md fill-blue" disabled><i class="ic-route"></i>경로 재계산</button>
                     </div>
-                    <div class="tbl-wrap v2 mt20">
+                    <div class="tbl-wrap v2 mt20 mt20"><!-- 20240509 수정 -->
                         <table>
                             <colgroup>
                                 <col style="width: 65px;">
@@ -3194,7 +3232,10 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="list-top p0 mt20 pb10">
+                </div>
+                <div class="detail-cont">
+                    <!-- 20240509 수정 -->
+                    <div class="list-top p0 pb10">
                         <div class="division">
                             <p class="txt-count">배송지 <strong>4개</strong></p>
                         </div>
@@ -3208,8 +3249,7 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="detail-cont">
+                    <!--// 20240509 수정 -->
                     <div class="list-wrap v5 sortable">
                         <div class="list-head">
                             <div class="row">
@@ -3584,11 +3624,12 @@
                                 </div>
                             </div>
                             <button class="btn-ic btn-option-toggle open"></button>
-                        </div>
-                        <div class="option-area">
-                            <p class="tit v3">배차 옵션 선택</p>
-                            <div class="check-group v3 mt10">
-                                <div class="check v6">
+                        </div> -->
+                        <!-- 20240509 수정 -->
+                        <!-- <p class="tit v3 mt10">배차 옵션 선택</p> -->
+                        <!-- <div class="option-area">
+                            <div class="check-group v3"> --><!--// 20240509 수정 -->
+                                <!-- <div class="check v6">
                                     <input type="checkbox" name="" id="" checked>
                                     <label for="">
                                         <img src="../img/img_dispatch_option01.png" alt="">
@@ -3697,22 +3738,30 @@
                                             <option value="">8시간 이내 완료</option>
                                         </select>
                                     </label>
-                                </div>
-                            </div>
+                                </div> -->
+                                <!-- 20240509 수정 -->
+                                <!-- <div class="check v6">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">
+                                        <img src="../img/img_dispatch_option05.png" alt="">
+                                        <p class="tit">경로균등화 옵션</p>
+                                        <p class="txt">
+                                            배차시, 배송에 대한 <br>
+                                            균등 옵션
+                                        </p>
+                                        <select name="" id="" class="select v4" disabled>
+                                            <option value="">균등 옵션 미설정</option>
+                                        </select>
+                                    </label>
+                                </div> -->
+                                <!--// 20240509 수정 -->
+                            <!-- </div>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="bx-area fx-none">
                         <div class="inner">
-                            <div class="list-search">
-                                <div class="keyword">
-                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
-                                    <button class="btn-ic btn-search">검색</button>
-                                </div>
-                                <button class="btn-ic btn-refresh">새로고침</button>
-                            </div>
-        
                             <div class="sort">
                                 <dl>
                                     <dt>소속</dt>
@@ -3741,8 +3790,18 @@
                                         </div>
                                     </dd>
                                 </dl>
-                            </div>
-                        </div>
+                            </div> -->
+
+                            <!-- 20240509 수정 -->
+                            <!-- <div class="list-search">
+                                <div class="keyword">
+                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                                <button class="btn-ic btn-refresh">새로고침</button>
+                            </div> -->
+                            <!--// 20240509 수정 -->
+                        <!-- </div>
                     </div>
                     <div class="bx-area">
                         <div class="inner">
@@ -3773,17 +3832,19 @@
                                                         <input type="checkbox" name="" id="">
                                                         <label for=""></label>
                                                     </div>
-                                                </th>
-                                                <th data-width="105"><span>업무</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="110"><span>이름</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="125"><span>소속</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="170"><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="165"><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="130"><span>차종</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="150"><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="120"><span>권역</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="690"><span>제목제목</span><button class="btn-ic btn-sort down"></button></th>
-                                            </tr>
+                                                </th> -->
+                                                <!-- 20240509 수정 -->
+                                                <!-- <th><span>업무</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>이름</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>소속</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>차종</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>권역</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>제목제목</span><button class="btn-ic btn-sort down"></button></th> -->
+                                                <!--// 20240509 수정 -->
+                                            <!-- </tr>
                                         </thead>
                                     </table>
                                 </div>
@@ -4100,8 +4161,8 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="paging mt20">
-                                <ul>
+                            <div class="paging mt45 pb10"> --><!-- 20240509 수정 -->
+                                <!-- <ul>
                                     <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
                                     <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
                                     <li class="on"><a href="javascript:void(0);">1</a></li>
@@ -4194,13 +4255,15 @@
                                 <li>최대업무시간(8시간)</li>
                             </ul>
                         </div>
-                        <div class="btn-wrap">
+                        <div class="btn-wrap pb15"><!-- 20240509 수정 -->
                             <button class="btn md line-purple"><i class="ic-download"></i>엑셀 다운로드</button>
                             <button class="btn md fill-purple"><i class="ic-add-work white"></i>배차 업무 생성</button>
                         </div>
                     </div>
-
-                    <div class="list-top p0 mt25 pb10">
+                </div>
+                <div class="datum-cont">
+                    <!-- 20240509 수정 -->
+                    <div class="list-top p0 pb10">
                         <div class="division">
                             <p class="txt-count">운전자 <strong>3명</strong></p>
                             
@@ -4222,8 +4285,7 @@
                             </select>
                         </div>
                     </div>
-                </div>
-                <div class="datum-cont">
+                    <!--// 20240509 수정 -->
                     <div class="list-wrap v5">
                         <div class="list-head">
                             <div class="row">
@@ -4791,6 +4853,2072 @@
         </div>
     </div>
     <!--// 레이어팝업-자동배차 -->
+
+    <!-- 20240513 수정 -->
+    <!-- 레이어팝업-반복배차 -->
+    <div class="popup full pop-dispatch-repeat">
+        <div class="pop-head">
+            <div class="tit-area">
+                <button class="btn-ic btn-full-close" onclick="popCloseAndDim('pop-dispatch-repeat', true);">팝업닫기</button>
+                <p class="tit">반복배차</p>
+                <p class="txt">고정 배정지를 운행하는 차량에 대해 자동으로 업무를 생성합니다.</p>
+            </div>
+            <div class="btn-wrap">
+                <!-- case1: 활성화 -->
+                <button class="btn-txt v3" onclick="popDuble(this, 'pop-alert03', true)"><i class="ic-add-work dark"></i>전체 업무 생성</button>
+                <button class="btn-txt v3" onclick="popDuble(this, 'pop-alert05', true)"><i class="ic-reset"></i>배송지 초기화</button>
+                <!--// case1: 활성화 -->
+
+                <!-- case2: 비활성화 -->
+                <!-- <button class="btn-txt v3" onclick="popDuble(this, 'pop-alert03', true)" disabled><i class="ic-add-work dark"></i>전체 업무 생성</button>
+                <button class="btn-txt v3" onclick="popDuble(this, 'pop-alert05', true)" disabled><i class="ic-reset"></i>배송지 초기화</button> -->
+                <!--// case2: 비활성화 -->
+            </div>
+        </div>
+        <div class="pop-body">
+            <div class="datum">
+                <button class="btn-ic btn-fold close" onclick="viewDatumDetail(this)"></button>
+                <div class="datum-head">
+                    <div class="search pb20"><!-- 20240509 수정 -->
+                        <div class="word">
+                            <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디등 검색">
+                            <button class="btn-ic btn-search">검색</button>
+                        </div>
+                        <button class="btn-ic btn-refresh"></button>
+                    </div>
+                </div>
+                <div class="datum-cont">
+                    <!-- 20240509 수정 -->
+                    <div class="list-top p0 pb10">
+                        <div class="division">
+                            <p class="txt-count">운전자 <strong>100명</strong></p>
+                        </div>
+                        <div class="division">
+                            <select name="" id="" class="select v2">
+                                <option value="">10개씩 보기</option>
+                                <option value="">30개씩 보기</option>
+                                <option value="">50개씩 보기</option>
+                                <option value="">100개씩 보기</option>
+                                <option value="">200개씩 보기</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--// 20240509 수정 -->
+                    <div class="list-wrap v5 sortable">
+                        <div class="list-head">
+                            <div class="row">
+                                <div class="col w60">
+                                    <p>번호</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>이름</p>
+                                    <button class="btn-ic btn-sort down"></button>
+                                </div>
+                                <div class="col w70">
+                                    <p>배송지수</p>
+                                    <button class="btn-ic btn-sort down"></button>
+                                </div>
+                                <div class="col w80">
+                                    <p>배차경로</p>
+                                    <button class="btn-ic btn-sort down"></button>
+                                </div>
+                                <div class="col">
+                                    <p>업무생성</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-body scroll-y">
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr01"></span>
+                                    <p>1</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button><!-- 운전자 배차 상세보기 -->
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr02"></span>
+                                    <p>2</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumResult(this)">홍길동</button><!-- 운전자 배차 결과 --><!-- 20240513 수정 -->
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)" disabled></button><!-- 비활성화 스타일 --><!-- 20240513 수정 -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr03"></span>
+                                    <p>3</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr04"></span>
+                                    <p>4</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr05"></span>
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr06"></span>
+                                    <p>6</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr07"></span>
+                                    <p>7</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr08"></span>
+                                    <p>8</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr09"></span>
+                                    <p>9</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr10"></span>
+                                    <p>10</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr11"></span>
+                                    <p>11</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr12"></span>
+                                    <p>12</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr13"></span>
+                                    <p>13</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr14"></span>
+                                    <p>14</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr15"></span>
+                                    <p>15</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr16"></span>
+                                    <p>16</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr17"></span>
+                                    <p>17</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr18"></span>
+                                    <p>18</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr19"></span>
+                                    <p>19</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr20"></span>
+                                    <p>20</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr21"></span>
+                                    <p>21</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr22"></span>
+                                    <p>22</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr23"></span>
+                                    <p>23</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr24"></span>
+                                    <p>24</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr25"></span>
+                                    <p>25</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr26"></span>
+                                    <p>26</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr27"></span>
+                                    <p>27</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr28"></span>
+                                    <p>28</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr29"></span>
+                                    <p>29</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr30"></span>
+                                    <p>30</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr31"></span>
+                                    <p>31</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr32"></span>
+                                    <p>32</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr33"></span>
+                                    <p>33</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr34"></span>
+                                    <p>34</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr35"></span>
+                                    <p>35</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr36"></span>
+                                    <p>36</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr37"></span>
+                                    <p>37</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr38"></span>
+                                    <p>38</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr39"></span>
+                                    <p>39</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr40"></span>
+                                    <p>40</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr41"></span>
+                                    <p>41</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr42"></span>
+                                    <p>42</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr43"></span>
+                                    <p>43</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr44"></span>
+                                    <p>44</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr45"></span>
+                                    <p>45</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr46"></span>
+                                    <p>46</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr47"></span>
+                                    <p>47</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <span class="label v4 clr48"></span>
+                                    <p>48</p>
+                                </div>
+                                <div class="col w80">
+                                    <button class="btn sm line-blue circle to-blue" onclick="viewDatumDetail(this)">홍길동</button>
+                                </div>
+                                <div class="col w70">
+                                    <p>5</p>
+                                </div>
+                                <div class="col w80">
+                                    <p>경유지 최적화</p>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-ic btn-add-work" onclick="popDuble(this, 'pop-add-work', true)"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="datum-foot">
+                    <div class="paging">
+                        <ul>
+                            <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                            <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                            <li class="on"><a href="javascript:void(0);">1</a></li>
+                            <li><a href="javascript:void(0);">2</a></li>
+                            <li><a href="javascript:void(0);">3</a></li>
+                            <li><a href="javascript:void(0);">4</a></li>
+                            <li><a href="javascript:void(0);">5</a></li>
+                            <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                            <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 운전자 배차 상세보기 -->
+            <div class="datum-detail">
+                <button class="btn-ic btn-close-detail" onclick="hideDatumDetail(this)"></button>
+                <button class="btn-ic btn-fold open" onclick="hideDatumDetail(this)"></button>
+                <div class="detail-head">
+                    <div class="worker-title">
+                        <p class="name">홍길동</p>
+                        <p class="text">111가 1111</p>
+                    </div>
+                    <div class="btn-wrap wp100 mt10">
+                        <button class="btn md fill-blue fx1" onclick="popDuble(this, 'pop-write-destination', true)"><i class="ic-add white"></i>배송지 추가</button>
+                        <button class="btn md fill-tangerine fx1" onclick="popDuble(this, 'pop-alert07', true)"><i class="ic-chuck"></i>전체 삭제</button>
+                    </div>
+                    <div class="search mt10 pb20">
+                        <div class="word">
+                            <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디등 검색">
+                            <button class="btn-ic btn-search">검색</button>
+                        </div>
+                        <button class="btn-ic btn-refresh"></button>
+                    </div>
+                </div>
+                <div class="detail-cont">
+                    <!-- 20240509 수정 -->
+                    <div class="list-top p0 pb10">
+                        <div class="division">
+                            <p class="txt-count">배송지 <strong>4개</strong></p>
+                        </div>
+                        <div class="division">
+                            <select name="" id="" class="select v2">
+                                <option value="">10개씩 보기</option>
+                                <option value="">30개씩 보기</option>
+                                <option value="">50개씩 보기</option>
+                                <option value="">100개씩 보기</option>
+                                <option value="">200개씩 보기</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--// 20240509 수정 -->
+                    <div class="list-wrap v5 sortable">
+                        <div class="list-head">
+                            <div class="row">
+                                <div class="col w60">
+                                    <p>번호</p>
+                                </div>
+                                <div class="col">
+                                    <p>배송지명</p>
+                                    <button class="btn-ic btn-sort down"></button>
+                                </div>
+                                <div class="col w70">
+                                    <p>정보관리</p>
+                                </div>
+                                <div class="col w60">
+                                    <p>삭제</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-body scroll-y">
+                            <div class="row">
+                                <div class="col w60">
+                                    <p>1</p>
+                                </div>
+                                <div class="col">
+                                    <p class="txt-blue" data-cont="
+                                    <div class='tooltip-wrap help'>
+                                        <p class='txt-tooltip'>배송지1</p>
+                                        <p class='txt-cont'>서울특별시 서초구 서초중앙로 200 (서초동, 삼풍아파트) 3-303</p>
+                                    </div>
+                                    ">배송지1</p>
+                                </div>
+                                <div class="col w70">
+                                    <button class="btn-ic btn-setting" onclick="popDuble(this, 'pop-manage-destination', true)"></button>
+                                </div>
+                                <div class="col w60">
+                                    <button class="btn-ic btn-delete" onclick="popDuble(this, 'pop-alert09', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <p>2</p>
+                                </div>
+                                <div class="col">
+                                    <p class="txt-blue" data-cont="
+                                    <div class='tooltip-wrap help'>
+                                        <p class='txt-tooltip'>배송지1</p>
+                                        <p class='txt-cont'>서울특별시 서초구 서초중앙로 200 (서초동, 삼풍아파트) 3-303</p>
+                                    </div>
+                                    ">배송지1</p>
+                                </div>
+                                <div class="col w70">
+                                    <button class="btn-ic btn-setting" onclick="popDuble(this, 'pop-manage-destination', true)"></button>
+                                </div>
+                                <div class="col w60">
+                                    <button class="btn-ic btn-delete" onclick="popDuble(this, 'pop-alert09', true)"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w60">
+                                    <p>3</p>
+                                </div>
+                                <div class="col">
+                                    <p class="txt-blue" data-cont="
+                                    <div class='tooltip-wrap help'>
+                                        <p class='txt-tooltip'>배송지1</p>
+                                        <p class='txt-cont'>서울특별시 서초구 서초중앙로 200 (서초동, 삼풍아파트) 3-303</p>
+                                    </div>
+                                    ">배송지1</p>
+                                </div>
+                                <div class="col w70">
+                                    <button class="btn-ic btn-setting" onclick="popDuble(this, 'pop-manage-destination', true)"></button>
+                                </div>
+                                <div class="col w60">
+                                    <button class="btn-ic btn-delete" onclick="popDuble(this, 'pop-alert09', true)"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-foot">
+                    <div class="paging">
+                        <ul>
+                            <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                            <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                            <li class="on"><a href="javascript:void(0);">1</a></li>
+                            <li><a href="javascript:void(0);">2</a></li>
+                            <li><a href="javascript:void(0);">3</a></li>
+                            <li><a href="javascript:void(0);">4</a></li>
+                            <li><a href="javascript:void(0);">5</a></li>
+                            <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                            <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--// 운전자 배차 상세보기 -->
+            <!-- 운전자 배차 결과 -->
+            <div class="datum-result">
+                <button class="btn-ic btn-close-detail" onclick="hideDatumResult(this)"></button>
+                <button class="btn-ic btn-fold open" onclick="hideDatumResult(this)"></button>
+                <div class="result-head">
+                    <div class="worker-title">
+                        <p class="name">홍길동</p>
+                        <p class="text">111가 1111</p>
+                        <div class="btn-wrap">
+                            <!-- case1: 활성화 -->
+                            <button class="btn md line-tangerine"><i class="ic-reset orange"></i>경로 초기화</button>
+                            <button class="btn md fill-blue"><i class="ic-route"></i>경로계산</button>
+                            <button class="btn md fill-blue"><i class="ic-save white"></i>경로저장</button>
+                            <button class="btn md fill-tangerine" onclick="popDuble(this, 'pop-alert07', true)"><i class="ic-delete white"></i>전체 삭제</button>
+                            <!--// case1: 활성화 -->
+
+                            <!-- case2: 비활성화 -->
+                            <!-- <button class="btn md line-tangerine" disabled><i class="ic-reset orange"></i>경로 초기화</button>
+                            <button class="btn md fill-blue" disabled><i class="ic-route"></i>경로계산</button>
+                            <button class="btn md fill-blue" disabled><i class="ic-save white"></i>경로저장</button>
+                            <button class="btn md fill-tangerine" onclick="popDuble(this, 'pop-alert07', true)" disabled><i class="ic-delete white"></i>전체 삭제</button> -->
+                            <!--// case2: 비활성화 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="result-cont">
+                    <div class="tbl-wrap v2">
+                        <table>
+                            <colgroup>
+                                <col style="width: 60px;">
+                                <col>
+                                <col style="width: 60px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>경로명칭</th>
+                                    <td>
+                                        <input type="text" name="" id="" class="w200" placeholder="최대 25자까지 입력 가능">
+                                    </td>
+                                    <th>업무회차</th>
+                                    <td>
+                                        <select name="" id="" class="select v4 w120">
+                                            <option value="" class="w200">1회차</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tbl-wrap v2 mt10">
+                        <table>
+                            <colgroup>
+                                <col style="width: 60px;">
+                                <col style="width: 240px;">
+                                <col style="width: 100px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>경로생성</th>
+                                    <td>
+                                        <div class="radio-group v2">
+                                            <div class="radio v1">
+                                                <input type="radio" name="" id="" checked>
+                                                <label for="">
+                                                    <p>경유지 최적화</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v1">
+                                                <input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>다중 경유지</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <th>업무시작 예정시간</th>
+                                    <td>
+                                        <div class="inp-wrap v1">
+                                            <div class="inp-item fx-none w90">
+                                                <div class="dropdown v1 row w90">
+                                                    <p class="txt-pick"><strong>00</strong>시</p>
+                                                    <ul class="drop-list">
+                                                        <li><strong>00</strong>시</li>
+                                                        <li><strong>01</strong>시</li>
+                                                        <li><strong>02</strong>시</li>
+                                                        <li><strong>03</strong>시</li>
+                                                        <li><strong>04</strong>시</li>
+                                                        <li><strong>05</strong>시</li>
+                                                        <li><strong>06</strong>시</li>
+                                                        <li><strong>07</strong>시</li>
+                                                        <li><strong>08</strong>시</li>
+                                                        <li><strong>09</strong>시</li>
+                                                        <li><strong>10</strong>시</li>
+                                                        <li><strong>11</strong>시</li>
+                                                        <li><strong>12</strong>시</li>
+                                                        <li><strong>13</strong>시</li>
+                                                        <li><strong>14</strong>시</li>
+                                                        <li><strong>15</strong>시</li>
+                                                        <li><strong>16</strong>시</li>
+                                                        <li><strong>17</strong>시</li>
+                                                        <li><strong>18</strong>시</li>
+                                                        <li><strong>19</strong>시</li>
+                                                        <li><strong>20</strong>시</li>
+                                                        <li><strong>21</strong>시</li>
+                                                        <li><strong>22</strong>시</li>
+                                                        <li><strong>23</strong>시</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="inp-item fx-none w90">
+                                                <div class="dropdown v1 row w90">
+                                                    <p class="txt-pick"><strong>00</strong>분</p>
+                                                    <ul class="drop-list">
+                                                        <li><strong>00</strong>분</li>
+                                                        <li><strong>10</strong>분</li>
+                                                        <li><strong>20</strong>분</li>
+                                                        <li><strong>30</strong>분</li>
+                                                        <li><strong>40</strong>분</li>
+                                                        <li><strong>50</strong>분</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tbl-wrap v2 mt10">
+                        <table>
+                            <colgroup>
+                                <col style="width: 60px;">
+                                <col>
+                                <col style="width: 60px;">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>경로생성</th>
+                                    <td>
+                                        <div class="radio-group v2">
+                                            <div class="radio v1">
+                                                <input type="radio" name="" id="" checked>
+                                                <label for="">
+                                                    <p>경유지 최적화</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v1">
+                                                <input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>다중 경유지</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="txt-normal mt5">
+                                            서울시 마포구 만리재로 47 (신공덕동, 공덕코어) 1층 주차장
+                                        </p>
+                                    </td>
+                                    <th>도착지</th>
+                                    <td>
+                                        <div class="radio-group v2">
+                                            <div class="radio v1">
+                                                <input type="radio" name="" id="">
+                                                <label for="">
+                                                    <p>센터주소</p>
+                                                </label>
+                                            </div>
+                                            <div class="radio v1">
+                                                <input type="radio" name="" id="" checked>
+                                                <label for="">
+                                                    <p>운전자 출발지</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="txt-normal mt5">
+                                            투입된 운전자의 도착지로 설정합니다.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tbl-wrap v4 mt20">
+                        <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="6">배송예측</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>배송지</th>
+                                    <td>4</td>
+                                    <th>배송거리</th>
+                                    <td>15.028km</td>
+                                    <th>배송시간</th>
+                                    <td>01:10</td>
+                                </tr>
+                                <tr>
+                                    <th>배송지 정차</th>
+                                    <td>00:30</td>
+                                    <th>업무시작</th>
+                                    <td>15:00</td>
+                                    <th>업무종료</th>
+                                    <td>18:30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <select name="" id="" class="select v2 mt20 w130">
+                        <option data="" type="">20개씩 보기</option>
+                    </select>
+
+                    <div class="list-wrap v9 sortable mt10">
+                        <div class="list-head">
+                            <table>
+                                <colgroup>
+                                    <col style="width: 80px;">
+                                    <col style="width: 95px;">
+                                    <col style="width: 95px;">
+                                    <col>
+                                    <col>
+                                    <col>
+                                    <col style="width: 60px;">
+                                    <col style="width: 60px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th rowspan="2">
+                                            번호
+                                            <button class="btn-ic btn-sort down"></button>
+                                        </th>
+                                        <th rowspan="2">
+                                            배송지명
+                                            <button class="btn-ic btn-sort up"></button>
+                                        </th>
+                                        <th rowspan="2">
+                                            운행거리 <br>
+                                            (KM)
+                                        </th>
+                                        <th colspan="3">도착 ・출발</th>
+                                        <th rowspan="2">제거</th>
+                                        <th rowspan="2">관리</th>
+                                    </tr>
+                                    <tr>
+                                        <th>도착</th>
+                                        <th>정차</th>
+                                        <th>출발</td>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="list-body scroll-y">
+                            <div class="row">
+                                <div class="col w80">
+                                    <p>1</p>
+                                </div>
+                                <div class="col w95">
+                                    <p class="txt-blue" data-cont="
+                                    <div class='tooltip-wrap help'>
+                                        <p class='txt-tooltip'>배송지1</p>
+                                        <p class='txt-cont'>서울특별시 서초구 서초중앙로 200 (서초동, 삼풍아파트) 3-303</p>
+                                    </div>
+                                    ">배송지1</p>
+                                </div>
+                                <div class="col w95">
+                                    <p>3.001</p>
+                                </div>
+                                <div class="col">
+                                    <p>15:30</p>
+                                </div>
+                                <div class="col">
+                                    <p>5분</p>
+                                </div>
+                                <div class="col">
+                                    <p>15:35</p>
+                                </div>
+                                <div class="col w60">
+                                    <button class="btn-ic btn-delete" onclick="popDuble(this, 'pop-alert09', true)"></button>
+                                </div>
+                                <div class="col w60">
+                                    <button class="btn-ic btn-swap"></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col w80">
+                                    <p>1</p>
+                                </div>
+                                <div class="col w95">
+                                    <p class="txt-blue" data-cont="
+                                    <div class='tooltip-wrap help'>
+                                        <p class='txt-tooltip'>배송지1</p>
+                                        <p class='txt-cont'>서울특별시 서초구 서초중앙로 200 (서초동, 삼풍아파트) 3-303</p>
+                                    </div>
+                                    ">배송지1</p>
+                                </div>
+                                <div class="col w95">
+                                    <p>3.001</p>
+                                </div>
+                                <div class="col">
+                                    <p>15:30</p>
+                                </div>
+                                <div class="col">
+                                    <p>5분</p>
+                                </div>
+                                <div class="col">
+                                    <p>15:35</p>
+                                </div>
+                                <div class="col w60">
+                                    <button class="btn-ic btn-delete" onclick="popDuble(this, 'pop-alert09', true)"></button>
+                                </div>
+                                <div class="col w60">
+                                    <button class="btn-ic btn-swap"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-foot">
+                    <div class="paging">
+                        <ul>
+                            <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
+                            <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
+                            <li class="on"><a href="javascript:void(0);">1</a></li>
+                            <li><a href="javascript:void(0);">2</a></li>
+                            <li><a href="javascript:void(0);">3</a></li>
+                            <li><a href="javascript:void(0);">4</a></li>
+                            <li><a href="javascript:void(0);">5</a></li>
+                            <li class="next"><a href="javascript:void(0);">다음으로</a></li>
+                            <li class="back"><a href="javascript:void(0);">맨 뒤로</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--// 운전자 배차 결과 -->
+            <div class="map">
+                <div class="map-category">
+                    <!-- 240328 수정 -->
+                    <ul>
+                        <li class="purple">담당지역</li>
+                        <li class="blue">권역</li>
+                        <li class="lime">선호지역</li>
+                        <li class="pink">교차금지선</li>
+                        <li class="dark">법정경계</li>
+                    </ul>
+                    <!--// 240328 수정 -->
+                </div>
+                <div class="map-tooltip v1" style="left: 20px; top: 20px;">
+                    <p class="txt-name">홍길동 담당지역</p>
+                    <p class="txt-state">(선택불가)</p>
+                </div>
+                <div class="map-tooltip v2" style="left: 130px; top: 20px;">
+                    <p class="txt">
+                        좌클릭 : 도형 범위 꼭지점 선택 <br>
+                        우클릭 : 그리기 완성
+                    </p>
+                </div>
+                <div class="map-tooltip v2" style="left: 20px; top: 70px;">
+                    <p class="txt">
+                        이미 생성된 선호지역이 있습니다.
+                    </p>
+                </div>
+                <div class="map-tooltip v2" style="left: 195px; top: 70px;">
+                    <p class="txt">
+                        좌클릭 후 끌어당기기 : 원형 범위 선택
+                    </p>
+                </div>
+                <div class="map-tooltip v2" style="left: 20px; top: 105px;">
+                    <p class="txt">
+                        좌클릭 : 교차금지선 생성 및 추가 <br>
+                        우클릭 : 그리기 완성
+                    </p>
+                </div>
+
+                <div class="pin-wrap" style="left: 150px; top: 200px;">
+                    <div class="pin v1 clr01">
+                        <div class="inner">
+                            <p>1</p>
+                        </div>
+                    </div>
+                    <div class="detail v1">
+                        <div class="inner">
+                            <div class="detail-head">
+                                <p>배송지2</p>
+                            </div>
+                            <div class="detail-body">
+                                <div class="list-wrap v8">
+                                    <ul>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pin-wrap" style="left: 300px; top: 200px;">
+                    <div class="pin v1 clr05">
+                        <div class="inner">
+                            <p>1</p>
+                        </div>
+                    </div>
+                    <div class="detail v1">
+                        <div class="inner">
+                            <div class="detail-head">
+                                <p>배송지2</p>
+                            </div>
+                            <div class="detail-body">
+                                <div class="list-wrap v8">
+                                    <ul>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pin-wrap" style="left: 150px; top: 300px;">
+                    <div class="pin v2 clr09">
+                        <div class="inner">
+                            <p>1</p>
+                        </div>
+                    </div>
+                    <div class="detail v1">
+                        <div class="inner">
+                            <div class="detail-head">
+                                <p>배송지2</p>
+                            </div>
+                            <div class="detail-body">
+                                <div class="list-wrap v8">
+                                    <ul>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pin-wrap" style="left: 300px; top: 300px;">
+                    <div class="pin v2 clr13">
+                        <div class="inner">
+                            <p>S/E</p>
+                        </div>
+                    </div>
+                    <div class="detail v1">
+                        <div class="inner">
+                            <div class="detail-head">
+                                <p>배송지2</p>
+                            </div>
+                            <div class="detail-body">
+                                <div class="list-wrap v8">
+                                    <ul>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pin-wrap" style="left: 150px; top: 400px;">
+                    <i class="ic-more"></i>
+                    <div class="pin v1 clr13">
+                        <div class="inner">
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <div class="detail v1">
+                        <div class="inner">
+                            <div class="detail-head">
+                                <p>배송지2 외 1곳</p>
+                            </div>
+                            <div class="detail-body">
+                                <div class="list-wrap v8">
+                                    <ul>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <p class="num">1</p>
+                                            <div class="cont">
+                                                <p class="txt">서울특별시 서초구 방배동 18길 67 (방배동, 방배자이 아파트) 101동 502호</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="../img/img_map.png" alt="" style="width: 100%; height: 100%;">
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-반복배차 -->
+
+    <!-- 레이어팝업-배송지 관리 -->
+    <div class="popup layer pop-manage-destination">
+        <button class="btn-ic btn-detail-prev"></button>
+        <button class="btn-ic btn-detail-next"></button>
+        <div class="pop-head">
+            <p class="tit">배송지 정보</p>
+            <!-- case1: 페이지 항목 클릭시 -->
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-manage-destination', true)"></button>
+            <!--// case1: 페이지 항목 클릭시 -->
+        </div>
+        <div class="pop-body scroll-y">
+            <div class="tit-wrap v1">
+                <div class="tit-area">
+                    <p class="tit v1">기본 정보</p> 
+                </div>
+            </div>
+            <div class="form-wrap mt15">
+                <div class="form-group v2">
+                    <div class="form row">
+                        <div class="form-title">
+                            <p>주문번호</p>
+                        </div>
+                        <div class="form-cont">
+                            <input type="text" name="" id="" placeholder="예시)oder1 / 공백 시, 자동생성">
+                        </div>
+                    </div>
+                    <div class="form row">
+                        <div class="form-title">
+                            <p>송장번호</p>
+                        </div>
+                        <div class="form-cont">
+                            <input type="text" name="" id="" placeholder="예시)294722">
+                        </div>
+                    </div>
+                    <div class="form row required">
+                        <div class="form-title">
+                            <p>배송지명</p>
+                        </div>
+                        <div class="form-cont">
+                            <input type="text" name="" id="" placeholder="배송지명을 입력해주세요.">
+                        </div>
+                    </div>
+                    <div class="form row required">
+                        <div class="form-title">
+                            <p>고객명</p>
+                        </div>
+                        <div class="form-cont">
+                            <input type="text" name="" id="" placeholder="예시) 홍길동">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group v1 mt15">
+                    <div class="form row required">
+                        <div class="form-title">
+                            <p>출발지 주소</p>
+                        </div>
+                        <div class="form-cont">
+                            <input type="text" name="" id="" placeholder="출발지 주소를 입력해 주세요" readonly onclick="popDuble(this, 'pop-search-address', true)">
+                            <input type="text" name="" id="" class="mt8" placeholder="상세 주소를 입력해 주세요">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group v2 mt15">
+                    <div class="form row">
+                        <div class="form-title">
+                            <p>고객 연락처</p>
+                        </div>
+                        <div class="form-cont">
+                            <input type="text" name="" id="" placeholder="예시)01012345678 또는 010-1234-5678">
+                        </div>
+                    </div>
+                    <div class="form row">
+                        <div class="form-title">
+                            <p>고객 메모</p>
+                        </div>
+                        <div class="form-cont">
+                            <input type="text" name="" id="" placeholder="최대 25자까지 입력">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="acc-wrap v2 mt30">
+                <!-- case1: 활성화 -->
+                <div class="acc-list">
+                    <div class="acc-tit" data-click>
+                        <div class="tit-area">
+                            <p>자동배차 항목</p>
+                        </div>
+                    </div>
+                    <div class="acc-cont">
+                        <div class="form-wrap">
+                            <div class="form-group v2">
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>화물무게(kg)</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="예시) 11 / 숫자만 입력해주요.">
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>화물갯수</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="예시) 8 / 숫자만 입력해주세요.">
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>배송 유형</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <div class="check-group v1">
+                                            <div class="check v3">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                    <p>배송</p>
+                                                </label>
+                                            </div>
+                                            <div class="check v3">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                    <p>수거</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>배송 순위</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <div class="check-group v1">
+                                            <div class="check v3">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                    <p>보통</p>
+                                                </label>
+                                            </div>
+                                            <div class="check v3">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                    <p>우선</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>희망 도착시간(시간)</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <div class="dropdown v1 row">
+                                            <button class="txt-pick">1</button>
+                                            <ul class="drop-list">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>차량 그룹</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <div class="dropdown v1 row">
+                                            <button class="txt-pick">그룹을 선택해주세요.</button>
+                                            <ul class="drop-list">
+                                                <li>A</li>
+                                                <li>B</li>
+                                                <li>C</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// case1: 활성화 -->
+                <!-- case2: 비활성화 -->
+                <div class="acc-list">
+                    <div class="acc-tit">
+                        <div class="tit-area">
+                            <p>자동배차 항목</p>
+                        </div>
+                    </div>
+                    <div class="acc-cont">
+                        <div class="form-wrap">
+                            <div class="form-group v2">
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>화물무게(kg)</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="예시) 11 / 숫자만 입력해주요.">
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>화물갯수</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="예시) 8 / 숫자만 입력해주세요.">
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>배송 유형</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <div class="check-group v1">
+                                            <div class="check v3">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                    <p>배송</p>
+                                                </label>
+                                            </div>
+                                            <div class="check v3">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                    <p>수거</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>배송 순위</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <div class="check-group v1">
+                                            <div class="check v3">
+                                                <input type="checkbox" name="" id="" checked>
+                                                <label for="">
+                                                    <p>보통</p>
+                                                </label>
+                                            </div>
+                                            <div class="check v3">
+                                                <input type="checkbox" name="" id="">
+                                                <label for="">
+                                                    <p>우선</p>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>희망 도착시간(시간)</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <div class="dropdown v1 row">
+                                            <button class="txt-pick">1</button>
+                                            <ul class="drop-list">
+                                                <li>1</li>
+                                                <li>2</li>
+                                                <li>3</li>
+                                                <li>4</li>
+                                                <li>5</li>
+                                                <li>6</li>
+                                                <li>7</li>
+                                                <li>8</li>
+                                                <li>9</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>차량 그룹</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <div class="dropdown v1 row">
+                                            <button class="txt-pick">그룹을 선택해주세요.</button>
+                                            <ul class="drop-list">
+                                                <li>A</li>
+                                                <li>B</li>
+                                                <li>C</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// case2: 비활성화 -->
+                <!-- case1: 활성화 -->
+                <div class="acc-list">
+                    <div class="acc-tit" data-click>
+                        <div class="tit-area">
+                            <p>수동배차 항목 <span>(반복배차 포함)</span></p>
+                            <i class="ic-tooltip" data-cont="
+                            <div class='tooltip-wrap help'>
+                                <div class='list-wrap v7'>
+                                    <ul>
+                                        <li>1. 수동배차 이용 시, 반드시 차량 번호가 등록되어야 합니다.</li>
+                                        <li>2. 차량의 담당지역과 배송지 주소가 다른 경우, 등록된 주소를 우선으로 차량이 배정됩니다.</li>
+                                        <li>3. 담당지역이 없는 경우, 해당 배송지에 배정하고 싶은 차량번호를 입력해주세요.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            "></i>
+                        </div>
+                    </div>
+                    <div class="acc-cont">
+                        <div class="form-wrap">
+                            <div class="form-group v2">
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>차량 지정</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="차량번호 등록 / 예시) 111서울1111">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// case1: 활성화 -->
+                <!-- case2: 비활성화 -->
+                <div class="acc-list">
+                    <div class="acc-tit">
+                        <div class="tit-area">
+                            <p>수동배차 항목 <span>(반복배차 포함)</span></p>
+                            <i class="ic-tooltip" data-cont="
+                            <div class='tooltip-wrap help'>
+                                <div class='list-wrap v7'>
+                                    <ul>
+                                        <li>1. 수동배차 이용 시, 반드시 차량 번호가 등록되어야 합니다.</li>
+                                        <li>2. 차량의 담당지역과 배송지 주소가 다른 경우, 등록된 주소를 우선으로 차량이 배정됩니다.</li>
+                                        <li>3. 담당지역이 없는 경우, 해당 배송지에 배정하고 싶은 차량번호를 입력해주세요.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            "></i>
+                        </div>
+                    </div>
+                    <div class="acc-cont">
+                        <div class="form-wrap">
+                            <div class="form-group v2">
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>차량 지정</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="차량번호 등록 / 예시) 111서울1111">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// case2: 비활성화 -->
+                <div class="acc-list on">
+                    <div class="acc-tit" data-click>
+                        <div class="tit-area">
+                            <p>커스텀 필드</p>
+                        </div>
+                    </div>
+                    <div class="acc-cont" style="display: block;">
+                        <div class="form-wrap">
+                            <div class="form-group v2">
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>국가 언어</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <div class="dropdown v1 row">
+                                            <button class="txt-pick">KR</button>
+                                            <ul class="drop-list">
+                                                <li>KR</li>
+                                                <li>EN</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>정차시간(분)</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" value="5" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group v1 mt20">
+                                <div class="form row">
+                                    <div class="form-title">
+                                        <p>비고</p>
+                                    </div>
+                                    <div class="form-cont">
+                                        <input type="text" name="" id="" placeholder="비고1">
+                                        <input type="text" name="" id="" placeholder="비고2" class="mt8">
+                                        <input type="text" name="" id="" placeholder="비고3" class="mt8">
+                                        <input type="text" name="" id="" placeholder="비고4" class="mt8">
+                                        <input type="text" name="" id="" placeholder="비고5" class="mt8">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <!-- case1: 페이지 항목 클릭시 -->
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-write-destination', true);"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-write-destination', true);"><i class="ic-submit"></i>등록</button>
+                <!--// case1: 페이지 항목 클릭시 -->
+
+                <!-- case2: 운전자 일괄 수정 항목 클릭시 -->
+                <!-- <button class="btn md fill-dark" onclick="popClose('pop-write-destination', true);"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-write-destination', true);"><i class="ic-submit"></i>등록</button> -->
+                <!--// case2: 운전자 일괄 수정 항목 클릭시 -->
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-배송지 수정/등록 -->
+    <!--// 20240513 수정 -->
 
     <!-- 레이어팝업-배송지 정보 보기 -->
     <div class="popup layer pop-detail-destination">
@@ -5408,9 +7536,10 @@
                             </div>
                             <button class="btn-ic btn-option-toggle open"></button>
                         </div>
+                        <!-- 20240509 수정 -->
+                        <p class="tit v3 mt10">배차 옵션 선택</p>
                         <div class="option-area">
-                            <p class="tit v3">배차 옵션 선택</p>
-                            <div class="check-group v3 mt10">
+                            <div class="check-group v3"><!--// 20240509 수정 -->
                                 <div class="check v6">
                                     <input type="checkbox" name="" id="" checked>
                                     <label for="">
@@ -5521,6 +7650,22 @@
                                         </select>
                                     </label>
                                 </div>
+                                <!-- 20240509 수정 -->
+                                <div class="check v6">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">
+                                        <img src="../img/img_dispatch_option05.png" alt="">
+                                        <p class="tit">경로균등화 옵션</p>
+                                        <p class="txt">
+                                            배차시, 배송에 대한 <br>
+                                            균등 옵션
+                                        </p>
+                                        <select name="" id="" class="select v4" disabled>
+                                            <option value="">균등 옵션 미설정</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <!--// 20240509 수정 -->
                             </div>
                         </div>
                     </div>
@@ -5528,14 +7673,6 @@
                 <div class="container">
                     <div class="bx-area fx-none">
                         <div class="inner">
-                            <div class="list-search">
-                                <div class="keyword">
-                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
-                                    <button class="btn-ic btn-search">검색</button>
-                                </div>
-                                <button class="btn-ic btn-refresh">새로고침</button>
-                            </div>
-        
                             <div class="sort">
                                 <dl>
                                     <dt>소속</dt>
@@ -5565,6 +7702,16 @@
                                     </dd>
                                 </dl>
                             </div>
+                            
+                            <!-- 20240509 수정 -->
+                            <div class="list-search">
+                                <div class="keyword">
+                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                                <button class="btn-ic btn-refresh">새로고침</button>
+                            </div>
+                            <!--// 20240509 수정 -->
                         </div>
                     </div>
                     <div class="bx-area">
@@ -5597,15 +7744,17 @@
                                                         <label for=""></label>
                                                     </div>
                                                 </th>
-                                                <th data-width="105"><span>업무</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="110"><span>이름</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="125"><span>소속</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="170"><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="165"><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="130"><span>차종</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="150"><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="120"><span>권역</span><button class="btn-ic btn-sort down"></button></th>
+                                                <!-- 20240509 수정 -->
+                                                <th><span>업무</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>이름</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>소속</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>차종</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>권역</span><button class="btn-ic btn-sort down"></button></th>
                                                 <th><span>제목제목</span><button class="btn-ic btn-sort down"></button></th>
+                                                <!--// 20240509 수정 -->
                                             </tr>
                                         </thead>
                                     </table>
@@ -5923,7 +8072,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="paging mt20">
+                            <div class="paging mt45 pb10"><!-- 20240509 수정 -->
                                 <ul>
                                     <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
                                     <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
@@ -5949,6 +8098,166 @@
         </div>
     </div>
     <!--// 레이어팝업-배차 실행 -->
+
+    <!-- 알럿팝업-전체 업무 생성 -->
+    <div class="popup alert pop-alert03">
+        <div class="pop-head">
+            <p class="tit">전체 업무 생성</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">
+                설정된 업무시작 시간을 무시하고 업무를 생성 후, <br>
+                운전자에게 전달 하시겠습니까?
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-alert03', true);"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-alert03'); popOpen('pop-alert04')"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-전체 업무 생성 -->
+
+    <!-- 알럿팝업-전체 업무 생성 완료 -->
+    <div class="popup alert pop-alert04">
+        <div class="pop-head">
+            <p class="tit">완료</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">업무 생성 및 전달 되었습니다.</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert04', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-전체 업무 생성 -->
+
+    <!-- 알럿팝업-배송지 초기화 -->
+    <div class="popup alert pop-alert05">
+        <div class="pop-head">
+            <p class="tit">배송지 초기화</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">
+                운전자에게 할당된 배송지를 초기화 하시겠습니까? <br>
+                초기화 후, 운전자의 배송지는 모두 0 으로 변경됩니다.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-alert05', true);"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-alert05'); popOpen('pop-alert06')"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-배송지 초기화 -->
+
+    <!-- 알럿팝업-배송지 초기화 완료 -->
+    <div class="popup alert pop-alert06">
+        <div class="pop-head">
+            <p class="tit">완료</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">
+                초기화가 완료 되었습니다. <br>
+                운전자 배송지를 재등록해 주시기 바랍니다.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert06', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-배송지 초기화 완료 -->
+
+    <!-- 알럿팝업-전체 삭제 초기화 -->
+    <div class="popup alert pop-alert07">
+        <div class="pop-head">
+            <p class="tit">전체 삭제</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">
+                등록된 배송지를 전체 삭제 하시겠습니까? <br>
+                운전자에 등록된 배송지 정보도 함께 삭제됩니다.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-alert07', true);"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-alert07'); popOpen('pop-alert08')"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-전체 삭제 -->
+
+    <!-- 알럿팝업-전체 삭제 완료 -->
+    <div class="popup alert pop-alert08">
+        <div class="pop-head">
+            <p class="tit">완료</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">
+                배송지 전체 삭제가 완료 되었습니다. <br>
+                배송지를 등록해 주시기 바랍니다.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert08', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-전체 삭제 완료 -->
+
+    <!-- 알럿팝업-삭제 -->
+    <div class="popup alert pop-alert09">
+        <div class="pop-head">
+            <p class="tit">삭제</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">
+                등록된 배송지를 삭제 하시겠습니까? <br>
+                운전자에 등록된 배송지 정보도 함께 삭제됩니다.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-alert09', true);"><i class="ic-close"></i>닫기</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-alert09'); popOpen('pop-alert10')"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-삭제 -->
+
+    <!-- 알럿팝업-삭제 완료 -->
+    <div class="popup alert pop-alert10">
+        <div class="pop-head">
+            <p class="tit">완료</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">
+                배송지 삭제가 완료 되었습니다.
+            </p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert10', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-삭제 완료 -->
 
     <!-- 레이어팝업-로딩 -->
     <div class="popup layer pop-loading">

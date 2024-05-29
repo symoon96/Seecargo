@@ -316,14 +316,6 @@
                     </div>
                     <div class="bx-area fx-none">
                         <div class="inner">
-                            <div class="list-search">
-                                <div class="keyword">
-                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
-                                    <button class="btn-ic btn-search">검색</button>
-                                </div>
-                                <button class="btn-ic btn-refresh">새로고침</button>
-                            </div>
-        
                             <div class="sort">
                                 <dl>
                                     <dt>소속</dt>
@@ -375,6 +367,16 @@
                                     </dd>
                                 </dl>
                             </div>
+                            
+                            <!-- 20240509 수정 -->
+                            <div class="list-search">
+                                <div class="keyword">
+                                    <input type="text" name="" id="" placeholder="이름, 전화번호, 아이디 등 다양하게 검색할 수 있습니다.">
+                                    <button class="btn-ic btn-search">검색</button>
+                                </div>
+                                <button class="btn-ic btn-refresh">새로고침</button>
+                            </div>
+                            <!--// 20240509 수정 -->
                         </div>
                     </div>
         
@@ -399,6 +401,7 @@
                             <div class="list-wrap v1 resize mt10">
                                 <div class="list-head">
                                     <table>
+                                        <!-- 20240509 수정 -->
                                         <thead>
                                             <tr>
                                                 <th data-width="35">
@@ -407,17 +410,18 @@
                                                         <label for=""></label>
                                                     </div>
                                                 </th>
-                                                <th data-width="115"><span>업무</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="115"><span>소속</span><button class="btn-ic btn-sort up"></button></th>
-                                                <th data-width="115"><span>이름</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="115"><span>직급</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="130"><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="140"><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="140"><span>차량번호</span><button class="btn-ic btn-sort down"></button></th>
-                                                <th data-width="185"><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>업무</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>소속</span><button class="btn-ic btn-sort up"></button></th>
+                                                <th><span>이름</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>직급</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>차량번호</span><button class="btn-ic btn-sort down"></button></th>
+                                                <th><span>최대 용적량(CBM)</span><button class="btn-ic btn-sort down"></button></th>
                                                 <th>권역<button class="btn-ic btn-sort down"></button></th>
                                             </tr>
                                         </thead>
+                                        <!--// 20240509 수정 -->
                                     </table>
                                 </div>
                                 <div class="list-body scroll-yx">
@@ -883,7 +887,7 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="paging mt20">
+                            <div class="paging mt45 pb10"><!-- 20240509 수정 -->
                                 <ul>
                                     <li class="front"><a href="javascript:void(0);">맨 앞으로</a></li>
                                     <li class="prev"><a href="javascript:void(0);">이전으로</a></li>
@@ -1090,14 +1094,16 @@
             <div class="list-wrap v1 mt10">
                 <div class="list-head">
                     <table>
+                        <!-- 20240509 수정 -->
                         <thead>
                             <tr>
                                 <th data-width="95">선택</th>
-                                <th data-width="80">그룹명</th>
-                                <th data-width="150">운전자 배정(운전자 수)</th>
+                                <th>그룹명</th>
+                                <th>운전자 배정(운전자 수)</th>
                                 <th>그룹 메모</th>
                             </tr>
                         </thead>
+                        <!--// 20240509 수정 -->
                     </table>
                 </div>
                 <div class="list-body">
@@ -2546,95 +2552,97 @@
                 <div class="list-wrap v1 resize mt10">
                     <div class="list-head">
                         <table>
+                            <!-- 20240509 수정 -->
                             <thead>
                                 <tr>
                                     <th data-width="95">
                                         <span>번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="155">
+                                    <th>
                                         <span>오류 메시지</span>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>소속</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>이름</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>직급</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="110">
+                                    <th>
                                         <span>아이디</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>전화번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="120">
+                                    <th>
                                         <span>비밀번호</span>
                                     </th>
-                                    <th data-width="120">
+                                    <th>
                                         <span>비밀번호 확인</span>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>차종</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>차량번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="200">
+                                    <th>
                                         <span>최대 용적량(CBM)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="215">
+                                    <th>
                                         <span>통행요금구분</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="230">
+                                    <th>
                                         <span>차량 총 중량(ton)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>연료</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="250">
+                                    <th>
                                         <span>유류구입지역(시/도)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="285">
+                                    <th>
                                         <span>유류구입지역(시/군/구)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="250">
+                                    <th>
                                         <span>자동 배차 그룹 지정</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="210">
+                                    <th>
                                         <span>출발지 주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="220">
+                                    <th>
                                         <span>출발지 상세주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="210">
+                                    <th>
                                         <span>도착지 주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="255">
+                                    <th>
                                         <span>도착지 상세주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
                                 </tr>
                             </thead>
+                            <!--// 20240509 수정 -->
                         </table>
                     </div>
                     <div class="list-body scroll-yx">
@@ -3810,95 +3818,97 @@
                 <div class="list-wrap v1 resize mt10">
                     <div class="list-head">
                         <table>
+                            <!-- 20240509 수정 -->
                             <thead>
                                 <tr>
                                     <th data-width="95">
                                         <span>번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="155">
+                                    <th>
                                         <span>오류 메시지</span>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>소속</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>이름</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>직급</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="110">
+                                    <th>
                                         <span>아이디</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>전화번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="120">
+                                    <th>
                                         <span>비밀번호</span>
                                     </th>
-                                    <th data-width="120">
+                                    <th>
                                         <span>비밀번호 확인</span>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>차종</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="145">
+                                    <th>
                                         <span>차량번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="200">
+                                    <th>
                                         <span>최대 용적량(CBM)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="215">
+                                    <th>
                                         <span>통행요금구분</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="230">
+                                    <th>
                                         <span>차량 총 중량(ton)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>연료</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="250">
+                                    <th>
                                         <span>유류구입지역(시/도)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="285">
+                                    <th>
                                         <span>유류구입지역(시/군/구)</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="250">
+                                    <th>
                                         <span>자동 배차 그룹 지정</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="210">
+                                    <th>
                                         <span>출발지 주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="220">
+                                    <th>
                                         <span>출발지 상세주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="210">
+                                    <th>
                                         <span>도착지 주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="255">
+                                    <th>
                                         <span>도착지 상세주소</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
                                 </tr>
                             </thead>
+                            <!--// 20240509 수정 -->
                         </table>
                     </div>
                     <div class="list-body scroll-yx">
@@ -4618,6 +4628,7 @@
             <div class="list-wrap v1 mt15">
                 <div class="list-head">
                     <table>
+                        <!-- 20240509 수정 -->
                         <thead>
                             <tr>
                                 <th data-width="55">
@@ -4626,12 +4637,13 @@
                                         <label for=""></label>
                                     </div>
                                 </th>
-                                <th data-width="85"><span>이름</span><button class="btn-ic btn-sort down"></button></th>
-                                <th data-width="85"><span>소속</span><button class="btn-ic btn-sort down"></button></th>
-                                <th data-width="95"><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
+                                <th><span>이름</span><button class="btn-ic btn-sort down"></button></th>
+                                <th><span>소속</span><button class="btn-ic btn-sort down"></button></th>
+                                <th><span>아이디</span><button class="btn-ic btn-sort down"></button></th>
                                 <th><span>전화번호</span><button class="btn-ic btn-sort down"></button></th>
                             </tr>
                         </thead>
+                        <!--// 20240509 수정 -->
                     </table>
                 </div>
                 <div class="list-body scroll-y">
@@ -4773,28 +4785,29 @@
                 <div class="list-wrap v1 resize mt10">
                     <div class="list-head">
                         <table>
+                            <!-- 20240509 수정 -->
                             <thead>
                                 <tr>
                                     <th data-width="85">
                                         <span>번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>오류메시지</span>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>이름</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="85">
+                                    <th>
                                         <span>소속</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="100">
+                                    <th>
                                         <span>아이디</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
-                                    <th data-width="110">
+                                    <th>
                                         <span>전화번호</span>
                                         <button class="btn-ic btn-sort down"></button>
                                     </th>
@@ -4808,6 +4821,7 @@
                                     </th>
                                 </tr>
                             </thead>
+                            <!--// 20240509 수정 -->
                         </table>
                     </div>
                     <div class="list-body scroll-yx">
