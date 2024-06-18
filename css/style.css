@@ -401,6 +401,10 @@
 .setting .fee-wrap .article.info-area .cont {padding: 35px 0; justify-content: center;}
 .setting .fee-wrap .article.info-area .claim-summary p {font-size: 24px; line-height: 1.20834; text-align: center;}
 .setting .fee-wrap .article.info-area .claim-summary p strong {font-weight: 700; color: #7950F2; display: inline-block; padding-left: 15px;}
+.setting .fee-wrap .article.info-area .summary {width: 100%; background-color: #E9ECEF; padding: 25px 40px; display: flex; align-items: center; justify-content: center; gap: 0 40px;}
+.setting .fee-wrap .article.info-area .summary dl {display: flex; align-items: center; justify-content: flex-start; gap: 0 10px;}
+.setting .fee-wrap .article.info-area .summary dl dt {font-size: 16px;}
+.setting .fee-wrap .article.info-area .summary dl dd {font-size: 24px; font-weight: 700; line-height: 1.20834;}
 
 .setting .fee-wrap .article.charge-area {width: 100%; flex: none;}
 .setting .fee-wrap .article.charge-area .summary {flex: none; display: flex; align-items: center; gap: 0 50px;}
@@ -419,6 +423,50 @@
 .setting .fee-wrap .article.plan-area {width: 100%; flex: none;}
 .setting .fee-wrap .article.plan-area .cont {justify-content: flex-start; gap: 0 115px;}
 .setting .fee-wrap .article.plan-area .btn-wrap {gap: 0 20px;}
+
+.setting .not-pay {border: 1px solid #FFA94D; background-color: #FFF4E6; display: flex; align-items: center; padding: 15px 20px; gap: 0 50px; border-radius: 10px;}
+.setting .not-pay p {font-size: 12px; line-height: 1.5834; color: #868E96; font-weight: 600;}
+.setting .not-pay dl {flex: 1 0; display: flex; gap: 0 15px; justify-content: flex-start;}
+.setting .not-pay dl dt {font-size: 24px;}
+.setting .not-pay dl dd {font-size: 24px; color: #E8590C; font-weight: 700;}
+
+.setting .panel .panel-content .method-area {height: 200px; margin: 0 auto; width: 560px;}
+.setting .panel .panel-content .method-area .list {margin-top: 25px;}
+.setting .panel .panel-content .method-area .list p {font-size: 12px; line-height: 1.5834; font-weight: 600; color: #858E96;}
+.setting .panel .panel-content .method-area .list ul li {font-size: 12px; line-height: 1.5834; color: #858E96; padding-left: 15px; position: relative;}
+.setting .panel .panel-content .method-area .list ul li::before {content: ""; width: 2px; height: 2px; position: absolute; left: 7px; top: 8px; background-color: #858E96;}
+.setting .panel .panel-content .info-area {height: 200px; margin: 0 auto; width: 365px; padding: 25px 0;}
+.setting .panel .panel-content .info-area .txt-pay {font-size: 20px; line-height: 1.2; font-weight: 600;}
+
+.setting .guide-area {margin: 60px auto 0; width: 810px; background-color: #FFE3E3; border-radius: 20px; padding: 20px 45px;}
+.setting .guide-area .text {padding-left: 42px; background: url('../img/icon/ic_guide.png') no-repeat left center; background-size: 32px; padding-top: 6px; padding-bottom: 5px; font-size: 14px; font-weight: 600; line-height: 1.5; color: #FA5252; width: fit-content; margin: 0 auto;}
+.setting .guide-area ul {margin-top: 10px;}
+.setting .guide-area ul li {position: relative; font-size: 12px; line-height: 1.58334; color: #868E96; padding-left: 12px;}
+.setting .guide-area ul li::before {content: ""; width: 2px; height: 2px; border-radius: 50%; background-color: #868E96; position: absolute; left: 4px; top: 7px;}
+
+.setting .plan-wrap table {width: 100%;}
+.setting .plan-wrap table tbody tr + tr > td {border-top: 1px solid #E9ECEF;}
+.setting .plan-wrap table tbody tr + tr > th {border-top: 1px solid #E9ECEF;}
+.setting .plan-wrap table tbody tr th + th,
+.setting .plan-wrap table tbody tr th + td,
+.setting .plan-wrap table tbody tr td + td {border-left: 4px solid #ffffff;}
+.setting .plan-wrap table tbody tr th {background-color: #F8F9FA; vertical-align: middle; font-size: 14px; font-weight: 700; text-align: center;}
+.setting .plan-wrap table tbody tr:first-child th {font-size: 20px;}
+.setting .plan-wrap table tbody tr:first-child th .title {font-size: 24px; color: #7950F2; font-weight: 700; line-height: 1.20834; margin-top: 20px;}
+.setting .plan-wrap table tbody tr:first-child th .vat {font-size: 12px; color: #868E96; font-weight: 600; line-height: 1.1667; margin-top: 4px;}
+.setting .plan-wrap table tbody tr th:has(.inner) {background: none;}
+.setting .plan-wrap table tbody tr th .inner {border-radius: 10px 10px 0 0; background-color: #F8F9FA; height: 135px; padding: 20px 0;}
+.setting .plan-wrap table tbody tr td {background-color: #F8F9FA; padding-top: 20px; padding-bottom: 20px; vertical-align: middle; text-align: center; font-size: 14px; line-height: 1.215; font-weight: 500;}
+.setting .plan-wrap table tbody tr:last-child th,
+.setting .plan-wrap table tbody tr:last-child td {background: none; padding: 0; height: 72px;}
+.setting .plan-wrap table tbody tr:last-child .inner {border-radius: 0 0 10px 10px; padding-top: 20px; padding-bottom: 20px; background-color: #F8F9FA; height: 100%; display: flex; align-items: center; justify-content: center;}
+.setting .plan-wrap table tbody tr td .discount {font-size: 14px; color: #FAB005; line-height: 1.215; font-weight: 700;}
+.setting .plan-wrap table tbody tr td .cost {font-size: 16px; color: #868E96; line-height: 1.5834; font-weight: 500; margin-top: 4px; text-decoration: line-through;}
+.setting .plan-wrap table tbody tr td .price {font-size: 20px; color: #7950F2; line-height: 1.2; font-weight: 700; margin-top: 4px;}
+.setting .plan-wrap table tbody tr td .btn {margin: 0 auto;}
+.setting .plan-wrap table tbody tr td .use {width: fit-content; color: #7950F2; font-size: 14px; font-weight: 600; line-height: 16px; padding-left: 20px; margin: 0 auto; background: url('../img/icon/ic_use.png') no-repeat left center; background-size: 16px;}
+.setting .plan-wrap table tbody tr td .applying {width: fit-content; color: #F08C00; font-size: 14px; font-weight: 600; line-height: 16px; padding-left: 20px; margin: 0 auto; background: url('../img/icon/ic_applying.png') no-repeat left center; background-size: 16px;}
+.setting .plan-wrap table tbody tr td .inquiry {width: fit-content; color: #7950F2; font-size: 14px; font-weight: 600; line-height: 16px; padding-left: 20px; margin: 0 auto; background: url('../img/icon/ic_inquiry.png') no-repeat left center; background-size: 16px;}
 
 /* 고객지원 */
 .customer {height: 100%; padding-bottom: 20px;}
@@ -511,7 +559,8 @@
 
 /* 휴무관리 팝업 */
 .pop-holiday-schedule {width: 920px; overflow: visible;}
-.pop-holiday-schedule .pop-body {padding: 20px 40px; overflow: visible !important;}
+.pop-holiday-schedule .pop-body {overflow: visible !important; padding: 20px 40px; display: flex; flex-direction: column;}
+.pop-holiday-schedule .pop-body .scroll-y {min-height: 0;}
 .pop-holiday-schedule .schedule-head {position: relative;}
 .pop-holiday-schedule .schedule-head .btn {position: absolute; right: 0; top: 15px;}
 .pop-holiday-schedule .schedule-head .year {font-size: 12px; font-weight: 700; line-height: 1.167; text-align: center; color: #868E96;}
@@ -535,6 +584,8 @@
 .pop-holiday-schedule .schedule-body .week-holiday .holiday:not(.more):hover .btn-chuck {display: block;}
 .pop-holiday-schedule .schedule-body .week-holiday .holiday + .holiday {margin-top: 2px;}
 .pop-holiday-schedule .schedule-body .week-holiday .more-holiday {position: absolute; left: 0; top: 100%; border: 1px solid #CED4DA; border-radius: 10px; box-shadow: 0px 4px 10px 0px #0000001A; z-index: 1; background-color: #F8F9FA; overflow: hidden; width: 100px; margin-left: 25px; margin-top: 6px; padding: 10px; display: none;}
+.pop-holiday-schedule .schedule-body .week:nth-last-child(2) .week-holiday .more-holiday,
+.pop-holiday-schedule .schedule-body .week:nth-last-child(1) .week-holiday .more-holiday {transform: translateY(-100%); margin-top: -16px;}
 .pop-holiday-schedule .schedule-body .week-holiday .more-holiday .date-area {display: flex; align-items: center; justify-content: center; gap: 0 8px;}
 .pop-holiday-schedule .schedule-body .week-holiday .more-holiday .date-area p {font-weight: 600; line-height: 1.167;}
 .pop-holiday-schedule .schedule-body .week-holiday .more-holiday .date-area p.text-date01 {font-size: 12px; color: #343A40;}
@@ -1014,6 +1065,50 @@
 /* 권한 관리 팝업 */
 .pop-info-authority {width: 900px;}
 .pop-info-authority .pop-body {padding: 25px 40px;}
+
+/* 배송확인 팝업 */
+.pop-view-photo {width: 640px;}
+.pop-view-photo .pop-body {padding: 20px 20px;}
+.pop-view-photo .pop-body .big-photo { padding: 0 50px; position: relative;}
+.pop-view-photo .pop-body .big-photo .swiper .swiper-wrapper .swiper-slide {position: relative; height: 500px; background-color: #343A40;}
+.pop-view-photo .pop-body .big-photo .swiper .swiper-wrapper .swiper-slide img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: contain;}
+.pop-view-photo .pop-body .big-photo [class*='swiper-button'] {width: 40px; height: 40px; background-repeat: no-repeat; background-size: 100%;}
+.pop-view-photo .pop-body .big-photo .swiper-button-prev {background-image: url('../img/icon/ic_swiper_l.png'); right: auto; left: 0;}
+.pop-view-photo .pop-body .big-photo .swiper-button-next {background-image: url('../img/icon/ic_swiper_r.png'); left: auto; right: 0;}
+.pop-view-photo .pop-body .small-photo {margin-top: 20px; padding: 0 50px;}
+.pop-view-photo .pop-body .small-photo .swiper .swiper-wrapper .swiper-slide {position: relative; height: 120px; background-color: #F1F3F5; cursor: pointer;}
+.pop-view-photo .pop-body .small-photo .swiper .swiper-wrapper .swiper-slide img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; height: 100%; object-fit: contain;}
+
+/* 요금제 신청 팝업 */
+.pop-apply-plan {width: 560px;}
+.pop-apply-plan .pop-body {padding: 40px 20px;}
+.pop-apply-plan .radio.v5 input[type="radio"] + label {width: 200px; padding: 30px 0;}
+.pop-apply-plan .pop-body .txt {text-align: center; font-size: 12px; line-height: 1.3334;}
+
+/* 요금결제 팝업 */
+.pop-liquidate-plan {width: 800px;}
+.pop-liquidate-plan .pop-body {padding: 40px 35px;}
+.pop-liquidate-plan .pop-body .txt {text-align: center; font-size: 12px; line-height: 1.3334;}
+.pop-liquidate-plan .receipt-area {margin-top: 40px; background-color: #F8F9FA; border-radius: 10px; padding: 30px 40px; display: flex; align-items: flex-start; gap: 0 50px;}
+.pop-liquidate-plan .receipt-area > div {flex: 1 0;}
+.pop-liquidate-plan .receipt-area dl {display: flex; align-items: flex-start; justify-content: flex-start;}
+.pop-liquidate-plan .receipt-area dl dt {font-size: 12px; line-height: 2; color: #868E96;}
+.pop-liquidate-plan .receipt-area dl dd {font-size: 12px; font-weight: 600; line-height: 2; flex: 1 0;}
+.pop-liquidate-plan .receipt-area .headline {flex: 1 0;}
+.pop-liquidate-plan .receipt-area .headline .title {font-size: 20px; line-height: 1.2; font-weight: 700;}
+.pop-liquidate-plan .receipt-area .headline .title + dl {margin-top: 10px;}
+.pop-liquidate-plan .receipt-area .headline dl dt {width: 100px;}
+.pop-liquidate-plan .receipt-area .cont .total + dl {margin-top: 10px;}
+.pop-liquidate-plan .receipt-area .cont dl dt {width: 110px;}
+.pop-liquidate-plan .receipt-area .cont dl dd { text-align: right; padding-right: 64px;}
+.pop-liquidate-plan .receipt-area .cont .total dt {font-size: 16px; line-height: 1.1875; font-weight: 700; color: #343A40;}
+.pop-liquidate-plan .receipt-area .cont .total dd {font-size: 16px; line-height: 1.1875; font-weight: 700; color: #7950F2; padding-right: 0;}
+.pop-liquidate-plan .receipt-area .cont .total dd .vat {font-size: 12px; line-height: 1.1667; color: #868E96; font-weight: 600;}
+.pop-liquidate-plan .payment-info {margin: 40px auto 0; width: 550px;}
+.pop-liquidate-plan .payment-info dl {display: flex; align-items: flex-start; }
+.pop-liquidate-plan .payment-info dl + dl {margin-top: 20px;;}
+.pop-liquidate-plan .payment-info dl dt {width: 185px; font-size: 14px; line-height: 1.143; padding: 8px 0; font-weight: 600;}
+.pop-liquidate-plan .payment-info dl dd {flex: 1 0;}
 
 /* 차량정보 안내 툴팁 */
 .tooltip-car-info {width: 840px;}

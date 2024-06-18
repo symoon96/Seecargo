@@ -681,7 +681,12 @@
                                         <tr>
                                             <td>1</td>
                                             <td>1</td>
-                                            <td>배송지17</td>
+                                            <td>
+                                                <div class="fx ai-c jc-sb">
+                                                    <p class="fx1 ta-l">배송지17</p>
+                                                    <button class="btn-ic btn-delete fx-none" onclick="popOpenAndDim('pop-alert01', true);"></button>
+                                                </div>
+                                            </td>
                                             <td>1.029km</td>
                                             <td>00:10</td>
                                             <td>14:00 / <strong>14:25</strong></td>
@@ -694,7 +699,8 @@
                                             <td>010-1234-5678</td>
                                             <td>부재시, 연락주세요</td>
                                             <td>
-                                                <div class="fx ai-c jc-c">
+                                                <div class="fx ai-c jc-c gap10">
+                                                    <button class="btn-img" onclick="popOpenAndDim('pop-view-photo', true);"><img src="../img/@temp_delivery01.png" alt=""></button>
                                                     <i class="ic-talk" data-cont="
                                                     <div class='tooltip-wrap help'>
                                                         <p class='txt-tooltip'>
@@ -1202,6 +1208,98 @@
         </div>
     </div>
     <!--// 레이어팝업-조회항목 설정 -->
+
+    <!-- 레이어팝업-배송확인 -->
+    <div class="popup layer pop-view-photo">
+        <div class="pop-head">
+            <p class="tit">배송확인</p>
+            <button class="btn-ic btn-pop-close" onclick="popCloseAndDim('pop-view-photo', true);">팝업닫기</button>
+        </div>
+        <div class="pop-body">
+            <div class="big-photo">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/@temp_delivery02.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/@temp_delivery03.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/@temp_delivery02.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/@temp_delivery03.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="small-photo">
+                <div thumbsSlider="" class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/@temp_delivery02.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/@temp_delivery03.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/@temp_delivery02.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/@temp_delivery03.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                
+            </script>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-view-photo', true);"><i class="ic-cancle"></i>닫기</button>
+            </div>
+        </div>
+    </div>
+    <!--// 레이어팝업-배송확인 -->
+
+    <!-- 알럿팝업-배송 취소 -->
+    <div class="popup alert pop-alert01">
+        <div class="pop-head">
+            <p class="tit">배송 취소</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-warning"></i>
+            <p class="txt-alert mt10">해당 배송지의 배송을 취소 하시겠습니까?</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-dark" onclick="popCloseAndDim('pop-alert01', true);"><i class="ic-submit"></i>확인</button>
+                <button class="btn md fill-purple" onclick="popClose('pop-alert01'); popOpen('pop-alert02')"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-배송 취소 -->
+
+    <!-- 알럿팝업-배송 취소 완료 -->
+    <div class="popup alert pop-alert02">
+        <div class="pop-head">
+            <p class="tit">완료</p>
+        </div>
+        <div class="pop-body">
+            <i class="ic-complete"></i>
+            <p class="txt-alert mt10">취소 되었습니다.</p>
+        </div>
+        <div class="pop-foot">
+            <div class="btn-wrap">
+                <button class="btn md fill-purple" onclick="popCloseAndDim('pop-alert02', true);"><i class="ic-submit"></i>확인</button>
+            </div>
+        </div>
+    </div>
+    <!--// 알럿팝업-배송 취소 완료 -->
 
     <!-- 레이어팝업-동영상 튜토리얼 -->
     <div class="popup layer pop-tutorial">

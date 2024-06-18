@@ -188,6 +188,8 @@
 .gap10 {gap: 10px 10px !important;}
 .gap20 {gap: 20px 20px !important;}
 .gap30 {gap: 30px 30px !important;}
+.gap40 {gap: 40px 40px !important;}
+.gap50 {gap: 50px 50px !important;}
 
 /*-------------------------------------------------------------------
     @Only (Display 스타일은 다양하므로 숨길경우만 사용)
@@ -217,6 +219,7 @@
 .bg-gray {background-color: #F8F9FA !important;}
 
 /* 텍스트 */
+.txt-white {color: #ffffff !important;}
 .txt-malibu {color: #748FFC !important;}
 .txt-blue {color: #4C6EF5 !important;}
 .txt-royalblue {color: #3B5BDB !important;}

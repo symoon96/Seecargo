@@ -8,7 +8,7 @@ $(document).ready(function(){
             el: ".tutorial-swiper .paging ul",
             clickable: true,
             renderBullet: function (index, className) {
-              return '<li class="' + className + '"><a href="javascript:void(0)">' + (index + 1) + "</a></li>";
+                return '<li class="' + className + '"><a href="javascript:void(0)">' + (index + 1) + "</a></li>";
             },
         },
         observer: true,
@@ -70,8 +70,30 @@ $(document).ready(function(){
             }
         }
     });
+
+    /* 20240530 수정 */
+    let deliveryCheck2 = new Swiper(".small-photo .swiper", {
+        spaceBetween: 5,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+        observer: true,
+        observeParents: true,
+    });
+    let deliveryCheck1 = new Swiper(".big-photo .swiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: deliveryCheck2,
+        },
+        observer: true,
+        observeParents: true,
+    });
+    /* // 20240530 수정 */
     rowFixedTbl()/* 20240522 수정 */
-    layerSizeTransform()
+    layerSizeTransform()/* 20240530 수정 */
 });
 
 /* 20240530 수정 */
@@ -81,8 +103,6 @@ function rowFixedTbl(){
     let targetTh
     let thHeight = []
     let thMaxHeight
-
-    console.log()
 
     if (target.length > 0) {
         target.forEach(function(target) {
@@ -263,39 +283,93 @@ function datumDetailListSort(){
     });
 }
 
+/* 20240530 수정 */
 function layerSizeTransform(){
-    $('.btn-size').click(function(){
-        if($(this).hasClass('expansion')) {
-            $(this).removeClass('expansion').addClass('shrink')
-            $(this).closest('.item').addClass('on')
-            $(this).closest('.side-area.detail').addClass('full')
-        } else if($(this).hasClass('shrink')) {
-            $(this).removeClass('shrink').addClass('expansion')
-            $(this).closest('.item').removeClass('on')
-            $(this).closest('.side-area.detail').removeClass('full')
-        }
+    let btnSize = document.querySelectorAll('.btn-size')
+
+    let itemArr = document.querySelectorAll('.item')
+    let sideArr = document.querySelectorAll('.side-area.detail')
+
+    btnSize.forEach(function(e){
+        e.addEventListener("click", function(e){
+            let thisTarget = e.target
+            let hasClass = thisTarget.classList.contains('expansion');
+            
+            if(hasClass) {
+                thisTarget.classList.remove('expansion')
+                thisTarget.classList.add('shrink')
+
+                itemArr.forEach(function(number){
+                    if(number.querySelector('.btn-size') == thisTarget){
+                        if(!number.classList.contains('on')) {
+                            number.classList.add('on')
+                        }
+                    }
+                })
+
+                sideArr.forEach(function(number){
+                    if(number.querySelector('.btn-size') == thisTarget){
+                        if(!number.classList.contains('full')) {
+                            number.classList.add('full')
+                        }
+                    }
+                })
+            } else if(!hasClass) {
+                thisTarget.classList.remove('shrink')
+                thisTarget.classList.add('expansion')
+
+                itemArr.forEach(function(number){
+                    if(number.querySelector('.btn-size') == thisTarget){
+                        if(number.classList.contains('on')) {
+                            number.classList.remove('on')
+                        }
+                    }
+                })
+
+                sideArr.forEach(function(number){
+                    if(number.querySelector('.btn-size') == thisTarget){
+                        if(number.classList.contains('full')) {
+                            number.classList.remove('full')
+                        }
+                    }
+                })
+            }
+        });
     })
 }
 
 function foldThis(e){
-    if($(e).closest('.side-area').hasClass('on')){
-        $(e).closest('.side-area').removeClass('on')
-        $(e).addClass('close').removeClass('open')
+    let eventTarget = e
+    let targetParent = eventTarget.closest('.side-area')
+    let classList = targetParent.classList.contains('on');
+
+    if(classList){
+        targetParent.classList.remove('on');
+        eventTarget.classList.add('close');
+        eventTarget.classList.remove('open')
     } else {
-        $(e).closest('.side-area').addClass('on')
-        $(e).addClass('open').removeClass('close')
+        targetParent.classList.add('on');
+        eventTarget.classList.add('open')
+        eventTarget.classList.remove('close')
     }
 }
 
 function viewSideDetail(e){
     let eventTarget = e
     let el = eventTarget.closest('.contents').querySelector('.side-area.detail')
+    let $target = eventTarget.closest('.contents').querySelector('.side-area.detail .list-wrap div:not([class*="scroll-"]) table');
 
     el.style.cssText = 'left:' + eventTarget.closest('.side-area.base').offsetWidth + 'px'
     el.className += ' on';
+    
+    const observer = new ResizeObserver((entries) => {
+        entries.forEach((entry) => {
+            const thisEl = entry.target
+            thisEl.style.cssText = 'transform: translateX(0);'
+        });
+    });
 
-    eventTarget.closest('.contents').querySelector('.btn-fold.open').style.display = 'block'
-    eventTarget.closest('.contents').querySelector('.btn-fold.close').style.display = 'none'
+    observer.observe($target);
 }
 
 function sideClose(e){
@@ -306,6 +380,7 @@ function sideClose(e){
     el.className = 'side-area detail';
     el.querySelector('.btn-size').className = 'btn-ic btn-size expansion';
 }
+/* // 20240530 수정 */
 
 // function datumDetailListDrop(){
 //     $( ".list-wrap.sortable .list-body > div > div" ).sortable({

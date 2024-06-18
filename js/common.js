@@ -13,7 +13,7 @@ $(document).ready(function(){
     accList();
     clickRightBtn();
 
-    dashScroll()
+    dashScroll();
 })
 
 /* 20240509 수정 */
