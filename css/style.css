@@ -234,7 +234,7 @@
 .dashboard .chart-summary {display: flex; align-items: center; padding-left: 10px; gap: 0 10px;}
 .dashboard .chart-summary dl {display: flex; align-items: center; justify-content: flex-start; gap: 0 5px;}
 .dashboard .chart-summary dl dt {font-size: 12px; font-weight: 600; line-height: 1.334; color: #868E96;}
-.dashboard .dash-height01 {max-height: 500px;}
+.dashboard .dash-height01 {height: 100%;}
 
 .dashboard .bx-wrap .bx-group .productivity {flex: 1 0; display: flex; flex-direction: column;}
 .dashboard .bx-wrap .bx-group .productivity .chart-area {margin-top: 10px; display: flex; flex-direction: column; flex: 1 0; min-height: 0;}
@@ -358,7 +358,7 @@
 .dashboard .card-swiper .swiper-button-prev {background-image: url('../img/icon/ic_swiper_l.png'); left: 0;}
 .dashboard .card-swiper .swiper-button-next {background-image: url('../img/icon/ic_swiper_r.png'); right: 0;}
 .dashboard .chart-area .chart > * {width: 100%; height: 100%;}
-.dashboard .operation {display: flex; padding: 0 20px; align-items: stretch; gap: 0 10px; height: 100%;}
+.dashboard .operation {display: flex; padding: 0 20px; align-items: stretch; gap: 0 10px;}
 .dashboard .operation dl {flex: 1 0; display: flex; align-items: center; justify-content: center; flex-direction: column; background-color: #F8F9FA; border-radius: 20px;}
 .dashboard .operation dl dt {font-size: 12px; text-align: center; font-weight: 600; line-height: 1.3334;}
 .dashboard .operation dl dd {margin-top: 2px; font-size: 11px; line-height: 1.182; text-align: center; color: #868E96; font-weight: 600;}
@@ -937,6 +937,7 @@
 
 /* 배차 설정 변경 팝업 */
 .pop-modify-set {width: calc(100% - 60px); height: calc(100vh - 60px)}
+.pop-modify-set .pop-body {max-height: calc(100vh - 200px) !important;}
 .pop-modify-set .pop-body .contents {padding: 0 0 20px; display: flex; flex-wrap: wrap; flex-direction: column; gap: 10px 10px;}
 .pop-modify-set .pop-body .contents > * {width: 100%; flex: 1 0; min-height: 0;}
 .pop-modify-set .pop-body .contents .container {display: flex; flex-wrap: wrap; flex-direction: column;}

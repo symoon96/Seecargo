@@ -37,9 +37,12 @@ function dashScroll(){
     // let dragDir = 0
     
     snapValue = [0]
-    $('.snap').find('.gap30').each(function(){
-        snapValue.push(snapValue[snapValue.length - 1] + $(this).outerHeight() + 50)
+    /* 20240618 수정 */
+    $('.snap').find('.block').each(function(){
+        $(this).height($('.snap').outerHeight())
+        snapValue.push(Math.round(snapValue[snapValue.length - 1] + $(this).outerHeight() + 50));
     })
+    /* // 20240618 수정 */
 
     snapValue.pop()
     
