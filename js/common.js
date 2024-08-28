@@ -3,7 +3,7 @@ $(document).ready(function(){
 
     setTimeout(() => {
         listColumnResize();
-    }, 0);
+    }, 0);// 20240829 수정
     scrollEvent()
     sortable();
     tooltip();
@@ -619,7 +619,7 @@ function tab(){
 function accList(){
     $('.acc-wrap [data-click]').click(function(){
         $(this).closest('.acc-list').toggleClass('on');
-        $(this).closest('.acc-list').children('.acc-cont').slideToggle(0);
+        $(this).closest('.acc-list').children('.acc-cont').slideToggle(0);// 20240829 수정
     });
 }
 
