@@ -47,7 +47,7 @@
 .btn-txt.v2 {font-size: 13px; font-weight: 600; line-height: 1.231; text-align: left; color: #343A40; gap: 0 4px;}
 .btn-txt.v3 {height: 32px; padding: 0 12px; font-size: 13px; line-height: 1.231; gap: 0 4px; font-weight: 600;}
 .btn-txt.v4 {font-size: 12px; line-height: 1.334; gap: 0 2px;}
-.btn-txt.v5 {font-size: 13px; line-height: 1.847; gap: 0 4px; color: #4C6EF5; font-weight: 600;}
+.btn-txt.v5 {font-size: 13px; line-height: 1.847; gap: 0 4px; color: #4C6EF5; font-weight: 600; flex: none;}
 
 .btn-box.v1 {width: 150px; height: 100px; flex-direction: column; align-items: center; justify-content: center; border-radius: 10px; color: #ffffff; text-align: center; font-weight: 600; font-size: 16px; display: flex; gap: 10px 0;}
 .btn-box.v1.purple {border-color: #7950F2; background-color: #7950F2;}
@@ -97,7 +97,7 @@
 .btn-option-toggle.close {background-image: url('../img/icon/ic_toggle_close.png');}
 .btn-refresh-now {width: 16px; height: 16px; background-image: url('../img/icon/ic_reset_default.png');}
 .btn-zoomin {width: 24px; height: 24px; background-image: url('../img/icon/ic_zoomin.png');}
-.btn-zoomout {width: 24px; height: 24px; background-image: url('../img/icon/ic_zoomout.png');}
+.btn-zoomout {width: 30px; height: 30px; background-image: url('../img/icon/ic_zoomout.png');}
 .btn-pin-delete {width: 12px; height: 12px; background-image: url('../img/icon/ic_pin_delete.png');}
 .btn-setting {width: 12px; height: 12px; background-image: url('../img/icon/ic_setting.png');}
 .btn-swap {width: 12px; height: 12px; background-image: url('../img/icon/ic_swap.png');}
@@ -440,6 +440,8 @@ button:hover > .ic-convey {background-image: url('../img/icon/ic_convey_hover.pn
 /* title */
 .tit-wrap {display: flex; align-items: center;}
 .tit-wrap .tit-area {display: flex; align-items: center; justify-content: flex-start; gap: 0 10px;}
+.tit-wrap .etc-area {display: flex; align-items: center; gap: 0 10px;}
+.tit-wrap .etc-area .txt-time {font-size: 11px; color: #868E96;}
 
 .tit-wrap.v1 {border-bottom: 1px solid #CED4DA; padding-bottom: 8px; justify-content: space-between;}
 .tit-wrap.v2 {justify-content: space-between;}
@@ -804,7 +806,7 @@ button:hover > .ic-convey {background-image: url('../img/icon/ic_convey_hover.pn
 .map .btn-zoomout {position: absolute; right: 10px; top: 10px; z-index: 1;}
 .map .map-filter {position: absolute; right: 20px; top: 15px; z-index: 1; display: flex; gap: 0 4px;}
 .map .map-filter .item {flex: none;}
-.map .map-summary {position: absolute; right: 20px; top: 70px; z-index: 1; height: calc(100vh - 160px); display: flex; flex-direction: column; gap: 10px;}
+.map .map-summary {position: absolute; right: 20px; top: 70px; z-index: 1; height: calc(100vh - 160px); min-height: 780px; display: flex; flex-direction: column; gap: 10px;}
 .map .map-summary .item {box-shadow: 0px 4px 10px 0px #0000001A; background-color: #ffffff; border-radius: 20px; width: 260px; padding: 10px 20px; display: flex; flex-direction: column;}
 .map .map-summary .item:has(.list-wrap) {min-height: 0;}
 .map .map-summary .item .item-head {display: flex; align-items: center; justify-content: space-between; flex: none;}

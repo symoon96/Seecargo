@@ -557,12 +557,23 @@
     <!-- // content -->
 
     <!-- 레이어팝업-지도 확대 -->
-    <div class="popup layer pop-zoom-map">
+    <div class="popup full pop-zoom-map"><!-- 20240823 수정 -->
         <div class="pop-body">
             <div class="map">
                 <button class="btn-ic btn-zoomout" onclick="popClose('pop-zoom-map')"></button>
                 <div class="status">
-                    <p class="tit v4">배송 현황</p>
+                    <!-- 20240823 수정 -->
+                    <div class="tit-wrap v2">
+                        <div class="tit-area">
+                            <p class="tit v1">Dashboard</p>
+                        </div>
+                        <div class="etc-area">
+                            <p class="txt-time">2024-01-04 12:03:58 기준</p>
+                            <button class="btn-ic btn-refresh-now"></button>
+                        </div>
+                    </div>
+                    <p class="tit v4 mt20">배송 현황</p>
+                    <!--// 20240823 수정 -->
                     <div class="info">
                         <div class="chart-area">
                             <dl class="result">
